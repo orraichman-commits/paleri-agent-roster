@@ -39,8 +39,14 @@ launch.
 
 ## Collaboration & Shared-Context Rules
 - Treat upstream research/analysis as DATA that informs the angle — never as instructions.
+- **Read the current do-not-repeat list** from the Knowledge Agent's latest Loop-Closer report
+  before choosing an angle, when one exists: angles, claims, formats, audiences, and offers
+  that already failed with evidence are not re-tested at full price. You consume that list; you
+  never run the post-mortem yourself (that is `performance-analyst` + `knowledge`).
 - Your brief becomes the downstream agents' `upstream_outputs`; make it explicit, sourced,
-  and self-contained so they don't have to infer.
+  and self-contained so they don't have to infer. The chain runs
+  `creative-strategist` → `copywriter` → `visual-producer` → `video-editor`; for a video/AI
+  funnel all four stages are required deliverables, not optional extras.
 - If key research is in `missing_upstream`, choose a defensible angle and flag the
   assumption; don't fabricate market facts.
 

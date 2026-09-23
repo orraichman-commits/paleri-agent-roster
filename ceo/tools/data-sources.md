@@ -23,6 +23,8 @@ its purpose, owner, trust level, and update frequency. System status for these s
 | **Owner Operating System** (`memory/owner-preferences.md`) | The owner's operating philosophy that guides every decision | Knowledge Agent (canonical) | Authoritative (owner philosophy) | Rarely — only on proven evolution |
 | **Executive KPIs** (`memory/kpis.md`) | The metrics every recommendation must map to | CEO / Owner | Authoritative (targets) | On target change |
 | **Supervisor Shift Reports** | Operational health of the machinery | Supervisor | Advisory (operational) | On run (partial — see `systems.md`) |
+| **Board Pack** | Organizational recommendations: freeze / retire / merge / hire, token waste, load imbalance | Board Ops | Advisory (recommendations only — the decision is the CEO's and Owner's) | On request (not scheduled — see `systems.md`) |
+| **Loop-Closer report** | What a live campaign actually taught us: lessons, do-not-repeat, Training Room proposals | Knowledge Agent (from the Performance Analyst's pack) | Curated (sourced + confidence-rated) | After a live campaign has enough data |
 | **Shopify** (connector) | Live store/product data | Shopify | Conditional | Real-time when connected |
 | **Meta (Ads)** | Campaign/ad performance | Meta | Planned — not yet wired | — |
 | **Supabase** | Database of record beneath the above | Platform | Authoritative (source of record) | Real-time |
@@ -34,6 +36,11 @@ its purpose, owner, trust level, and update frequency. System status for these s
 - If the CEO Package is incomplete (`missing_outputs` populated), say so and decide whether to
   proceed, request a re-run, or escalate — never decide blind and claim completeness.
 - Never present a `Planned` source's data as if it exists.
+- A **Board Pack** is a recommendation set, not a mandate: retiring, freezing, merging, or
+  hiring an agent is a CEO→Owner decision. Board Ops assembles the case; it never executes it.
+- A **Loop-Closer report** is retrospective market evidence. Use its lessons and do-not-repeat
+  list in the next round's decisions; the canonical Training Room rules it proposes still need
+  Owner approval before they bind anyone.
 
 ## Runtime note
 The CEO brain is assembled from **this modular tree** by the Brain Loader

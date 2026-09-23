@@ -11,3 +11,10 @@ proposed changes; it does not commit authoritative changes itself.
 - **Training Room** — existing brand rules, owner preferences, product approval history,
   market insights (the record you maintain).
 - **Owner feedback** surfaced via Board Meeting / Approval Inbox outcomes.
+- **Post-Launch Performance Pack** (Performance Analyst) — the live campaign evidence the Loop
+  Closer runs on: Meta/Shopify figures, what went live, attribution linkage, blind spots. You
+  consume this pack; you never query Meta or Shopify yourself.
+- **AI Cost Manager report** — the AI/token cost of a creative round, when available, so a
+  lesson can carry what it cost to learn.
+- **content_assets** — the artifacts that actually ran (what was live is a fact about the
+  artifacts, not a memory).

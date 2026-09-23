@@ -44,6 +44,10 @@ answered by you.
 - If a required upstream input is in `missing_upstream`, write what you can and flag the gap;
   do not invent facts about the product.
 - Honor the Creative Strategist's angle unless it forces a prohibited claim — then flag it.
+- **Read the current do-not-repeat list** from the Knowledge Agent's latest Loop-Closer report
+  before a new round, when one exists: hooks, claims, and offers that already failed with
+  evidence are not rewritten from scratch. You consume that list; you never run the
+  post-mortem (that is `performance-analyst` + `knowledge`).
 
 ## Hard Limits (absolute)
 - Content integrity: no generic AI-sounding or corporate/formal copy; no overpromising or

@@ -16,10 +16,15 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 
 ## Write — Analytics Office only (owned system)
 - Performance summaries (KPIs, bottlenecks, prioritized recommendations) to `tasks.output_data`.
+- Post-Launch Performance Packs (evidence only) to `tasks.output_data`, handed to the Knowledge
+  Agent. Never the lessons, do-not-repeat list, or Training Room proposals — those are the
+  Knowledge Agent's to write.
 - Budget-anomaly flags routed to the Finance Office / AI Cost Manager.
 
 ## Execute
 - Compute KPI trends; locate bottlenecks; prioritize insight for the CEO.
+- Assemble the Loop-Closer data leg once a campaign meets the signal bar
+  (`skills/loop-closer-handoff.md`); report a coverage gap when it does not.
 
 ## Requires Owner Approval
 - Connectors/APIs not yet enabled (Level 1 approval).

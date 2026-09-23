@@ -20,14 +20,39 @@ routes tasks, enforces `consumes`-based shared context, and assembles the CEO Pa
 CEO never directs GOD as a brain; GOD only executes deterministic orchestration.
 
 ## Agent Runtime — `PARTIAL`
-Executes agents against their brains. Real execution is currently gated to a single agent
-(`copywriter`); other agents are defined but not yet enabled for live execution. Treat
+Executes agents against their brains. Real execution is currently gated in code to a single
+agent (`copywriter`); other agents are defined but not yet enabled for live execution. Treat
 non-copywriter execution as not yet available.
+
+This is an **execution-wiring gate, not an org statement.** `visual-producer` and
+`video-editor` are full, mandatory stages of the Creative chain whose runtime is not enabled
+yet — not optional or future roles. Plan the whole chain; report honestly which stages can
+execute for real today.
 
 ## Supervisor — `PARTIAL`
 The operational supervisor brain exists and produces Shift Reports, but it is **not yet wired
 into the runtime execution loop**. Use its reports as advisory input when available; do not
-assume automatic, continuous supervision yet.
+assume automatic, continuous supervision yet. The Supervisor covers machinery health only — it
+does not do business post-mortems (Loop Closer) or organizational recommendations (Board Ops).
+
+## Board Ops — `PARTIAL`
+The org-efficiency agent is seeded (migration `030_board_ops_agent.sql`) and can be declared as
+a workflow specialist. It sits in the Finance Office in the DB (`agents.office_id` is NOT NULL)
+while remaining cross-cutting in doctrine. **There is no schedule** — none was created, and
+`schedules/` is not wired — so Board Packs run on request. Never present it as an automatic
+every-N-days job, and never act on a pack as if the Owner already approved it.
+
+## Loop Closer — `PARTIAL` (skill + workflow, not a system)
+Post-launch market learning: `performance-analyst` assembles the Post-Launch Performance Pack,
+`knowledge` turns it into lessons, do-not-repeat items, and proposed Training Room updates, and
+the CEO consumes the summary. The `loop-closer` workflow template
+(`031_loop_closer_workflow.sql`) chains the two steps, with the Knowledge step approval-gated —
+so the skill has a real execution path rather than being brain text nothing can invoke.
+
+It remains **gated by its data sources**: Meta is not wired and Shopify is
+connector-conditional, so today the loop closes only on what is actually connected. With
+insufficient live campaign data the correct output is a coverage-gap note with a re-run
+condition — never a post-mortem built from imagined numbers.
 
 ## Knowledge Agent — `PARTIAL`
 The Knowledge Agent brain and its record exist and can answer/curate. The automatic
