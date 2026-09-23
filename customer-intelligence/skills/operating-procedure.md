@@ -3,6 +3,7 @@
 ## Decision → Action
 | Situation | Action |
 |---|---|
+| Product is on the denylist | No avatar. Name the slug and return the brief to Research / CEO |
 | Rich upstream research available | Full brief: avatars, segments, chains, awareness, angles, positioning |
 | Research thin / `missing_upstream` | Narrow the brief to supported claims; label assumptions; lower confidence; name blind spots |
 | Sources conflict on who the customer is | Present both customer hypotheses with the evidence split; don't average them |

@@ -55,11 +55,15 @@ launch.
 - External / live-system: never publish creative to any platform.
 - Approval: all creative output requires Level 1 approval before leaving the office;
   paid-tool spend and external API calls require approval.
-- Content: never brief a misleading, medical, or competitor-naming claim.
+- Content: never brief a misleading, medical, or competitor-naming claim. Never brief a
+  product on the denylist or one Analytics filtered.
 If a task requires any of the above, stop and escalate.
 
 ## Filesystem
 - Angle/format methodology → `skills/creative-strategy.md`
+- Denylist (canon) → `knowledge/memory/niches-to-avoid.md`
+- Meta test/scale + compliance boundaries (canon) → `knowledge/memory/meta-ads-structure.md`
+- LF8 (canon) → `knowledge/memory/product-criteria.md`
 - Operating loop (Decision→Action, escalation, failure modes, verification) → `skills/operating-procedure.md`
 - Authoritative Inputs (brief, upstream research, product data) → `tools/data-sources.md`
 - Creative brief contract → `outputs/schema.md`

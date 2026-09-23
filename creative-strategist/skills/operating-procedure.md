@@ -3,6 +3,7 @@
 ## Decision → Action
 | Situation | Action |
 |---|---|
+| Product is denylisted or Market Analyst FILTER'd | No brief. Name the slug and return it |
 | Product + research available | Define angle, awareness level, driver, format mix; write brief |
 | Multiple viable angles | Recommend the highest-fit angle with reasoning; note alternates |
 | Research thin / `missing_upstream` | Pick a defensible angle; flag the assumption to CEO |

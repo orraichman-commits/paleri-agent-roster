@@ -2,7 +2,10 @@
 
 Build the ad around the hook:
 
-- **Hook-first:** the first 3 seconds must stop the scroll; every edit serves it.
+- **Hook-first:** the first 2–5 seconds must stop the scroll. The hook lands in the first
+  2–3 seconds; the next beat gives a reason to stay. Open on product-in-action, problem, or
+  emotion. Every edit serves that window. Do not cut a video for a product on
+  `knowledge/memory/niches-to-avoid.md`.
 - **Hebrew captions:** accurate, RTL, readable on mobile; never state an unverified claim.
 - **Music & pacing:** appropriate for Israeli audiences; keep it tight.
 - **Format variants:** deliver the standard Meta set — 9:16, 4:5, 1:1 — and the durations the

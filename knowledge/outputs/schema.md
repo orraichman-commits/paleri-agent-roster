@@ -39,11 +39,13 @@ Angle / hook / offer / audience / format: <as briefed, with artifact ids>
   - <concrete, testable change> — tied to: <the evidence above>
 
 ### לא לחזור על זה (do-not-repeat)
-  - <angle / claim / format / audience / offer> — Evidence: <why> —
+  - <niche slug / angle / claim / hook / format / audience / offer> — Evidence: <why> —
     Revisit only if: <what would have to be true>
+  - Denylist check: <clear | ran a hard-reject / avoid-at-start slug — process failure>
 
 ### הצעות לעדכון Training Room (pending Owner approval)
-  - <proposed canonical rule> — Confidence: <…> — Conflicts with: <existing entry, if any>
+  - <proposed canonical rule, including a niches-to-avoid or product-criteria addition> —
+    Confidence: <…> — Conflicts with: <existing entry, if any>
 
 ### המלצות להמשך
   - CEO: <what the market taught, for the next decision — never what to decide>

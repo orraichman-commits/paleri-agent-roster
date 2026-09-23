@@ -1,14 +1,56 @@
 # Skill: Product Research — Product Research Agent
 
-For each candidate product, research and document:
+Qualify products for the Israeli dropshipping pipeline. The denylist is a gate, not a
+score. Read `knowledge/memory/niches-to-avoid.md` and `knowledge/memory/product-criteria.md`
+before any QUALIFY. Those files are the criteria; this skill is how you apply them.
 
-- **Sourcing** — supplier availability, lead time, unit cost, reliability signals.
-- **Margin** — estimated margin range and the basis for it.
-- **Competition** — competition level with evidence.
-- **Israeli-market fit** — suitability for the Israeli eCommerce / dropshipping audience.
+## 1. Denylist first
+Map the candidate to a slug. `hard-reject` (skin, ingestibles, emergency, zero-value
+gimmick, licensed IP, counterfeit) is an immediate **REJECT** — no sourcing deep-dive
+required beyond enough evidence to name the slug. `avoid-at-start` (apparel, jewelry,
+footwear, expensive electronics, heavy goods, trend/situational) is also a **REJECT**
+for a starting test unless the task quotes an explicit Owner override. AliExpress
+availability does not clear IP.
 
-Then apply PALERI's product criteria (curated in the Training Room via the Knowledge Agent)
-and issue a **QUALIFY** or **REJECT** verdict per product, with the reason and sources.
-Reject weak products explicitly — do not inflate them. Structure the output so the Market
-Analyst can score it directly. Cross-checking with the Market Research Agent's intelligence
-strengthens confidence; note any conflicts rather than resolving them silently.
+If the niche is denied, stop. Do not hand a "qualified with caveats" product downstream.
+
+## 2. Six criteria
+For anything still alive, score each slug and show the evidence:
+
+`lf8-real-need`, `not-commodity`, `perceived-value`, `margin-room`, `not-saturated`,
+`wow-factor`.
+
+A meaningful miss on need, commodity status, or saturation is a REJECT named by slug.
+Clearing "most" of the six does not save a gimmick. State which LF8 drive the outcome
+pulls, and whether we are selling a solved problem or an emotion — outcome, not feature.
+
+Also check:
+
+- Israeli price band **89–399 ₪** (`price-band-il`). Outside it, say so; do not quietly
+  QUALIFY a $5 item or a $500 item.
+- Price floor versus COD: ≥ ×2.5, prefer ×3–×4, as a rule of thumb (`unit-economics.md`).
+  Unknown cost is an unknown, not a ×4 fantasy.
+- We understand the niche well enough to talk like the buyer. If not, REJECT.
+- Audience is not tiny.
+- The product is evergreen, not a news cycle.
+
+## 3. What to document when you QUALIFY or REJECT
+- **Sourcing** — supplier, lead time, unit cost, reliability signals. AliExpress is the
+  default first source; it is not legal clearance.
+- **Margin** — range and the basis (cost, shipping, implied shelf price).
+- **Competition** — level with evidence. Competition that is already selling is a
+  positive signal if the offer or the ad can be better. Saturation (the market already
+  owns it) is a failed `not-saturated`.
+- **Israeli-market fit** — price band, delivery expectation, whether the outcome
+  translates.
+- **Search trail** — which source showed the product already selling (Ads Library,
+  Foreplay if approved, or neither). A candidate nobody is advertising is higher risk;
+  label it. Do not invent an ad you did not see.
+
+Cross-check with `research-beta` when their intelligence is in `upstream_outputs`.
+Conflicts are recorded, not smoothed over.
+
+## Verdict
+**QUALIFY** or **REJECT**, with the slug that decided it and the sources. Structure the
+output so the Market Analyst can score it without re-doing the search
+(`outputs/schema.md`).

@@ -18,4 +18,6 @@ Apply always:
   what the anchors mean for tone and urgency.
 
 The canonical, evolving market knowledge is curated by the Knowledge Agent in the Training
-Room. This file is the Copywriter's local reference view.
+Room. This file is the Copywriter's local reference view. Niches you will not write for
+live in `knowledge/memory/niches-to-avoid.md`. The first 2–5 seconds and the compliance
+line live in `knowledge/memory/meta-ads-structure.md`.

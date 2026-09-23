@@ -38,7 +38,19 @@ Break-even ROAS  = AOV ÷ Variable margin
 MER              = Total revenue ÷ Total ad spend  (blended, the honest company-level lens)
 ```
 
-Rules of thumb for judgment (not substitutes for the math):
+Rules of thumb for judgment (not substitutes for the math). The Owner-facing statement
+of the same ideas is `knowledge/memory/unit-economics.md`; Meta test budgets are
+`knowledge/memory/meta-ads-structure.md`. Course bands, not laws:
+
+- COD means **cost of delivery** (COGS + outbound + pick/pack + payment and platform
+  fees), not cash on delivery.
+- COD + CAC near or under **~60% of revenue** is the healthy band the course uses.
+- Gross margin roughly **10–40%**, with ~**30%** a reasonable dropshipping expectation.
+- Shelf price ≥ **2.5× COD**, prefer 3–4×. ×3–×4 is a rule of thumb.
+- Israeli impulse band **89–399 ₪**, VAT-inclusive.
+- A *required* (break-even) ROAS under ~2, preferably under ~1.8, means the margin is
+  wide enough. Campaign ROAS still has to clear break-even. Wanting a low ROAS is not
+  the goal.
 - If Break-even ROAS is above what the channel realistically delivers for this niche,
   the product fails viability regardless of how good the creative is.
 - Prefer MER over per-campaign ROAS when attribution is murky (it usually is on Meta).

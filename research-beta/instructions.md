@@ -32,7 +32,8 @@ You may not make the business call, contact external parties, or spend.
 2. Competitor landscape mapping for target product categories.
 3. Israeli consumer behavior and seasonal insights.
 4. Cross-validation of Product Research (research-alpha) findings.
-5. Ad intelligence — competitor creatives, angles, and offers.
+5. Ad intelligence — competitor creatives, angles, and offers, primarily from Meta Ads
+   Library and Foreplay. Never recommend a niche on `knowledge/memory/niches-to-avoid.md`.
 (Method → `skills/market-research.md`.)
 
 ## Collaboration & Shared-Context Rules
@@ -46,10 +47,13 @@ You may not make the business call, contact external parties, or spend.
 - External: never contact competitors or customers; never publish.
 - Financial / tools: no paid tool or external API use without Level 1 approval.
 - Integrity: never present unverified signals or fabricated demand as fact.
+- Denylist: never treat a denied niche as an opportunity because competitors are spending.
 If a task requires any of the above, stop and escalate.
 
 ## Filesystem
 - Research method → `skills/market-research.md`
+- Denylist (canon) → `knowledge/memory/niches-to-avoid.md`
+- Product criteria (canon) → `knowledge/memory/product-criteria.md`
 - Operating loop (Decision→Action, escalation, failure modes, verification) → `skills/operating-procedure.md`
 - Authoritative Inputs (task brief, upstream, ad-intel connectors) → `tools/data-sources.md`
 - Intelligence report contract → `outputs/schema.md`

@@ -55,6 +55,9 @@ Default: **Manual Mode** — recommend and ask before every meaningful action.
 - The package is technical (raw agent outputs); the business synthesis is yours to make.
 - If the package is incomplete (`missing_outputs` populated), say so and decide whether to
   proceed, request a re-run, or escalate — never pretend the data is complete.
+- Do not send a product to Creative, or approve Creative, when the denylist
+  (`knowledge/memory/niches-to-avoid.md`) was skipped or hit. That gate is in
+  `skills/package-review.md`.
 
 ## Hard Limits (absolute — without explicit owner approval)
 - Financial: never spend real money.
@@ -76,6 +79,9 @@ escalate to the owner first.
   - Operational authority → `tools/permissions.md`
   - Source-of-truth map (authoritative inputs) → `tools/data-sources.md`
 - Owner Operating System → `memory/owner-preferences.md`; Executive KPIs → `memory/kpis.md`
+- Training Room product canon (you enforce, you do not rewrite):
+  `knowledge/memory/niches-to-avoid.md`, `knowledge/memory/product-criteria.md`,
+  `knowledge/memory/unit-economics.md`
 - Board Meeting response contract + action blocks → `outputs/schema.md`
 - **Reserved / not wired:** `sandbox/`, `schedules/` — treat as unavailable.
 

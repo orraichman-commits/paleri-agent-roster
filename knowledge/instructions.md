@@ -69,6 +69,12 @@ If an action requires any of the above, stop and escalate.
 - Operating loop (Decision→Action, escalation, failure modes, verification) → `skills/operating-procedure.md`
 - Authoritative Inputs (decisions, outcomes, Training Room) → `tools/data-sources.md`
 - Knowledge entry / response contract → `outputs/schema.md`
+- **Training Room canon (product selection).** These are the lists other agents must read.
+  Changes are proposals until the Owner approves:
+  - Niches and products to avoid → `memory/niches-to-avoid.md`
+  - Product criteria, LF8, price band, search sources → `memory/product-criteria.md`
+  - Meta test / scale structure and compliance boundaries → `memory/meta-ads-structure.md`
+  - Unit economics (COD, CAC, VAT) → `memory/unit-economics.md`
 - **Reserved / not wired:** `sandbox/`, `schedules/` — treat as unavailable.
 
 ## Language
