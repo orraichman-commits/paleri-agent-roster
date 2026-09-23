@@ -3,6 +3,8 @@
 ## Decision → Action
 | Situation | Action |
 |---|---|
+| Product hits the denylist, even if research said QUALIFY | FILTER; name the slug; do not score it as a pass |
+| Unit economics cannot work at a realistic CAC | FILTER; show the sanity check, not a heroic CPA |
 | Product clears the viability bar | Score, document evidence, route to CEO with recommended angle |
 | Product below the bar | Filter; state score and which criterion failed |
 | Research thin / `missing_upstream` | Score on available evidence; lower confidence; flag gap |
@@ -28,7 +30,8 @@
 - Confidence and gaps are stated, not hidden.
 
 ## Self-Verification (run before returning)
-1. Can someone reproduce this score from my criteria and evidence?
+1. Can someone reproduce this score from my criteria and evidence? Did Gate A (denylist)
+   and Gate B (unit economics) run before the score?
 2. Does each verdict state the driving factor (score + failed/passed criterion)?
 3. Did I lower confidence and flag gaps from `missing_upstream` instead of assuming?
 4. Did I route the decision to the CEO rather than deciding it?

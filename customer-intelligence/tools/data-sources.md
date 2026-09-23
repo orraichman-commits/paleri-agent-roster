@@ -13,7 +13,8 @@ Authoritative Inputs. Read fresh; never assume.
   - **missing_upstream** — declared inputs that produced nothing; these become the
     brief's named blind spots.
 - **Training Room** (via Knowledge Agent) — prior avatars, past angle performance,
-  owner's product criteria, accumulated Israeli-market knowledge.
+  owner's product criteria, accumulated Israeli-market knowledge. Canon for this gate:
+  `knowledge/memory/niches-to-avoid.md`, `knowledge/memory/product-criteria.md`.
 - **memory/israeli-consumer.md** — durable Israeli consumer-psychology reference
   (agent-local view; the Training Room remains canonical).
 - **External research connectors** (reviews platforms, audience tools) — only when

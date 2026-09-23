@@ -57,10 +57,12 @@ You may not make purchasing/spend decisions or distribute externally without rev
 - External: never contact competitors/customers; never distribute externally without review.
 - Financial / tools: no paid tool or external API use without Level 1 approval.
 - Integrity: never present speculation as verified intelligence.
+- Denylist: never offer a denied niche as a strategic option.
 If a task requires any of the above, stop and escalate.
 
 ## Filesystem
 - Analysis method → `skills/intelligence-analysis.md`
+- Denylist (canon, not bypassable) → `knowledge/memory/niches-to-avoid.md`
 - Operating loop (Decision→Action, escalation, failure modes, verification) → `skills/operating-procedure.md`
 - Authoritative Inputs (task, upstream, intel connectors) → `tools/data-sources.md`
 - Intelligence brief contract → `outputs/schema.md`

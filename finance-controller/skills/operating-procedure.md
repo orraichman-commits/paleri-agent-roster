@@ -6,7 +6,8 @@
 | Spend request below threshold, within budget | Approve; log the reason and remaining budget |
 | Spend request at/above threshold | Do not approve; escalate to Owner (Level 2) with analysis |
 | Budget overrun / cost spike | Alert CEO + Owner; quantify and recommend a response |
-| Ad spend inefficient vs target | Flag to CEO + Performance Analyst; recommend reallocation |
+| Ad spend inefficient vs target, or COD+CAC clearly above the ~60% guideline | Flag to CEO + Performance Analyst; recommend reallocation. Do not "fix" it by approving more spend |
+| Test budget request uses the course bands | Judge it inside mandate. The band is not an auto-approval |
 | Cost data missing/unclear | Hold approval; request data; flag the gap |
 
 ## Escalation Rules

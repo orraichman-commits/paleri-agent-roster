@@ -1,7 +1,7 @@
 # PALERI Agent Roster
 
 Read-only export of the agent brain files from `paleri-os/agents/`.
-**17 agents, 131 markdown files**, one folder per agent, same structure as the source repo.
+**17 agents, 137 markdown files**, one folder per agent, same structure as the source repo.
 
 This repo exists so external bots/services can fetch these files over plain HTTP or the
 GitHub API instead of scraping a claude.ai artifact link. It is a manual export, not synced
@@ -36,6 +36,18 @@ Each agent folder carries its modular brain:
 **Analytics** — `market-analyst` (viability gate) · `performance-analyst` (live performance + Loop-Closer data leg) · `strategic-intelligence` (**on-demand only**)
 
 **Shopify** — `shopify` · **Finance** — `finance-controller`, `ai-cost-manager` · **Training Room** — `knowledge`
+
+## Training Room canon (product selection)
+
+Shared criteria live under `knowledge/memory/`. Agents reference these files; they do not
+each keep a private copy of the list.
+
+- `niches-to-avoid.md` — hard rejects and niches to avoid at the start
+- `product-criteria.md` — six selection criteria, LF8, Israeli price band, search sources
+- `meta-ads-structure.md` — ABO test vs CBO/ASC scale, test budgets, compliance boundaries
+- `unit-economics.md` — COD, CAC, the ~60% guideline, Israeli VAT
+
+What changed when the ecommerce training course was folded in: `CHANGELOG.md`.
 
 ## Notes for anyone reading these brains
 

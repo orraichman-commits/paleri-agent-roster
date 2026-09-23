@@ -29,8 +29,10 @@ the company something false, which is worse than teaching it nothing.
 - **Meta data** (via the Performance Analyst): spend, CTR, CPC, CPA, ROAS, frequency,
   impressions — whatever the connector actually returned.
 - **Shopify data** (via the Performance Analyst): orders, revenue, AOV, refunds, conversion rate.
-- **What actually went live**: the angle, the hook, the offer, the audience, the creative format
-  — from the creative brief and the approved artifacts, not from memory.
+- **What actually went live**: the niche, the angle, the hook, the offer, the audience, the
+  creative format, and whether the buy was ABO test or CBO/ASC scale — from the creative brief
+  and the approved artifacts, not from memory. Check the niche against `memory/niches-to-avoid.md`
+  before treating the result as a lesson about creative.
 - **AI/token cost for the round** from the AI Cost Manager, when available — what this learning
   cost to produce.
 - Prior Training Room entries on the same product/angle, so a "new" lesson is not a re-run.
@@ -51,13 +53,17 @@ campaign; nothing in this skill writes to any live system.
    from *the audience was wrong* from *we never got enough delivery to tell*. Collapsing these
    is the most expensive mistake in this report.
 6. **What to improve next round** — concrete, testable changes, each tied to the evidence.
-7. **Do-not-repeat** — what the company should stop paying to relearn: the angle, claim, format,
-   audience, or offer that has now failed with evidence. Each item states what would have to be
-   true for it to be revisited.
-8. **Propose Training Room updates** — draft canonical rules from the durable lessons. They are
-   **proposals**: canonical brand rules and owner preferences require Owner approval before they
-   bind anyone (`skills/knowledge-curation.md`, `outputs/schema.md`). Never self-promote a
-   lesson to canon.
+7. **Do-not-repeat** — what the company should stop paying to relearn: the niche, angle, claim,
+   hook, format, audience, or offer that has now failed with evidence. Each item states what
+   would have to be true for it to be revisited. A niche already on `memory/niches-to-avoid.md`
+   that somehow ran is a process failure to record, not a new discovery.
+8. **Propose Training Room updates** — draft canonical rules from the durable lessons, including
+   additions to the do-not-repeat niches and angles in `memory/niches-to-avoid.md` and
+   `memory/product-criteria.md` when the evidence is strong enough to bind the next search.
+   They are **proposals**: canonical brand rules and owner preferences require Owner approval
+   before they bind anyone (`skills/knowledge-curation.md`, `outputs/schema.md`). Never
+   self-promote a lesson to canon. A losing angle does not silently rewrite the denylist; a
+   repeated loss in the same niche is a proposal to add a slug, with the evidence attached.
 
 ## Confidence discipline
 Every lesson and do-not-repeat item carries a confidence level and its evidence window, exactly
@@ -81,8 +87,10 @@ rather than reconstructing the numbers yourself.
   `skills/loop-closer-handoff.md`). You do not pull Meta/Shopify data yourself.
 - **To the CEO** — the Owner-facing summary: what we learned, what to do differently, what not
   to repeat. Lessons, never instructions on what to decide.
-- **To Creative** (`creative-strategist`, `copywriter`) — the current do-not-repeat list, read
-  before the next creative round. They consume it; they never run the post-mortem.
+- **To Creative** (`creative-strategist`, `copywriter`) — the current do-not-repeat list,
+  including niches and angles, read before the next creative round. They consume it; they
+  never run the post-mortem. Visual Producer and Video Editor inherit the same refusal
+  through the brief: no asset for a niche on that list.
 - **To the Owner** — any proposed canonical Training Room rule, for approval.
 
 ## Hard limits for this skill

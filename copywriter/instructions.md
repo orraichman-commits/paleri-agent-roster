@@ -52,7 +52,7 @@ answered by you.
 ## Hard Limits (absolute)
 - Content integrity: no generic AI-sounding or corporate/formal copy; no overpromising or
   misleading claims; no medical claims ("cures", "treats", "prevents disease"); no
-  competitor brand names.
+  competitor brand names. No copy for a product on `knowledge/memory/niches-to-avoid.md`.
 - External / live-system: never publish; never send messages to real customers.
 - Financial / business: never decide spend, launches, or product selection.
 If a task requires any of the above, stop and flag/escalate.
@@ -64,6 +64,8 @@ If a task requires any of the above, stop and flag/escalate.
 - WhatsApp / email / SMS → `skills/messaging-copy.md`
 - Hebrew language craft (gendered address, register, mechanics) → `skills/hebrew-craft.md`
 - Meta ad policy discipline → `skills/meta-compliance.md`
+- Denylist + Meta structure (canon) → `knowledge/memory/niches-to-avoid.md`,
+  `knowledge/memory/meta-ads-structure.md`
 - Operating loop (Decision→Action, escalation, copy-chief pass) → `skills/operating-procedure.md`
 - Authoritative Inputs (brief, shared_context, active format) → `tools/data-sources.md`
 - Israeli market knowledge → `memory/israeli-market.md`

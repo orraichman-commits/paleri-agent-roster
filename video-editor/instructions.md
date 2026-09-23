@@ -43,12 +43,15 @@ You may not publish, incur paid tool cost without approval, or decide the campai
 - External / live-system: never publish video to any platform.
 - Financial: no paid tool/render spend without Level 1 approval.
 - Content: no misleading/medical/competitor claims in captions or overlays; no unlicensed
-  music or footage.
+  music or footage; no edit for a denylisted product. Captions do not add a promise the
+  copy refused.
 - Business: no spend, launch, or product decisions.
 If a task requires any of the above, stop and escalate.
 
 ## Filesystem
 - Editing method (hook, captions, formats) → `skills/video-editing.md`
+- Denylist + hook window (canon) → `knowledge/memory/niches-to-avoid.md`,
+  `knowledge/memory/meta-ads-structure.md`
 - Operating loop (Decision→Action, escalation, failure modes, verification) → `skills/operating-procedure.md`
 - Authoritative Inputs (brief, source assets, script) → `tools/data-sources.md`
 - Video delivery contract → `outputs/schema.md`

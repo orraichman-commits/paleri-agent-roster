@@ -28,6 +28,9 @@ Sources: Meta <connected | NOT wired> · Shopify <connected | not connected> · 
 Identity: campaign=<id> adset=<id> creative=<id> artifacts=<content_assets ids>
 
 What went live (from the brief + approved artifacts):
+  Niche: <slug or unknown> | Denylist: <clear | hit — name slug>
+  Structure: <ABO test | CBO / Advantage Campaign Budget | ASC | other>
+  Daily budget vs guideline: <actual vs 20–35 / 60–100 and vs ~50% of price — or unknown>
   Angle: <…> | Hook: <…> | Offer: <…> | Audience: <…> | Format: <…>
 
 Meta (when connected):

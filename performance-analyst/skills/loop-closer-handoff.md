@@ -27,8 +27,11 @@ Everything sourced, with its window and connector state:
 - **Attribution linkage** — how the ad connects to the store result, and how confident that
   link is. If the linkage is assumed rather than tracked, say so explicitly; a confident number
   on a broken link is worse than no number.
-- **What went live** — angle, hook, offer, audience, format, taken from the brief and the
-  approved artifacts, not from memory.
+- **What went live** — niche (and whether it is on the denylist), angle, hook, offer,
+  audience, format, and budget structure (ABO test vs CBO/ASC scale), taken from the brief
+  and the approved artifacts, not from memory. Note daily spend against the test-budget
+  bands in `knowledge/memory/meta-ads-structure.md`. Underfunded delivery is a coverage
+  fact the Knowledge Agent needs; it is not a creative verdict from you.
 - **AI/token cost for the round** — from the AI Cost Manager, when available.
 - **Blind spots** — every unavailable connector, missing window, or `missing_upstream` gap.
 

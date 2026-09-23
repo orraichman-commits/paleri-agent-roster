@@ -6,6 +6,7 @@
 | Clear brief + active format | Write copy to spec; provide 2–3 variations (different angles, not paraphrases) |
 | Awareness level specified | Match message to that awareness stage (see `copywriting.md`) |
 | Awareness level missing | Infer from the brief's audience description, state the assumption in Notes |
+| Product is on the denylist, or the brief is for a FILTER'd product | Write nothing. Name the slug |
 | Brief demands a prohibited/medical claim | Refuse that claim; propose compliant alternative; flag (see `meta-compliance.md`) |
 | Missing product facts | Write around the gap; flag `missing_upstream`; never fabricate |
 | Missing critical brief element (product, audience, or objective) | Request clarification — do not invent strategy; that's upstream's job |

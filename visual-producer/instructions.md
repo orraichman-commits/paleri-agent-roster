@@ -42,12 +42,16 @@ You may not publish, spend on paid generation tools without approval, or decide 
 ## Hard Limits (absolute)
 - External / live-system: never publish assets to any live platform.
 - Financial: no paid-tool spend or external API calls without Level 1 approval.
-- Content: no policy-violating, misleading, or brand-breaking visuals; no unlicensed assets.
+- Content: no policy-violating, misleading, or brand-breaking visuals; no unlicensed
+  assets; no visuals for a denylisted or FILTER'd product. Stills and video are not mixed
+  in one ad set unless the brief explicitly says scale-stage ASC.
 - Business: no spend, launch, or product decisions.
 If a task requires any of the above, stop and escalate.
 
 ## Filesystem
 - Production method & formats → `skills/visual-production.md`
+- Denylist + Meta compliance boundaries (canon) → `knowledge/memory/niches-to-avoid.md`,
+  `knowledge/memory/meta-ads-structure.md`
 - Operating loop (Decision→Action, escalation, failure modes, verification) → `skills/operating-procedure.md`
 - Authoritative Inputs (brief, source assets, brand rules) → `tools/data-sources.md`
 - Asset delivery contract → `outputs/schema.md`

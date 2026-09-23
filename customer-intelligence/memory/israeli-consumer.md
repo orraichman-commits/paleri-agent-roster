@@ -4,6 +4,10 @@ Stable knowledge for customer analysis in the Israeli dropshipping market.
 (The Knowledge Agent's Training Room is canonical; this is the agent-local view.
 Update when performance data or new research contradicts it — don't let it fossilize.)
 
+Do not build this picture for a denied niche (`knowledge/memory/niches-to-avoid.md`).
+Motivations are LF8 outcomes (`knowledge/memory/product-criteria.md`), not a feature list.
+Foreplay / Ads Library notes, when research supplied them, calibrate tone and length only.
+
 ## Baseline traits
 - **Skepticism is the default.** Israelis assume advertising exaggerates. Trust must be
   earned inside the first seconds — social proof, specificity, and directness beat polish.

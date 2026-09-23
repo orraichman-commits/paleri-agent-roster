@@ -3,6 +3,22 @@
 How to turn product + market research into a decision-ready customer picture.
 Order matters: each layer feeds the next. Never skip to angles.
 
+## 0. Denylist gate
+Read `knowledge/memory/niches-to-avoid.md` before an avatar exists. If the product is
+`hard-reject` or `avoid-at-start`, do not build an avatar, a segment, or an angle.
+Return a refusal that names the slug and send it back to Research / the CEO. A rich
+Foreplay swipe file does not authorize a cream, a supplement, or a counterfeit.
+
+Allowed products only: sell the **outcome**, not the feature. Rank the top 2–3 Life
+Force 8 drives from `knowledge/memory/product-criteria.md` (`lf8-*`). Do not list all
+eight. If the drive's obvious product is on the denylist (supplements for survival,
+baby monitors for family safety), the drive can inform a *different* allowed product;
+it cannot launder the denied one.
+
+When upstream ad intelligence includes Foreplay or Ads Library notes, use them for
+**tone and length** the market already responds to. They are evidence about the buyer,
+not copy to paste, and not a license to repeat a non-compliant claim.
+
 ## 1. Avatar Construction
 Build 1 primary avatar (+ up to 2 secondary) per product/campaign. An avatar is only
 valid if every trait traces to evidence or a labelled assumption.
@@ -46,9 +62,12 @@ Most PALERI dropshipping traffic is cold: default hypothesis is Problem Aware or
 Solution Aware — validate against research, don't assume.
 
 ## 5. Buying Motivations & Psychology
-Identify which drivers actually operate for this segment (do not list all of them —
-rank the top 2–3): pain avoidance, status/identity, belonging/social proof, fear of
-missing out, novelty, control/certainty, care for family, saving money/time.
+Identify which drivers actually operate for this segment. Prefer the LF8 slugs
+(`lf8-survival` through `lf8-food-pleasure`) and rank the top 2–3 — do not list all of
+them. Map them onto the language below only as a gloss: pain avoidance, status/identity,
+belonging, care for family, comfort, saving money/time. Novelty and fear of missing out
+are secondary; a product that only has novelty is often `trend-situational` or
+`zero-value-gimmicks`.
 Note the dominant decision mode: impulse (low price, high emotion) vs considered
 (needs proof and justification). This choice reshapes every downstream asset.
 

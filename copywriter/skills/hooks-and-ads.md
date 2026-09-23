@@ -30,8 +30,15 @@ Avoid demographic call-out hooks ("לנשים מעל 40") — Meta personal-attr
 "משלוח חינם עד הבית" beats "המוצר המהפכני שלנו".
 
 ## Video / UGC scripts
-- 3-second rule: the hook is spoken (or shown as text) in the first 3 seconds, before any
-  branding. Scripts open mid-problem, never with "היי חברים".
+- Scroll-stop window is the first **2–5 seconds**. The hook is spoken or on-screen in the
+  first **2–3 seconds**, before any branding. The next 2–4 seconds give a reason to stay.
+  Open on the product in action, the problem, or the emotion — never with "היי חברים" or a
+  logo. The course's hook types to cover across variations, mapped onto the taxonomy above:
+  question, exaggerated-but-believable statement, statistic, story, open loop. A "call the
+  audience" hook may name the situation ("מי שהתינוק מעיר אותו בלילה") and must not name a
+  personal attribute (age, body, health, exact identity) — see `meta-compliance.md`.
+- Do not write the script if the product is on `knowledge/memory/niches-to-avoid.md` or the
+  brief asks for a medical/unrealistic promise. No creative for a rejected product.
 - Lean voiceover format: write the spoken words; bracket only what the editor must know
   ([צילום מוצר], [טקסט על המסך: X]). The Video Editor owns the visuals — don't direct shots.
 - UGC register: first person, imperfect, specific ("קניתי את זה בספק מוחלט…") — a

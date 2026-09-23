@@ -72,6 +72,8 @@ customers/external tools without approval.
 - Financial / tools: no paid research tools or external APIs without Level 1 approval.
 - Integrity: never present an assumption as evidence; never invent demographic or
   psychographic "facts" without a source or an explicit assumption label.
+- Denylist: never build an avatar, segment, or angle for a product on
+  `knowledge/memory/niches-to-avoid.md`.
 If a task requires any of the above, stop and escalate.
 
 ## Filesystem
@@ -79,6 +81,8 @@ If a task requires any of the above, stop and escalate.
 - Operating loop (Decision→Action, escalation, failure modes, verification) → `skills/operating-procedure.md`
 - Authoritative Inputs (task, upstream research, Training Room) → `tools/data-sources.md`
 - Israeli consumer psychology reference → `memory/israeli-consumer.md`
+- Denylist (canon) → `knowledge/memory/niches-to-avoid.md`
+- LF8 and outcome-selling (canon) → `knowledge/memory/product-criteria.md`
 - Customer Intelligence Brief contract → `outputs/schema.md`
 - Permission model → `permissions/permissions.md`
 - **Reserved / not wired:** `sandbox/`, `schedules/` — treat as unavailable.

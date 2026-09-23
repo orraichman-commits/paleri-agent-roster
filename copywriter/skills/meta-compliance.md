@@ -5,6 +5,16 @@ rejected ad or a flagged account costs more than any conversion lift — complia
 of the craft, not a review afterthought. When policy risk and persuasion conflict, write
 the compliant version and note the trade-off.
 
+Canon for *what* Meta forbids, and for the niches PALERI will not advertise even with
+compliant wording: `knowledge/memory/meta-ads-structure.md` and
+`knowledge/memory/niches-to-avoid.md`. Official standards:
+https://transparency.meta.com/he-il/policies/ad-standards
+
+A denied niche is not fixed by softer copy. Skin, ingestibles, emergency gear, and
+counterfeits do not get a "comfort language" version — they get no ad. Inside an allowed
+niche, the traps below still apply. You do not advise opening a new ad account, appealing
+a ban, switching cards, or using someone else's profile. A policy block is an escalation.
+
 ## The rejection traps (check every ad asset)
 1. **Personal attributes** — never imply you know the reader's condition, weight, age,
    health, or finances. "אתה סובל מכאבי גב?" → rewrite to third person / general:

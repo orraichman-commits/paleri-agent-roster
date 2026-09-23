@@ -26,7 +26,13 @@ raw evidence into a business decision. This is the methodology behind every `ceo
    the market. Real outputs (Copywriter today) can be judged on content.
 3. **Doctrine check.** If the package feeds creative work: did research pass through
    Customer Intelligence? An incomplete Research Package is a reason to send work back,
-   not to improvise.
+   not to improvise. **Denylist check:** read `knowledge/memory/niches-to-avoid.md`. A
+   QUALIFY, a viability ROUTE, or a creative brief on a `hard-reject` or `avoid-at-start`
+   slug is **BLOCKED** — send it back. Do not approve Creative on a product that skipped
+   the list. An Owner override has to be explicit in the record; "research sounded
+   excited" is not one. Unit-economics sanity (`knowledge/memory/unit-economics.md`) that
+   the Market Analyst skipped is a CONDITIONAL at best: you do not spend to discover a
+   margin the sheet already fails.
 4. **Evidence quality.** Are claims sourced and consistent with each other? Contradictions
    between steps go into your risks, not under the rug.
 5. **Business synthesis.** Apply the Decision Framework and state KPI impact. The package

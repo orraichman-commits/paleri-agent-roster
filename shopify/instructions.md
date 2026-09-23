@@ -49,10 +49,14 @@ drafts until an explicit owner approval publishes anything live.
 - Honesty: never claim a live change was made when the connector is absent or approval wasn't
   given.
 - Business: never make pricing-strategy or launch decisions.
+- Catalog: never draft a product page for a denylisted niche
+  (`knowledge/memory/niches-to-avoid.md`).
 If a task requires any of the above, stop and escalate.
 
 ## Filesystem
 - Page-building method → `skills/product-pages.md`
+- Denylist + VAT-inclusive pricing (canon) → `knowledge/memory/niches-to-avoid.md`,
+  `knowledge/memory/unit-economics.md`
 - Operating loop (Decision→Action, escalation, failure modes, verification) → `skills/operating-procedure.md`
 - Authoritative Inputs (brief, upstream, active format) → `tools/data-sources.md`
 - Shopify permission tiers & connector dependency → `tools/shopify.md`

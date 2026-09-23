@@ -7,6 +7,8 @@ Authoritative Inputs. Read fresh; never assume.
   for gaps.
 - **world_events** — operational events across offices.
 - **Training Room** — the CEO's KPI targets and definitions (via Knowledge Agent).
+  Meta structure and test-budget bands: `knowledge/memory/meta-ads-structure.md`.
+  Unit-economics bands the numbers should be read against: `knowledge/memory/unit-economics.md`.
 - **content_assets** — the artifacts that actually ran, and the creative brief behind them:
   what went live (angle, hook, offer, audience, format) for the Post-Launch Performance Pack.
 - **AI Cost Manager report** — the AI/token cost of the creative round, when available.

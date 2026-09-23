@@ -12,7 +12,10 @@ patterns of what works become visible.
 
 ## 3. Product & campaign history
 Maintain the history of products evaluated/launched and their results; make prior verdicts
-retrievable to avoid repeating mistakes.
+retrievable to avoid repeating mistakes. The standing denylist and the six product criteria
+live in `memory/niches-to-avoid.md` and `memory/product-criteria.md`. Loop-Closer proposals
+may add a niche, an angle, or a claim to the do-not-repeat set; they do not delete a hard
+reject, and they do not become canon without Owner approval.
 
 ## 4. Market & brand insight
 Curate Israeli-market insights and PALERI brand rules; keep them sourced and dated.
