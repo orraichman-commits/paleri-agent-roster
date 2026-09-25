@@ -10,6 +10,12 @@ Detailed detection criteria for each responsibility.
 - Repeated failures/retries on the same step or workflow.
 
 ## 2. Agent coordination
+- Every handoff: did it complete, did the output meet the receiving contract, how many
+  stages have sent work back for a standard failure.
+- A stage with no output for **2 hours**: one nudge, then an alert to the CEO (who
+  updates Or). LIO waiting on the supplier is excluded from this clock.
+- Stop rule: standard-failure send-backs at **2 or more stages** → halt all routines,
+  confirm temporary routines have stopped (LIO's 15-minute supplier check), wait for Or.
 - Agents dispatched but never started, or that never reported back.
 - Agents idle while work is queued, or one agent overloaded while others sit idle.
 - Handoffs between waves that did not actually transfer the expected work.

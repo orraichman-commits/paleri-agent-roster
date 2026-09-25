@@ -11,6 +11,9 @@ into a Loop-Closer report.
 
 ## Trigger — when this runs
 
+The approved cadence is **weekly, and at the end of a test** (`memory/funnels.md`).
+`performance-analyst` wakes you with the pack. Marketing's 24-hour read does not.
+
 All of the following must hold:
 1. A campaign/ad is **live** and linked to the store (Meta → Shopify or the equivalent path).
 2. Enough time has passed **and** enough has happened to read a signal — both, not either.

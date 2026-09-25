@@ -4,7 +4,7 @@ Authoritative Inputs. Read fresh; never assume.
 
 - **tasks.input_data** — the product/campaign scope and the question being asked.
 - **tasks.input_data.shared_context.upstream_outputs** — the evidence base:
-  - `research-alpha` (Product Research) — product facts, reviews signals, supplier data.
+  - `research-alpha` (Product Research) — product facts, review signals, provisional AliExpress cost. Not a supplier.
   - `research-beta` (Market Research) — demand, competition, pricing landscape.
   - `market-analyst` — viability scoring and recommended angle candidates.
   - `strategic-intelligence-agent` — competitive/macro context.

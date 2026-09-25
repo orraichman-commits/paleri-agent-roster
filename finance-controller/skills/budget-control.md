@@ -17,7 +17,17 @@ Guard the money with sourced numbers:
     later "≥50% of price" band) are **recommendations to judge**, not a mandate to approve.
     Approving them still respects the Owner threshold. Do not approve a larger "learning
     phase" budget (~4× CPA) just to exit learning if the mandate is not there.
-  - Israeli shelf prices are VAT-inclusive. Do not treat gross ₪ as net margin.
+  - Or is an עוסק פטור. Shelf prices are **without VAT**. Do not strip 18% and do not
+    treat a .90 ending as required. Margin for the products table is
+    `price − cost − 5% clearing` (`ceo/memory/products-table.md`).
+  - A test-budget proposal from `marketing` gets an **opinion for the CEO's Gate 2 deck**,
+    not a live spend. Reasonable, not excessive, consistent with canon: total daily test
+    budget ≥ **0.5×** final price (ideal **100–200%**); per-ad-set floor **20–35 ₪/day**
+    up to ~400 ₪ and **60–100 ₪** above that; COD+CAC ≤ **~60%**; break-even ROAS **below 2**.
+  - After the daily read, compare actual Meta spend to the approved budget and alert the
+    CEO on overspend. Review **budget increases only**. Cuts and kills are not yours to
+    re-litigate.
+  - No monthly Meta spend ceiling. No turnover-ceiling alert. Approval is per campaign.
 - **AI tokens are not CAC.** `ai_token` is the AI Cost Manager's category. Do not fold it
   into the 60% media-and-delivery guideline, and do not treat ad spend as an AI-routing
   problem.

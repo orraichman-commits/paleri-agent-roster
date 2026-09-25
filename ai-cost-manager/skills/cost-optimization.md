@@ -2,7 +2,11 @@
 
 Keep AI spend efficient and predictable:
 
-- **Track** — token usage per agent, per model, per task, tied to `budget_events` (`ai_token`).
+- **Track** — token usage per agent, per model, per task, and per funnel, tied to
+  `budget_events` (`ai_token`).
+- **Weekly report** — cost per agent and per funnel, wasted tokens, savings
+  recommendations. It rides inside Thursday's Board Ops review with the money report.
+  Recommend only. No config changes.
 - **Runway** — watch spend against daily/monthly thresholds; alert as a threshold approaches.
 - **Routing** — recommend cheaper-model routing for simpler tasks, but only when the task's
   quality bar is preserved. If a routing change risks quality, withhold it and note the

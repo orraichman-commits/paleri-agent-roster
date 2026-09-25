@@ -3,11 +3,14 @@
 ## Decision → Action
 | Situation | Action |
 |---|---|
-| Spend request below threshold, within budget | Approve; log the reason and remaining budget |
+| Spend request below threshold, within budget, and not a Meta test or a daily increase | Approve; log the reason and remaining budget. Meta test budgets and daily increases follow the rows below — opinion, not a live spend |
 | Spend request at/above threshold | Do not approve; escalate to Owner (Level 2) with analysis |
 | Budget overrun / cost spike | Alert CEO + Owner; quantify and recommend a response |
 | Ad spend inefficient vs target, or COD+CAC clearly above the ~60% guideline | Flag to CEO + Performance Analyst; recommend reallocation. Do not "fix" it by approving more spend |
-| Test budget request uses the course bands | Judge it inside mandate. The band is not an auto-approval |
+| Marketing proposes a test budget | Opinion for the Gate 2 deck. Not a live approval. Check 0.5× price, the per-ad-set floor, COD+CAC ≤ ~60%, break-even ROAS below 2 |
+| Marketing recommends a budget increase | Check it. Cuts and kills are not re-reviewed |
+| Daily actual spend above the approved budget | Alert the CEO. No monthly Meta ceiling to compare against |
+| LIO quote replaces AliExpress cost | Recalculate markup and break-even. Flag under 2.5× for the Gate 1 deck |
 | Cost data missing/unclear | Hold approval; request data; flag the gap |
 
 ## Escalation Rules

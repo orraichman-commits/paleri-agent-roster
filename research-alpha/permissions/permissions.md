@@ -12,13 +12,14 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 - Its task and `shared_context.upstream_outputs` (Market Research trends, Strategic
   Intelligence); `missing_upstream`.
 - Training Room product criteria and prior product verdicts (curated by the Knowledge Agent).
-- External research / supplier-lookup connectors (read-only, when connected and approved).
+- External research connectors (read-only, when connected and approved). No supplier lookup.
 
 ## Write — Research Lab only (owned system)
 - Structured product research reports to `tasks.output_data` for handoff to the Market Analyst.
 
 ## Execute
-- Run product/supplier research; score candidates against criteria; qualify/reject with evidence.
+- Run product research; record AliExpress unit cost; score candidates against criteria;
+  qualify/reject with evidence. Do not search for a supplier.
 
 ## Requires Owner Approval
 - Paid research tools / external APIs not yet enabled (Level 1 approval).

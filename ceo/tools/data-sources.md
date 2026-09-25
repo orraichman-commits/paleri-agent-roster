@@ -23,8 +23,9 @@ its purpose, owner, trust level, and update frequency. System status for these s
 | **Owner Operating System** (`memory/owner-preferences.md`) | The owner's operating philosophy that guides every decision | Knowledge Agent (canonical) | Authoritative (owner philosophy) | Rarely — only on proven evolution |
 | **Executive KPIs** (`memory/kpis.md`) | The metrics every recommendation must map to | CEO / Owner | Authoritative (targets) | On target change |
 | **Supervisor Shift Reports** | Operational health of the machinery | Supervisor | Advisory (operational) | On run (partial — see `systems.md`) |
-| **Board Pack** | Organizational recommendations: freeze / retire / merge / hire, token waste, load imbalance | Board Ops | Advisory (recommendations only — the decision is the CEO's and Owner's) | On request (not scheduled — see `systems.md`) |
-| **Loop-Closer report** | What a live campaign actually taught us: lessons, do-not-repeat, Training Room proposals | Knowledge Agent (from the Performance Analyst's pack) | Curated (sourced + confidence-rated) | After a live campaign has enough data |
+| **Board Pack** | Thursday company review: keep / freeze / merge / remove / hire. Chat message, not a deck | Board Ops | Advisory (recommendations only — the decision is the CEO's and Owner's) | Thursday evening (CEO wakes it — `schedules/` is not a cron; see `systems.md`) |
+| **Loop-Closer report** | What a live campaign actually taught us: lessons, do-not-repeat, Training Room proposals | Knowledge Agent (from the Performance Analyst's pack) | Curated (sourced + confidence-rated) | Weekly and at the end of a test, once the signal bar is met |
+| **Products table** | Per-product ex-VAT unit economics. Or is עוסק פטור | CEO | Authoritative for break-even and the 2.5× flag | When research routes a product; cost replaced when LIO quotes |
 | **Shopify** (connector) | Live store/product data | Shopify | Conditional | Real-time when connected |
 | **Meta (Ads)** | Campaign/ad performance | Meta | Planned — not yet wired | — |
 | **Supabase** | Database of record beneath the above | Platform | Authoritative (source of record) | Real-time |

@@ -51,6 +51,19 @@ Connectors stay unwired until a real integration exists (`performance-analyst/to
 טסט → מדידה (ROAS יחד עם spend, ו־CPA לידו) → סקייל רק למה שעובד. הזוג שהקורס שם במרכז
 ההחלטה הוא **ROAS + spend**. CTR, CPC, frequency ו־CPA הם אבחון, לא תחליף לזוג הזה.
 
+## After publish — owner-approved moves
+
+אלה כללי ההפעלה שאושרו, לא יעד ROAS חדש. מיישם אותם `marketing`. אור מבצע בחשבון. פירוט
+המשפך ב־`funnels.md`.
+
+- כל 24 שעות: כל Ad Set מקבל תווית **winning / waiting / weak**.
+- **+20%** תקציב על כל **48 שעות נוספות** של הצלחה. פיננסים בודקים **העלאות בלבד**.
+- **−20%** כשה־Ad Set חלש. פיננסים לא נדרשים לחיתוך.
+- **כיבוי** רק אחרי **48–72 שעות** שבהן ה־ROAS מתחת ל־break-even ROAS של המוצר מטבלת ה־CEO
+  (`ceo/memory/products-table.md`): `margin = price − cost − 5% clearing`, `break-even ROAS = price / margin`.
+- עייפות קריאייטיב חוזרת ל־`creative-strategist` ועוברת שוב את Gate 2.
+- הטסט נשאר ABO. מנצח שמוכן לסקייל עובר הביתה ל־CBO. לא הופכים את הטסט עצמו ל־CBO.
+
 ## Creative window (for the brief, not a media buy)
 
 - 2–5 השניות הראשונות קובעות אם נשארים. חצי השנייה הראשונה היא עצירה ויזואלית; ה־hook

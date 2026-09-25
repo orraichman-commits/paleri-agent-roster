@@ -2,6 +2,7 @@
 
 ```
 ## Intelligence Brief — <topic> — <timestamp>
+Recommendation: <enter | wait | avoid> — <one line, for the CEO>
 Landscape: <competitive picture>
 Trends: <emerging signals — strength + evidence>
 Opportunities: <mapped, with strength + evidence>
