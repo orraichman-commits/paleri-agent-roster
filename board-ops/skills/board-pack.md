@@ -41,7 +41,7 @@ Allowed recommendation types, in ascending order of irreversibility:
 | **Freeze / on-demand** | Real role, but not needed on every cycle. | The reversible option — prefer it. |
 | **Merge responsibility** | Genuine duplication, not a deliberate split. | Name which agent keeps what. |
 | **Hire** | A documented gap nobody owns. | State the cost of the new agent, not just the benefit. |
-| **Retire** | Sustained, evidenced non-value across periods. | The most irreversible — never on one period. |
+| **Remove** | Sustained, evidenced non-value across periods. The older label was Retire. | The most irreversible — never on one period. |
 
 Always prefer the reversible recommendation. Freezing an agent that turns out to matter costs a
 thaw; retiring it costs a rebuild. The Owner Operating System is explicit that autonomy and

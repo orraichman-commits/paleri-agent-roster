@@ -8,7 +8,8 @@ Candidates:
     Criteria: <lf8-real-need / not-commodity / perceived-value / margin-room / not-saturated / wow-factor — pass|fail each>
     LF8 / outcome: <drive slug + the result being sold>
     Price band: <shelf ₪ vs 89–399, and COD multiple if cost is known>
-    Sourcing: <supplier signal, lead time, cost — AliExpress is not IP clearance>
+    AliExpress cost (provisional, not a supplier): <unit cost ₪ | unknown>
+    Market price vs that cost: <≥ 2.5× | below | unknown>
     Margin estimate: <range + basis>
     Competition: <level + evidence; competition ≠ saturation>
     Israeli-market fit: <assessment>

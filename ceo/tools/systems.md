@@ -38,9 +38,9 @@ does not do business post-mortems (Loop Closer) or organizational recommendation
 ## Board Ops — `PARTIAL`
 The org-efficiency agent is seeded (migration `030_board_ops_agent.sql`) and can be declared as
 a workflow specialist. It sits in the Finance Office in the DB (`agents.office_id` is NOT NULL)
-while remaining cross-cutting in doctrine. **There is no schedule** — none was created, and
-`schedules/` is not wired — so Board Packs run on request. Never present it as an automatic
-every-N-days job, and never act on a pack as if the Owner already approved it.
+while remaining cross-cutting in doctrine. The approved cadence is **Thursday evening**
+(a chat message, not a deck). The CEO wakes it. `schedules/` is not a wired cron — do not
+invent one — and never act on a pack as if the Owner already approved it.
 
 ## Loop Closer — `PARTIAL` (skill + workflow, not a system)
 Post-launch market learning: `performance-analyst` assembles the Post-Launch Performance Pack,

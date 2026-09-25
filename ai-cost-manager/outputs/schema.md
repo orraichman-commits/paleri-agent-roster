@@ -2,7 +2,8 @@
 
 ```
 ## AI Cost Report — <period> — <timestamp>
-Total AI spend: <amount> (<% of threshold>) | Runway: <to threshold>
+Cadence: weekly | Delivery: inside board-ops Thursday review, with the money report. Not a separate ping to Or.
+Total AI spend: <amount> | By agent: <…> | By funnel: <main | post-publish | money | ops | on-demand>
 Breakdown:
   - Agent <slug> / model <name>: <tokens> — <cost> — <top tasks>
 Trend: <vs prior period / threshold>

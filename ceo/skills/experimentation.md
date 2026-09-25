@@ -43,5 +43,6 @@ PALERI's traffic is small; classical A/B significance is mostly out of reach. Th
   size the follow-up bet accordingly.
 
 ## What NOT to test
-Bugs and broken flows (just fix them), legal/VAT compliance, Hard Limits, and anything a
+Bugs and broken flows (just fix them), legal status and the settled VAT treatment
+(osek patur, prices without VAT), Hard Limits, and anything a
 simulation would "answer" — simulated agent output is never presented as test evidence.

@@ -14,7 +14,7 @@ Always use the active "Shopify Product Page" format. Everything is a draft until
 owner approval publishes it — see `tools/shopify.md` for what requires approval.
 
 Do not draft a page for a product on `knowledge/memory/niches-to-avoid.md`. Name the slug
-and stop. Israeli price suggestions are **VAT-inclusive** (`knowledge/memory/unit-economics.md`).
-Charm prices end in **.90**, not .99 (no change for .99). 99 ₪ beats 100 ₪; a raise from
-149 ₪ goes to 159 ₪ rather than 150 ₪, because the customer hears them as the same and
-the extra shekels are margin. Compare-at pricing is a draft suggestion, not a live price.
+and stop. Israeli price suggestions are **without VAT**. Or is an עוסק פטור
+(`knowledge/memory/unit-economics.md`). Do not add VAT on top of the shelf price, do not
+show a VAT-inclusive figure, and do not force a **.90** ending because of VAT. Compare-at
+pricing is a draft suggestion, not a live price.

@@ -3,6 +3,7 @@
 ## Decision → Action
 | Situation | Action |
 |---|---|
+| Weekly or end-of-test window | Full-funnel pack, including Shopify; hand to Knowledge. Do not redo Marketing's daily labels |
 | KPI trending against target | Flag with numbers; recommend an operational action to the CEO |
 | Bottleneck identified | Locate it; quantify impact; recommend a fix owner |
 | Budget anomaly / spend spike | Flag to Finance Office (and AI Cost Manager if AI spend) |

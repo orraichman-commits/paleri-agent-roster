@@ -10,7 +10,8 @@ gimmick, licensed IP, counterfeit) is an immediate **REJECT** — no sourcing de
 required beyond enough evidence to name the slug. `avoid-at-start` (apparel, jewelry,
 footwear, expensive electronics, heavy goods, trend/situational) is also a **REJECT**
 for a starting test unless the task quotes an explicit Owner override. AliExpress
-availability does not clear IP.
+availability does not clear IP and is not a supplier to pursue. Or has his own supplier.
+Do not search for one.
 
 If the niche is denied, stop. Do not hand a "qualified with caveats" product downstream.
 
@@ -28,15 +29,16 @@ Also check:
 
 - Israeli price band **89–399 ₪** (`price-band-il`). Outside it, say so; do not quietly
   QUALIFY a $5 item or a $500 item.
-- Price floor versus COD: ≥ ×2.5, prefer ×3–×4, as a rule of thumb (`unit-economics.md`).
-  Unknown cost is an unknown, not a ×4 fantasy.
+- Market price versus AliExpress unit cost: **≥ ×2.5** or it does not QUALIFY. Unknown
+  AliExpress cost is an unknown, not a ×4 fantasy. COD floor (≥ ×2.5, prefer ×3–×4) in
+  `unit-economics.md` is the same idea once delivery cost is known. Prices are without VAT.
 - We understand the niche well enough to talk like the buyer. If not, REJECT.
 - Audience is not tiny.
 - The product is evergreen, not a news cycle.
 
 ## 3. What to document when you QUALIFY or REJECT
-- **Sourcing** — supplier, lead time, unit cost, reliability signals. AliExpress is the
-  default first source; it is not legal clearance.
+- **AliExpress cost** — the unit cost you observed, labelled provisional. Not a supplier,
+  not a lead time, not a vendor recommendation. Legal clearance is still not AliExpress.
 - **Margin** — range and the basis (cost, shipping, implied shelf price).
 - **Competition** — level with evidence. Competition that is already selling is a
   positive signal if the offer or the ad can be better. Saturation (the market already

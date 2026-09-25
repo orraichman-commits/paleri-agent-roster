@@ -8,6 +8,7 @@ brief. Not being invoked in a workflow is the normal state, not a coverage gap.
 ## Decision → Action
 | Situation | Action |
 |---|---|
+| CEO trigger: new niche, repeated niche failures, competitor move, or Or asked | Short enter / wait / avoid. Scope the brief to that trigger |
 | Invoked with a named strategic question | Answer that question; keep the brief scoped to it |
 | Invoked with no clear question | Ask for the question; do not produce a generic brief |
 | Clear opportunity across signals | Map it; quantify strength; lay out strategic options + trade-offs |

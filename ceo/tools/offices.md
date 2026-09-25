@@ -15,7 +15,7 @@ Locked offices have no agents and accept no work — do not route anything there
 - **Mission:** Produce the complete Research Package: what to sell, the market it lives in, and who buys it.
 - **Responsibilities:** Product sourcing/evaluation (`research-alpha`), market & competitor-ad research (`research-beta`), and the **final research layer** — customer avatars, pains, desired outcomes, objections, awareness levels, buying motivations (`customer-intelligence`).
 - **Expected outputs:** Product research reports, market research, Customer Intelligence Briefs → together the Research Package.
-- **Doctrine:** research that has not passed through Customer Intelligence is not a complete package; Creative should not build from it.
+- **Doctrine:** research that has not passed through Customer Intelligence is not a complete package; Creative should not build from it. CI runs in parallel with the finders. There is no supplier search — after research finishes, the CEO hands the product name and a screenshot to external LIO.
 - **CEO involves it when:** evaluating what to sell, validating a product idea, or preparing the research a launch will be built on.
 - **Escalates to CEO when:** a qualified product needs a go/no-go, or research quality is too low to score.
 
@@ -47,18 +47,22 @@ Locked offices have no agents and accept no work — do not route anything there
 - **Escalates to CEO/Owner when:** any live store change (publish, live price, theme) needs Level 4 approval.
 
 ## Analytics Office (`analytics`) — active
-- **Mission:** Turn data into decision-ready insight and gate viability.
+- **Mission:** Turn data into decision-ready insight, gate viability, and organize the Meta test.
 - **Agents:**
-  - `market-analyst` — viability scoring/gate (**standing**: part of the default path).
-  - `performance-analyst` — live performance + the **Post-Launch Performance Pack** that feeds
-    the Loop Closer (**standing**).
-  - `strategic-intelligence-agent` — macro/competitive intelligence, **scheduled / on-demand
-    only**. Not part of the default workflow start; invoked for a specific strategic question.
-- **Distinct on purpose:** `market-analyst` gates *whether to go* (viability before launch);
-  `performance-analyst` measures *what happened* (live numbers after launch). Do not merge them.
-- **Expected outputs:** Viability analyses, performance summaries, Post-Launch Performance Packs, on-demand intelligence briefs.
-- **CEO involves it when:** assessing performance, opportunities, threats, or product viability.
-- **Escalates to CEO when:** a KPI deteriorates materially, or intelligence implies a strategic decision.
+  - `market-analyst` — viability scoring/gate (**standing**: part of funnel A).
+  - `marketing` — ABO test structure before publish, and the every-24h ad-set read after
+    Or confirms launch. Recommendations only. Never publishes, never changes a budget.
+  - `performance-analyst` — weekly and end-of-test full-funnel read (Shopify included) and
+    the **Post-Launch Performance Pack** that feeds the Loop Closer. Not the daily read.
+  - `strategic-intelligence-agent` — macro/competitive intelligence, **on-demand only**.
+    The CEO triggers it without asking Or: new niche, a string of failures in one niche,
+    a notable competitor move, or Or asked. Short enter / wait / avoid.
+- **Distinct on purpose:** `market-analyst` gates *whether to go*; `marketing` structures
+  the test and reads it daily; `performance-analyst` measures the full funnel weekly and
+  at the end of a test. Do not merge them. There is **no Marketing Office**.
+- **Expected outputs:** Viability analyses, ABO plans, daily reads, performance summaries, Post-Launch Performance Packs, on-demand intelligence briefs.
+- **CEO involves it when:** assessing performance, opportunities, threats, product viability, or the shape of a test.
+- **Escalates to CEO when:** a KPI deteriorates materially, a kill or a raise is recommended, or intelligence implies a strategic decision.
 
 ## Finance Office (`finance`) — active
 - **Mission:** Protect PALERI's money and keep spend efficient.
@@ -70,7 +74,7 @@ Locked offices have no agents and accept no work — do not route anything there
 - **Mission:** Be the institutional memory of the company.
 - **Agents:** `knowledge` (Knowledge Agent).
 - **Expected outputs:** Curated, sourced, confidence-rated knowledge; proposed canonical updates (Owner-approved); **Loop-Closer reports** after a live campaign (lessons + do-not-repeat).
-- **CEO involves it when:** it needs prior context, owner preferences, or decision history before deciding — or when a live campaign has run long enough to close its learning loop.
+- **CEO involves it when:** it needs prior context, owner preferences, or decision history before deciding — or weekly / at the end of a test, when the Loop Closer should close.
 
 ---
 
@@ -81,16 +85,17 @@ Locked offices have no agents and accept no work — do not route anything there
   organizational recommendation set for the Owner and CEO.
 - **Inputs:** Supervisor Shift Reports, AI Cost Manager reports, Finance Controller summaries,
   office/agent workload status.
-- **Expected outputs:** A Board Pack — freeze / retire / merge-responsibility / hire proposals,
-  token waste, load imbalance — **recommendations only**.
-- **Hard boundary:** never changes live config, never retires an agent, never approves spend.
+- **Expected outputs:** A Thursday-evening chat message — keep / freeze / merge / remove / hire,
+  token waste, load imbalance — **recommendations only**. Not a deck.
+- **Hard boundary:** never changes live config, never removes an agent, never approves spend.
   The CEO and Owner decide; Board Ops only assembles the case.
 - **DB seat:** `agents.office_id` is NOT NULL, so the row lives in the **Finance Office**
   (migration `030_board_ops_agent.sql`) while the role stays cross-cutting: it consumes
   Finance's reports but reports to the CEO and Owner, never up through Finance. A workflow
   step declaring `board-ops` must therefore name `office_slug: finance`.
-- **No schedule — deliberate.** `schedules/` is not wired, and none was created. Board Packs
-  are produced on request. Never describe it as a recurring job.
+- **Thursday evening — the approved cadence.** A structured chat message, not a deck. The
+  CEO wakes Board Ops, adds notes, and sends the message to Or. `schedules/` is not a wired
+  cron; do not invent one, and do not describe the review as optional.
 
 ---
 
@@ -114,13 +119,14 @@ Locked offices have no agents and accept no work — do not route anything there
 
 ## What does NOT exist (do not route work to these)
 
-There is **no Marketing Office** and no Product/Operations/Customer-Experience/Data/Automation
-office — those were an older conceptual model. Campaign/audience strategy is currently CEO
-work informed by `research-beta` + Analytics; store operations live in the Shopify Office;
-orchestration is the GOD Runtime (not an office).
+There is **no Marketing Office**. `marketing` is an Analytics agent: it builds the ABO test
+and reads it daily. The CEO still decides, and Or still publishes and changes budgets by
+hand. There is also no Product/Operations/Customer-Experience/Data/Automation office — those
+were an older conceptual model. Store operations live in the Shopify Office; orchestration
+is the GOD Runtime (not an office).
 
-Do not create a Marketing Office. If campaign strategy feels unowned, that is by design: it is
-the CEO's own work, not a gap to be filled with a new office.
+Do not create a Marketing Office. The daily read living in Analytics is the approved design,
+not a gap.
 
 There is also **no Loop Closer office or agent** — market learning after a live campaign is a
 *skill* held by `performance-analyst` (data) and `knowledge` (lessons), consumed by the CEO.

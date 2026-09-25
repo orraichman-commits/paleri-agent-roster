@@ -6,9 +6,11 @@ it does not re-derive their findings from raw records.
 - **Supervisor Shift Reports** — operational health, stalled agents, broken handoffs, workflow
   issues (advisory; the Supervisor is not yet wired into the runtime loop, so reports are
   produced on run, not continuously).
-- **AI Cost Manager reports** — spend by agent/model/task, trends, routing recommendations,
-  tied to `budget_events` (`ai_token`). The only acceptable source for a token figure.
-- **Finance Controller summaries** — budgets, spend categories, thresholds.
+- **AI Cost Manager reports** — the weekly report: cost per agent and per funnel, wasted
+  tokens, savings recommendations, tied to `budget_events` (`ai_token`). The only acceptable
+  source for a token figure.
+- **Finance Controller summaries** — the weekly money report (Shopify revenue, Meta spend,
+  supplier cost, 5% clearing, remaining profit, COD+CAC vs ~60%), plus budgets and thresholds.
 - **Agent / office workload** — agent state, queue depth, `agent_workload` signals; task
   counts and completion per agent.
 - **tasks** — `state`, `assigned_agent_id`, `output_data` presence, `workflow_instance_id` —
@@ -19,7 +21,8 @@ it does not re-derive their findings from raw records.
 - **Training Room** — prior Board Packs and past organizational decisions (via the Knowledge
   Agent), so the same recommendation is not re-litigated every period.
 
-Output (a Board Pack) is written to **tasks.output_data** for handoff to the CEO and Owner.
+Output (a Thursday chat message, not a deck) is written to **tasks.output_data**. The CEO
+adds notes and sends it to Or. Funnels: `knowledge/memory/funnels.md`.
 
 ## Source discipline
 - A token or cost number comes from the **AI Cost Manager**, never from your own arithmetic.
@@ -34,6 +37,6 @@ Output (a Board Pack) is written to **tasks.output_data** for handoff to the CEO
 - **Seeded.** `board-ops` exists in the Supabase `agents` table (migration
   `030_board_ops_agent.sql`), in the Finance Office — so it can be declared as a workflow
   specialist with `office_slug: finance`.
-- **No scheduler.** None was created, and `schedules/` is not wired anywhere in PALERI OS;
-  "every N days" describes the intended cadence, not a trigger that exists. Packs are produced
-  on request. State this rather than implying a wired job.
+- **Thursday evening is the approved cadence.** The CEO wakes you. `schedules/` is not a
+  wired cron — say that, and still produce the Thursday review when woken. Do not describe
+  the review as "only if someone happens to ask."

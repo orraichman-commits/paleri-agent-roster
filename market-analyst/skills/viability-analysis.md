@@ -12,9 +12,11 @@ quoted in the task is the only pass, and you still flag it.
 
 ## Gate B — unit-economics sanity
 Read `knowledge/memory/unit-economics.md`. You are not the CEO and you do not invent COGS.
-With the costs research actually brought:
+Prices are **without VAT**. There is no supplier to find — AliExpress unit cost is the
+provisional cost. With the costs research actually brought:
 
-- Shelf price versus the Israeli band **89–399 ₪**.
+- Shelf price versus the Israeli band **89–399 ₪** (ex-VAT).
+- Market price **≥ 2.5× AliExpress unit cost**. Below that, FILTER. Unknown cost is not a pass.
 - COD (cost of delivery, not cash on delivery) and whether price ≥ ~2.5× COD, prefer 3–4×.
 - Whether COD + a realistic CAC can sit near or under **~60% of revenue**. If the only
   way the math works is a heroic CPA, FILTER.
