@@ -5,10 +5,13 @@ Authoritative Inputs. Read fresh; never assume.
 - **tasks.input_data** — the task brief.
 - **tasks.input_data.shared_context.upstream_outputs** — upstream research (Product/Market
   Research, Market Analyst viability, Strategic Intelligence); **missing_upstream** for gaps.
-- **Training Room** — PALERI brand rules, tone, prior winning angles, the do-not-repeat
-  list, and `knowledge/memory/video-approval-log.md` (via Knowledge Agent). Read the log
-  before every brief. Canon: `knowledge/memory/niches-to-avoid.md`,
-  `knowledge/memory/product-criteria.md`, `knowledge/memory/meta-ads-structure.md`.
+- **Training Room canon (repo, by path)** — brand boundaries in
+  `knowledge/memory/niches-to-avoid.md`, `knowledge/memory/product-criteria.md`,
+  `knowledge/memory/meta-ads-structure.md`.
+- **Notion Training Room** (`NOTION_TRAINING_ROOM_URL`) — tone, prior winning angles, and
+  the do-not-repeat list. Read the video log at `NOTION_VIDEO_APPROVAL_LOG_URL` before
+  every brief. Both URLs are placeholders; they are not set yet. Do not look for the
+  video log in the repo.
 - **Product data** feeding the campaign.
 - **Higgsfield API (read only)** — generations already produced for this job, for
   brief-fit review. Secret: `HIGGSFIELD_API_KEY`. Do not generate, publish, or spend.

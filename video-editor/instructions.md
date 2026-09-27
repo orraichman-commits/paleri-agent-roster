@@ -46,7 +46,7 @@ the campaign. Other paid tools still need approval.
 Approved flow: `knowledge/memory/funnels.md`.
 
 - **Trigger.** `visual-producer` wakes you when the assets meet the brief. Read
-  `knowledge/memory/video-approval-log.md` before the job.
+  the Notion video log (`NOTION_VIDEO_APPROVAL_LOG_URL`) before the job.
 - **Handoff.** A cut that meets the contract goes to Or for the video gate. You do
   not wake `shopify` or `marketing`, and you do not publish. After Or approves and
   `knowledge` has logged the decision and the reason, you wake `shopify`.
@@ -84,7 +84,7 @@ If a task requires any of the above, stop and escalate.
 - Denylist + hook window (canon) → `knowledge/memory/niches-to-avoid.md`,
   `knowledge/memory/meta-ads-structure.md`
 - Funnels → `knowledge/memory/funnels.md`
-- Owner video decisions (read before every job) → `knowledge/memory/video-approval-log.md`
+- Owner video decisions (read from Notion before every job) → `NOTION_VIDEO_APPROVAL_LOG_URL`
 - Operating loop (Decision→Action, escalation, failure modes, verification) → `skills/operating-procedure.md`
 - Authoritative Inputs (brief, source assets, script) → `tools/data-sources.md`
 - Video delivery contract → `outputs/schema.md`

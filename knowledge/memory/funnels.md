@@ -26,7 +26,8 @@ There is no Marketing Office. `marketing` sits in Analytics.
 אישור להוציא כסף או לפרסם.
 
 **שער וידאו (זמני, בתחילת הדרך).** כל סרטון שנוצר עובר לאישור או לדחייה של אור לפני
-`marketing` ולפני Gate 2. ההחלטה והנימוק נרשמים ב־`knowledge/memory/video-approval-log.md`.
+`marketing` ולפני Gate 2. ההחלטה והנימוק נרשמים ביומן הוידאו בחדר האימון ב־Notion
+(`NOTION_VIDEO_APPROVAL_LOG_URL` — הכתובת עדיין לא הוגדרה).
 דחייה חוזרת ל־`video-editor` ול־`visual-producer` עם הנימוק. זו החזרת סטנדרט של **שלב
 הייצור** (שלב אחד). שלב אחד שהוחזר פעם אחת הוא תיקון, לא עצירה. אם שלב אחר באותו ריצה
 כבר הוחזר, ה־STOP RULE חל. כששיעור האישורים יציב, אור יכול לרפות את השער לאוטונומיה.
@@ -83,9 +84,10 @@ Or (brief, or "hunt")
    for brief-fit. They may not generate.
    **VIDEO GATE (temporary).** Every generated video goes to Or for approve or reject
    before it moves on to `marketing` or Gate 2. `shopify` is not woken until Or
-   approves. The decision and the reason are logged in
-   `knowledge/memory/video-approval-log.md`. Creative reads that log before the next
-   job. A rejection returns the video to `video-editor` and `visual-producer` with the
+   approves. The decision and the reason are logged in the Notion video log
+   (`NOTION_VIDEO_APPROVAL_LOG_URL`; the URL is not set yet). Creative reads that log
+   from Notion before the next job. A rejection returns the video to `video-editor` and
+   `visual-producer` with the
    reason. That return is one production-stage send-back: a single rejection is a
    correction, not a stop. It trips the stop rule when another stage on this run was
    already sent back for failing the standard. Or can later relax the gate once
@@ -219,7 +221,7 @@ LIO's quote replaces it.
 | `copywriter` | `visual-producer` | `creative-strategist` |
 | `visual-producer` | `video-editor` | `copywriter` |
 | `video-editor` (cut ready) | Or, for the video gate. Not `shopify` | `visual-producer` |
-| Or approves the video | `shopify` (woken by `video-editor` after `knowledge` logs it) | — |
+| Or approves the video | `shopify` (woken by `video-editor` after `knowledge` logs it in Notion) | — |
 | Or rejects the video | `video-editor` and `visual-producer`, with the reason | one production-stage send-back; stop rule if another stage on this run already failed |
 | `shopify` | `marketing` | `video-editor` |
 | `marketing` (ABO plan) | `finance-controller` | `shopify` or `creative-strategist` |

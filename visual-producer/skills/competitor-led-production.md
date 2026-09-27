@@ -25,8 +25,9 @@ flag `missing_upstream` and send the package back. Do not guess it.
 
 ## 2. Read the video log
 
-Read `knowledge/memory/video-approval-log.md` before the job. Also read the current
-do-not-repeat list when one exists. A reason Or already gave is a constraint on this
+Read the Notion video log (`NOTION_VIDEO_APPROVAL_LOG_URL`) before the job. Also read the
+current do-not-repeat list in the Notion Training Room (`NOTION_TRAINING_ROOM_URL`) when
+one exists. A reason Or already gave is a constraint on this
 job. An empty log is not a free hand — it only means he has not judged a video yet.
 
 ## 3. Open the competitor ad

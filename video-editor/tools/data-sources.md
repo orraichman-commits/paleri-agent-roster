@@ -13,9 +13,10 @@ Authoritative Inputs. Read fresh; never assume.
   the key, a token, or a spend figure into the repo, a prompt, or an output. Generation
   is allowed. Publishing, credit purchases, plan changes, and any spend that is not
   generation are not.
-- **Training Room** — brand rules for pacing, captions, logo/end-card usage, and
-  `knowledge/memory/video-approval-log.md` (via Knowledge Agent). Read the log before
-  every job.
+- **Training Room canon (repo, by path)** — brand rules for pacing, captions, and
+  logo/end-card usage, plus the denylist and Meta boundaries under `knowledge/memory/`.
+- **Notion video log** — `NOTION_VIDEO_APPROVAL_LOG_URL`. Read it before every job.
+  The URL is not set yet. Do-not-repeat lives in `NOTION_TRAINING_ROOM_URL`.
 
 If the Higgsfield key is absent or the API is unwired, deliver an edit plan / EDL and
 mark `requires connector`. Do not claim a rendered file. Output is written to

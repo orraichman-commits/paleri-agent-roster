@@ -54,7 +54,7 @@ Approved flow: `knowledge/memory/funnels.md`.
 - **Trigger (pre-publish).** `shopify` wakes you when the draft page is done and the
   creative chain (`creative-strategist` → `copywriter` → `visual-producer` →
   `video-editor`) has handed its assets, and Or has approved the video (logged in
-  `knowledge/memory/video-approval-log.md`). You do not start before both exist, and
+  the Notion video log, `NOTION_VIDEO_APPROVAL_LOG_URL`). You do not start before both exist, and
   you do not build an ABO plan on a video he has not approved. The gate is temporary.
   Until Or relaxes it, a missing approve is a gap, not a default yes.
 - **Handoff.** When the ABO plan meets the output contract, wake `finance-controller`

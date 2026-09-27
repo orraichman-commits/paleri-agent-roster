@@ -45,8 +45,8 @@ Approved flow: `knowledge/memory/funnels.md`.
 
 - **Trigger.** `copywriter` wakes you when the copy meets the contract, including the
   Foreplay link or ID the copy was written from. Gate 1 has already passed. You do
-  not start from a bare product. Read `knowledge/memory/video-approval-log.md` before
-  the job.
+  not start from a bare product. Read the Notion video log
+  (`NOTION_VIDEO_APPROVAL_LOG_URL`) before the job.
 - **Handoff.** Assets that meet the brief wake `video-editor`. You do not wake
   `shopify` or `marketing`.
 - **Send-back.** Copy that cannot be shot, or a package with no Foreplay link/ID,
@@ -82,7 +82,7 @@ If a task requires any of the above, stop and escalate.
 - Denylist + Meta compliance boundaries (canon) → `knowledge/memory/niches-to-avoid.md`,
   `knowledge/memory/meta-ads-structure.md`
 - Funnels → `knowledge/memory/funnels.md`
-- Owner video decisions (read before every job) → `knowledge/memory/video-approval-log.md`
+- Owner video decisions (read from Notion before every job) → `NOTION_VIDEO_APPROVAL_LOG_URL`
 - Operating loop (Decision→Action, escalation, failure modes, verification) → `skills/operating-procedure.md`
 - Authoritative Inputs (brief, source assets, brand rules) → `tools/data-sources.md`
 - Asset delivery contract → `outputs/schema.md`

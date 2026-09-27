@@ -14,7 +14,8 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 - Foreplay, to open those cited ads before generation. Not a license to browse for new ads.
 - Training Room brand visual rules, palette, logo usage (curated by the Knowledge Agent).
 - Product imagery / source assets referenced by the brief.
-- `knowledge/memory/video-approval-log.md` before every job.
+- The Notion video log (`NOTION_VIDEO_APPROVAL_LOG_URL`) before every job. The URL is
+  not set yet. Do not look for this log in the repo.
 
 ## Write — Creative Office only (owned system)
 - Visual asset drafts (or generation specs when no connector) to `tasks.output_data`,

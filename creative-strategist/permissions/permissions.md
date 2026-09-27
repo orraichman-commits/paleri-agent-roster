@@ -12,7 +12,8 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 - Task brief and `shared_context.upstream_outputs` (Product/Market Research, Market Analyst
   viability, Strategic Intelligence, exact Foreplay links/IDs); `missing_upstream`.
 - Training Room brand rules, tone, prior winning angles (curated by the Knowledge Agent).
-- `knowledge/memory/video-approval-log.md` before every brief.
+- The Notion video log (`NOTION_VIDEO_APPROVAL_LOG_URL`) before every brief. The URL is
+  not set yet. Do not look for this log in the repo.
 - Product/campaign operational context — read-only.
 - **Higgsfield API, read only.** Generation records already created for this job
   (status, generation id, output id), so a brief-fit review can see the asset.

@@ -6,7 +6,7 @@ skill is how you apply them to one product.
 
 ## When you run
 `shopify` has a draft (prices **without VAT**), the creative chain has assets, and Or
-has approved the video (temporary gate, logged in `knowledge/memory/video-approval-log.md`).
+has approved the video (temporary gate, logged in Notion at `NOTION_VIDEO_APPROVAL_LOG_URL`).
 If any of that is missing, send the package back. Do not invent ads to fill a grid.
 
 ## How to group

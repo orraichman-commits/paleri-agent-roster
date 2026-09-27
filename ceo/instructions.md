@@ -68,8 +68,9 @@ meets the standard. You do not publish and you do not spend.
   the work back to the start, or stops. Approval wakes `creative-strategist`.
 - **VIDEO GATE (temporary).** After `video-editor`, before `shopify` wakes `marketing`.
   Every generated video comes to Or for approve or reject. You do not treat a cut as
-  ready for the store or the ABO plan until he approves. `knowledge` logs the decision
-  and the reason. A rejection goes back to `video-editor` and `visual-producer`. It is
+  ready for the store or the ABO plan until he approves. `knowledge` (Notion memory bot)
+  logs the decision and the reason in Notion (`NOTION_VIDEO_APPROVAL_LOG_URL`). A rejection
+  goes back to `video-editor` and `visual-producer`. It is
   one production-stage send-back, and it counts toward the stop rule. You do not relax
   this gate. Or does, later, if approval rates are stable.
 - **GATE 2.** After the approved video, the Shopify draft, Marketing's ABO plan, and

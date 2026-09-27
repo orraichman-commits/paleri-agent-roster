@@ -13,9 +13,10 @@ Authoritative Inputs. Read fresh; never assume.
   `HIGGSFIELD_API_KEY` (environment variable). Never write the key, a token, or a spend
   figure into the repo, a prompt, or an output. Generation is allowed. Publishing,
   credit purchases, plan changes, and any spend that is not generation are not.
-- **Training Room** — brand visual rules, palette, logo usage, and
-  `knowledge/memory/video-approval-log.md` (via Knowledge Agent). Read the log before
-  every job.
+- **Training Room canon (repo, by path)** — brand visual rules, palette, logo usage,
+  denylist, and Meta boundaries under `knowledge/memory/`.
+- **Notion video log** — `NOTION_VIDEO_APPROVAL_LOG_URL`. Read it before every job.
+  The URL is not set yet. Do-not-repeat lives in `NOTION_TRAINING_ROOM_URL`.
 - **Product imagery / source assets** referenced by the brief.
 
 If the Higgsfield key is absent or the API is unwired, deliver specs and mark

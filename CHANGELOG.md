@@ -1,5 +1,23 @@
 # Changelog
 
+## Knowledge role moves to Notion memory bot — 2026-09-27
+
+Or's follow-up the same day. Prices stay without VAT.
+
+The Knowledge Agent role is held by **Notion memory bot** (also called Notion Manager).
+Its task-board coordinator role stays apart from the knowledge record.
+
+- **Repo canon**, read by path: `niches-to-avoid.md`, `product-criteria.md`,
+  `meta-ads-structure.md`, `unit-economics.md`, `funnels.md`, plus instruction packs,
+  skills, and permissions. An approved rule lands here only as a PR. Notion keeps a
+  read-only mirror, regenerated after each merge, never hand-edited.
+- **Notion living layer** (`NOTION_TRAINING_ROOM_URL`, URL not set): lessons and the
+  do-not-repeat list, decision memory, product and campaign history, and a proposals
+  inbox. Loop Closer writes there. A canon proposal becomes a PR only after Or approves
+  it in the inbox.
+- **Video log** leaves the repo. It lives at `NOTION_VIDEO_APPROVAL_LOG_URL` (URL not
+  set). Creative reads it from Notion before every job. The gate logic is unchanged.
+
 ## Higgsfield generation and the video gate — 2026-09-27
 
 Or's decision. Prices stay without VAT. He is עוסק פטור.
@@ -16,8 +34,8 @@ Or's decision. Prices stay without VAT. He is עוסק פטור.
   angle, avatar, copy, and brand. Denylist, ad policy, and ABO by angle / avatar /
   copy / hook still apply.
 - **Video gate.** Temporary. Every generated video goes to Or before `shopify` continues
-  it toward marketing and Gate 2. Decision and reason go in
-  `knowledge/memory/video-approval-log.md`. Creative reads it before the next job.
+  it toward marketing and Gate 2. Decision and reason go in the Notion video log
+  (`NOTION_VIDEO_APPROVAL_LOG_URL`). Creative reads it before the next job.
   Rejection returns to `video-editor` and `visual-producer` and counts as one
   production-stage send-back under the stop rule. Or can relax the gate later.
   Agents cannot.
