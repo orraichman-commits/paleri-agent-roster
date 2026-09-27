@@ -27,7 +27,7 @@ There is no Marketing Office. `marketing` sits in Analytics.
 
 **שער וידאו (זמני, בתחילת הדרך).** כל סרטון שנוצר עובר לאישור או לדחייה של אור לפני
 `marketing` ולפני Gate 2. ההחלטה והנימוק נרשמים ביומן הוידאו בחדר האימון ב־Notion
-(`NOTION_VIDEO_APPROVAL_LOG_URL` — הכתובת עדיין לא הוגדרה).
+([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)).
 דחייה חוזרת ל־`video-editor` ול־`visual-producer` עם הנימוק. זו החזרת סטנדרט של **שלב
 הייצור** (שלב אחד). שלב אחד שהוחזר פעם אחת הוא תיקון, לא עצירה. אם שלב אחר באותו ריצה
 כבר הוחזר, ה־STOP RULE חל. כששיעור האישורים יציב, אור יכול לרפות את השער לאוטונומיה.
@@ -85,7 +85,7 @@ Or (brief, or "hunt")
    **VIDEO GATE (temporary).** Every generated video goes to Or for approve or reject
    before it moves on to `marketing` or Gate 2. `shopify` is not woken until Or
    approves. The decision and the reason are logged in the Notion video log
-   (`NOTION_VIDEO_APPROVAL_LOG_URL`; the URL is not set yet). Creative reads that log
+   ([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)). Creative reads that log
    from Notion before the next job. A rejection returns the video to `video-editor` and
    `visual-producer` with the
    reason. That return is one production-stage send-back: a single rejection is a

@@ -15,8 +15,8 @@ Authoritative Inputs. Read fresh; never assume.
   credit purchases, plan changes, and any spend that is not generation are not.
 - **Training Room canon (repo, by path)** — brand visual rules, palette, logo usage,
   denylist, and Meta boundaries under `knowledge/memory/`.
-- **Notion video log** — `NOTION_VIDEO_APPROVAL_LOG_URL`. Read it before every job.
-  The URL is not set yet. Do-not-repeat lives in `NOTION_TRAINING_ROOM_URL`.
+- **Notion video log** — [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce). Read it before every job.
+  Do-not-repeat lives in [NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26).
 - **Product imagery / source assets** referenced by the brief.
 
 If the Higgsfield key is absent or the API is unwired, deliver specs and mark

@@ -8,9 +8,9 @@ Authoritative Inputs. Read fresh; never assume.
 - **Training Room canon (repo, by path)** — brand boundaries in
   `knowledge/memory/niches-to-avoid.md`, `knowledge/memory/product-criteria.md`,
   `knowledge/memory/meta-ads-structure.md`.
-- **Notion Training Room** (`NOTION_TRAINING_ROOM_URL`) — tone, prior winning angles, and
-  the do-not-repeat list. Read the video log at `NOTION_VIDEO_APPROVAL_LOG_URL` before
-  every brief. Both URLs are placeholders; they are not set yet. Do not look for the
+- **Notion Training Room** ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)) — tone, prior winning angles, and
+  the do-not-repeat list. Read the video log at [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce) before
+  every brief. Do not look for the
   video log in the repo.
 - **Product data** feeding the campaign.
 - **Higgsfield API (read only)** — generations already produced for this job, for

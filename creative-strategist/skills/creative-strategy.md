@@ -27,7 +27,7 @@ For each allowed product campaign, define:
 Then write a self-contained brief that the Copywriter, Visual Producer, and Video Editor can
 execute without guessing: what to include (proof points, offer, CTA direction) and what to
 avoid (prohibited claims, tone traps, and reasons already in
-the Notion video log, `NOTION_VIDEO_APPROVAL_LOG_URL`). Copy the exact Foreplay link or ID of every
+the Notion video log, [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)). Copy the exact Foreplay link or ID of every
 competitor ad the angle uses. Production will open that ad. A paraphrase will fail their
 contract and come back.
 

@@ -27,8 +27,8 @@ Do not start the cut until these are in `upstream_outputs`. If one is missing, f
 
 ## 2. Read the video log
 
-Read the Notion video log (`NOTION_VIDEO_APPROVAL_LOG_URL`) before the job. Also read the
-current do-not-repeat list in the Notion Training Room (`NOTION_TRAINING_ROOM_URL`) when
+Read the Notion video log ([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)) before the job. Also read the
+current do-not-repeat list in the Notion Training Room ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)) when
 one exists. A reason Or already gave is a constraint on this
 cut. An empty log means he has not judged a video yet. It is not permission to skip
 the gate on this one.
@@ -88,7 +88,7 @@ A cut that meets the contract goes to Or for approve or reject. It does not wake
 `shopify`, `marketing`, or Gate 2.
 
 `knowledge` (Notion memory bot) logs the decision and the reason in the Notion video log
-(`NOTION_VIDEO_APPROVAL_LOG_URL`).
+([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)).
 
 - **Approve.** Then you wake `shopify`.
 - **Reject.** The reason comes back to you and to `visual-producer`. Change the cut.

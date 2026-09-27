@@ -4,7 +4,7 @@ The learning loop closes here. A campaign went live, the market answered, and th
 to become institutional knowledge instead of evaporating. You own this skill: the Performance
 Analyst brings the numbers, you turn them into lessons, do-not-repeat items, and proposed
 rules. Lessons, the do-not-repeat list, and proposals are written to the Notion Training
-Room (`NOTION_TRAINING_ROOM_URL`). A proposal Or approves there becomes a pull request
+Room ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)). A proposal Or approves there becomes a pull request
 into repo canon. The CEO consumes the summary. You do not edit a canon file in place.
 
 **This is market learning, not organizational efficiency.** Which agents to keep, merge, or
@@ -61,13 +61,14 @@ campaign; nothing in this skill writes to any live system.
 7. **Do-not-repeat** — what the company should stop paying to relearn: the niche, angle, claim,
    hook, format, audience, or offer that has now failed with evidence. Each item states what
    would have to be true for it to be revisited. Write the item to the Notion Training Room
-   (`NOTION_TRAINING_ROOM_URL`). A niche already on `memory/niches-to-avoid.md`
+   ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)). A niche already on `memory/niches-to-avoid.md`
    that somehow ran is a process failure to record, not a new discovery. The denylist file
    itself does not change in this step.
 8. **Propose Training Room updates** — draft canonical rules from the durable lessons, including
    additions to the do-not-repeat niches and angles in `memory/niches-to-avoid.md` and
    `memory/product-criteria.md` when the evidence is strong enough to bind the next search.
-   Write the proposal to the **proposals inbox** inside `NOTION_TRAINING_ROOM_URL`. Or
+   Write the proposal to the Rule Proposals inbox
+   (https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa). Or
    approves or rejects it there. After he approves, open a pull request that lands the
    approved text in the repo file. Do not edit the canon file in place, and do not open the
    PR before that approval. Never self-promote a lesson to canon. A losing angle does not
@@ -79,14 +80,16 @@ Every lesson and do-not-repeat item carries a confidence level and its evidence 
 as any other knowledge entry. One campaign's result is usually `medium` at best; a pattern
 repeated across campaigns earns `high`. A lesson that contradicts repo canon or an existing
 Notion entry is recorded as a **conflict** in Notion and escalated — never silently
-overwritten, and never resolved by editing the canon mirror.
+overwritten, and never resolved by editing the read-only canon mirror
+(https://app.notion.com/p/3e8020daae5b81888781d66360a19207).
 
 ## How this runs (the execution path)
 The `loop-closer` workflow template (`031_loop_closer_workflow.sql`) is the invocation path:
 step 0 is `performance-analyst` (analytics) assembling the pack, step 1 is you (training),
 `consumes: [0]`, so GOD hands you the pack as shared context. Lessons, the do-not-repeat
 list, and proposed rules are written to the Notion Training Room
-(`NOTION_TRAINING_ROOM_URL`). A proposed canon change waits in the proposals inbox. Or
+([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)). A proposed canon change waits in the Rule Proposals inbox
+(https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa). Or
 approves or rejects it there. Canonical repo changes are his call, then a PR — not yours
 to land by editing the file.
 
@@ -98,14 +101,15 @@ rather than reconstructing the numbers yourself.
 - **From** `performance-analyst` — the Post-Launch Performance Pack (see its
   `skills/loop-closer-handoff.md`). You do not pull Meta/Shopify data yourself.
 - **To Notion** — the lessons, the do-not-repeat list, and any proposed rule
-  (`NOTION_TRAINING_ROOM_URL`). That is the record Creative reads.
+  ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)). That is the record Creative reads.
 - **To the CEO** — the Owner-facing summary: what we learned, what to do differently, what not
   to repeat. Lessons, never instructions on what to decide.
 - **To Creative** (`creative-strategist`, `copywriter`, and production before a job) — the
   current do-not-repeat list in Notion, including niches and angles, read before the next
   creative round. They consume it; they never run the post-mortem. No asset for a niche on
   that list, and no asset for a niche on `memory/niches-to-avoid.md`.
-- **To the Owner** — the proposed rule, in the proposals inbox. After he approves, a PR.
+- **To the Owner** — the proposed rule, in the Rule Proposals inbox
+  (https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa). After he approves, a PR.
   A rejection stays in Notion.
 
 ## Hard limits for this skill
@@ -113,7 +117,8 @@ rather than reconstructing the numbers yourself.
 - Never publish anything, and never spend.
 - Never invent or extrapolate a metric; an unavailable connector is a blind spot, stated.
 - Never promote a lesson to repo canon without Or's approval in the proposals inbox, followed
-  by a PR. Never hand-edit the Notion canon mirror.
+  by a PR. Never hand-edit the read-only canon mirror
+  (https://app.notion.com/p/3e8020daae5b81888781d66360a19207).
 - Never mix in organizational recommendations (retire/merge/hire an agent) — that is
   `board-ops`, a different loop with a different owner.
 - Never issue a business decision. You supply what the market taught; the CEO decides.

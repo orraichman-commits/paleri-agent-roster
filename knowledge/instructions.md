@@ -35,19 +35,19 @@ pull request after Or has approved the proposal. Do not edit these files in plac
 - This pack: `instructions.md`, `skills/`, `permissions/`, and the other agents' packs.
 
 **Notion — living learning layer.** Source of truth for what the company is still
-learning. Placeholder `NOTION_TRAINING_ROOM_URL` (URL not set yet).
+learning. [NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26).
 
 - Loop Closer lessons and the do-not-repeat list
 - Decision memory
 - Product and campaign history
-- Or's video approve/reject log — placeholder `NOTION_VIDEO_APPROVAL_LOG_URL` (URL not
-  set yet)
-- A proposals inbox, inside the Training Room, where Or approves or rejects a proposed
-  rule
+- Or's video approve/reject log — [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)
+- Rule Proposals inbox — [https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa](https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa).
+  Or approves or rejects a proposed rule there.
 
-Notion also holds a **read-only mirror** of the repo canon, regenerated from the repo
-after each merge. Never hand-edit that mirror. If the mirror and the repo disagree, the
-repo path wins. Agents read canon by path, not from the mirror.
+Notion also holds a **read-only canon mirror**, generated from `main` after each merge:
+[https://app.notion.com/p/3e8020daae5b81888781d66360a19207](https://app.notion.com/p/3e8020daae5b81888781d66360a19207).
+Never hand-edit that mirror. If the mirror and the repo disagree, the repo path wins.
+Agents read canon by path, not from the mirror.
 
 ## Mission
 Turn scattered history — CEO decisions, workflow outcomes, owner feedback, market
@@ -97,7 +97,7 @@ own canon PR in place of that approval.
    Lessons and the list go to Notion. A proposed canon change goes to the proposals inbox,
    then a PR after Or approves. You own this loop.
 7. **Video-gate log** — when Or approves or rejects a generated video, append the decision
-   and his reason to the Notion video log (`NOTION_VIDEO_APPROVAL_LOG_URL`). Record only.
+   and his reason to the Notion video log ([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)). Record only.
    Not a canon edit.
 (Detailed method → `skills/knowledge-curation.md`; the loop → `skills/loop-closer.md`.)
 
@@ -113,7 +113,7 @@ own canon PR in place of that approval.
   do-not-repeat list from the Notion Training Room before the next round. Organizational
   recommendations are never yours — that is `board-ops`.
 - Video gate: when Or approves or rejects a generated video, append his decision and
-  his reason to `NOTION_VIDEO_APPROVAL_LOG_URL` before the next handoff. Verbatim.
+  his reason to [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce) before the next handoff. Verbatim.
   That log is a record, not a new brand rule. A rule drawn from it is a separate
   proposal and waits for his approval. Creative reads the log from Notion before every
   new job.
@@ -145,12 +145,11 @@ If an action requires any of the above, stop and escalate.
   - Meta test / scale structure and compliance boundaries → `memory/meta-ads-structure.md`
   - Unit economics (COD, CAC, ex-VAT / עוסק פטור) → `memory/unit-economics.md`
   - Approved funnels → `memory/funnels.md`
-- **Notion living layer** → `NOTION_TRAINING_ROOM_URL`
-  - Video approve/reject log → `NOTION_VIDEO_APPROVAL_LOG_URL`
-  - Proposals inbox → inside `NOTION_TRAINING_ROOM_URL`
-  - Read-only canon mirror → regenerated from the repo after each merge; never hand-edited
+- **Notion living layer** → [NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)
+  - Video approve/reject log → [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)
+  - Rule Proposals inbox → [https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa](https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa)
+  - Read-only canon mirror (from `main`) → [https://app.notion.com/p/3e8020daae5b81888781d66360a19207](https://app.notion.com/p/3e8020daae5b81888781d66360a19207). Never hand-edit it.
 - **Reserved / not wired:** `sandbox/`, `schedules/` — treat as unavailable.
-  The two Notion URLs above are named placeholders. They are not set yet.
 
 ## Language
 Match the operator's language (Hebrew or English). Store Israeli-market and brand knowledge

@@ -10,13 +10,14 @@ Its task-board coordinator role stays apart from the knowledge record.
 - **Repo canon**, read by path: `niches-to-avoid.md`, `product-criteria.md`,
   `meta-ads-structure.md`, `unit-economics.md`, `funnels.md`, plus instruction packs,
   skills, and permissions. An approved rule lands here only as a PR. Notion keeps a
-  read-only mirror, regenerated after each merge, never hand-edited.
-- **Notion living layer** (`NOTION_TRAINING_ROOM_URL`, URL not set): lessons and the
-  do-not-repeat list, decision memory, product and campaign history, and a proposals
-  inbox. Loop Closer writes there. A canon proposal becomes a PR only after Or approves
-  it in the inbox.
-- **Video log** leaves the repo. It lives at `NOTION_VIDEO_APPROVAL_LOG_URL` (URL not
-  set). Creative reads it from Notion before every job. The gate logic is unchanged.
+  read-only mirror, generated from `main` after each merge, never hand-edited:
+  https://app.notion.com/p/3e8020daae5b81888781d66360a19207
+- **Notion living layer** ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)): lessons and the
+  do-not-repeat list, decision memory, and product and campaign history. Loop Closer
+  writes there. A canon proposal goes to the Rule Proposals inbox
+  (https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa) and becomes a PR only
+  after Or approves it.
+- **Video log** leaves the repo. It lives at [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce). Creative reads it from Notion before every job. The gate logic is unchanged.
 
 ## Higgsfield generation and the video gate — 2026-09-27
 
@@ -35,7 +36,7 @@ Or's decision. Prices stay without VAT. He is עוסק פטור.
   copy / hook still apply.
 - **Video gate.** Temporary. Every generated video goes to Or before `shopify` continues
   it toward marketing and Gate 2. Decision and reason go in the Notion video log
-  (`NOTION_VIDEO_APPROVAL_LOG_URL`). Creative reads it before the next job.
+  ([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)). Creative reads it before the next job.
   Rejection returns to `video-editor` and `visual-producer` and counts as one
   production-stage send-back under the stop rule. Or can relax the gate later.
   Agents cannot.

@@ -21,7 +21,7 @@ these files are forbidden.
 
 ## Notion Training Room (living layer — source and destination)
 
-Placeholder `NOTION_TRAINING_ROOM_URL`. The URL is not set yet. This is where living
+[NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26). This is where living
 knowledge is written and where it is read back.
 
 Write here, and read here before answering from memory:
@@ -29,14 +29,15 @@ Write here, and read here before answering from memory:
 - Loop Closer lessons and the do-not-repeat list
 - Decision memory
 - Product and campaign history
-- The proposals inbox (inside the Training Room), where Or approves or rejects a
-  proposed rule. An approval there is what authorizes the canon PR. A rejection stays
-  in the inbox. It does not become a repo edit.
-- A **read-only mirror** of the repo canon, regenerated from the repo after each merge.
+- Rule Proposals inbox — [https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa](https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa).
+  Or approves or rejects a proposed rule there. An approval is what authorizes the canon
+  PR. A rejection stays in the inbox. It does not become a repo edit.
+- Read-only canon mirror, generated from `main` —
+  [https://app.notion.com/p/3e8020daae5b81888781d66360a19207](https://app.notion.com/p/3e8020daae5b81888781d66360a19207).
   Destination for the mirror refresh only. Never a source you hand-edit. If the mirror
   and a repo file disagree, the repo file wins, and the next refresh must copy the repo.
 
-Video approve/reject log: placeholder `NOTION_VIDEO_APPROVAL_LOG_URL` (URL not set yet).
+Video approve/reject log: [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce).
 Append Or's decision and his reason there. Creative reads that page before every job.
 Do not store `HIGGSFIELD_API_KEY` or any other secret in an entry.
 

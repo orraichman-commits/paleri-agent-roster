@@ -39,7 +39,7 @@ The key is the secret `HIGGSFIELD_API_KEY` (not in this repo). Generation only �
 publishing, no spend beyond generation. `creative-strategist` may read those
 generations and may not create them. Every video waits for Or's approve/reject
 before marketing and Gate 2. The log lives in the Notion Training Room
-(`NOTION_VIDEO_APPROVAL_LOG_URL`; the URL is not set yet).
+([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)).
 
 **Analytics** — `market-analyst` (viability gate) · `marketing` (ABO test structure + daily ad read; recommendations only) · `performance-analyst` (weekly / end-of-test full funnel + Loop-Closer data leg) · `strategic-intelligence` (**on-demand only**)
 
@@ -54,8 +54,9 @@ The constitution stays in `knowledge/`. The living record is in Notion.
 
 **Canon stays in this repo.** Agents read it by path. A rule change lands here only as a
 pull request after Or approves it. Notion holds a read-only mirror of these files,
-regenerated from the repo after each merge. The mirror is not hand-edited. If the two
-differ, the repo wins.
+generated from `main` after each merge:
+[https://app.notion.com/p/3e8020daae5b81888781d66360a19207](https://app.notion.com/p/3e8020daae5b81888781d66360a19207).
+The mirror is not hand-edited. If the two differ, the repo wins.
 
 - `knowledge/memory/niches-to-avoid.md` — hard rejects and niches to avoid at the start
 - `knowledge/memory/product-criteria.md` — six selection criteria, LF8, Israeli price band, search sources
@@ -65,11 +66,13 @@ differ, the repo wins.
 
 Instruction packs, skills, and permissions stay in the repo on the same rule.
 
-**The living layer is in Notion** (`NOTION_TRAINING_ROOM_URL`; URL not set yet): Loop Closer
+**The living layer is in Notion** ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)): Loop Closer
 lessons and the do-not-repeat list, decision memory, product and campaign history, the
-proposals inbox where Or approves or rejects a proposed rule, and the video approve/reject
-log (`NOTION_VIDEO_APPROVAL_LOG_URL`; URL not set yet). Creative reads that log from Notion
-before every job. The gate itself is unchanged.
+Rule Proposals inbox
+([https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa](https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa)),
+and the video approve/reject log
+([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)).
+Creative reads that log from Notion before every job. The gate itself is unchanged.
 
 What changed when the ecommerce training course was folded in, and when the approved workflow landed: `CHANGELOG.md`.
 
@@ -83,7 +86,8 @@ What changed when the ecommerce training course was folded in, and when the appr
   canonical authored version.
 - **Loop Closer** is a skill, not an agent: `performance-analyst/skills/loop-closer-handoff.md`
   (data) → `knowledge/skills/loop-closer.md` (lessons + do-not-repeat, written to Notion) → CEO.
-  A proposed canon rule waits in the Notion proposals inbox. After Or approves, it becomes a PR.
+  A proposed canon rule waits in the Rule Proposals inbox
+  (https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa). After Or approves, it becomes a PR.
 - Locked offices (Publishing, Customer Service, Inventory) have no agents by design.
   There is no Marketing Office. Campaign structure and the daily read are `marketing`,
   in Analytics. The CEO still decides. Or still executes live changes.

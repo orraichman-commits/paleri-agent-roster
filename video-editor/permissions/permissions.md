@@ -13,8 +13,7 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
   `shared_context.upstream_outputs`; `missing_upstream`.
 - Foreplay, to open those cited ads before generation. Not a license to browse for new ads.
 - Training Room brand rules for pacing, captions, logo/end-card usage (curated by Knowledge Agent).
-- The Notion video log (`NOTION_VIDEO_APPROVAL_LOG_URL`) before every job. The URL is
-  not set yet. Do not look for this log in the repo.
+- The Notion video log ([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)) before every job. Do not look for this log in the repo.
 
 ## Write — Creative Office only (owned system)
 - Video variants (or an edit plan / EDL when no render connector) to `tasks.output_data`,

@@ -15,13 +15,16 @@ Notes: <conflicts, gaps, or what to confirm>
 
 ## Notion entry (living layer)
 
-Write living knowledge to Notion. Do not write it into a repo canon file. Placeholders
-(URLs are not set yet): `NOTION_TRAINING_ROOM_URL`, `NOTION_VIDEO_APPROVAL_LOG_URL`.
-The proposals inbox is a page inside `NOTION_TRAINING_ROOM_URL`.
+Write living knowledge to Notion. Do not write it into a repo canon file.
+
+- Training Room: [NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)
+- Video log: [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)
+- Rule Proposals inbox: [https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa](https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa)
+- Read-only canon mirror: [https://app.notion.com/p/3e8020daae5b81888781d66360a19207](https://app.notion.com/p/3e8020daae5b81888781d66360a19207)
 
 ```
 ## Notion entry — <timestamp>
-Destination: <NOTION_TRAINING_ROOM_URL | NOTION_VIDEO_APPROVAL_LOG_URL | proposals inbox>
+Destination: <https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26 | https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce | https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa>
 Type: <lesson | do-not-repeat | decision-memory | product-history | market-insight | video-gate | proposal | conflict>
 Title: <page title>
 Statement: <the knowledge, plainly, in the language it was learned in>
@@ -39,14 +42,14 @@ write is the PR. Do not put task-board status in this entry. Do not store secret
 
 ## Video-gate log entry (Notion)
 
-Append to `NOTION_VIDEO_APPROVAL_LOG_URL` when Or approves or rejects a generated video.
+Append to [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce) when Or approves or rejects a generated video.
 Do not rewrite his reason. This is a record, not a Loop-Closer lesson and not a canon change.
 Creative reads this page from Notion before every job. An empty log means there is no prior
 reason yet. Do not invent one.
 
 ```
 ## <YYYY-MM-DD> — <product> — <approve | reject>
-Destination: NOTION_VIDEO_APPROVAL_LOG_URL
+Destination: https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce
 Video: <variant / output ref>
 Foreplay ref: <url or id the cut was built from>
 Decision: <approve | reject>
@@ -62,8 +65,9 @@ Who must read it before the next job: `visual-producer`, `video-editor`,
 ## Loop-Closer report (after a live campaign — see `skills/loop-closer.md`)
 
 Owner-facing, Hebrew by default. Metric names, slugs, and IDs stay in English.
-Write the report to the Notion Training Room (`NOTION_TRAINING_ROOM_URL`). Proposed
-canon changes in the last section also go to the proposals inbox there. They become a
+Write the report to the Notion Training Room ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)). Proposed
+canon changes in the last section also go to the Rule Proposals inbox
+(https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa). They become a
 repo PR only after Or approves.
 
 ```
@@ -102,7 +106,7 @@ Angle / hook / offer / audience / format: <as briefed, with artifact ids>
   - Research: <what to re-check or validate>
 
 AI/token cost for the round: <from AI Cost Manager, when available>
-Handoff: Notion (lessons, do-not-repeat, proposals inbox) · CEO (summary) · Creative reads Notion · Owner approves proposals in the inbox, then a PR
+Handoff: Notion (lessons, do-not-repeat) · Rule Proposals inbox (https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa) · CEO (summary) · Creative reads Notion · Owner approves proposals in the inbox, then a PR
 ```
 
 **Rules:** no organizational recommendations (that is `board-ops`), no live-system changes, no

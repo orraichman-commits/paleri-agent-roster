@@ -8,7 +8,7 @@ feedback; keep them consistent with the CEO's Owner Preference Layer.
 
 ## 2. Decision memory
 Record every meaningful CEO decision, its rationale, and (once known) its outcome, in the
-Notion Training Room (`NOTION_TRAINING_ROOM_URL`), so patterns of what works become visible.
+Notion Training Room ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)), so patterns of what works become visible.
 
 ## 3. Product & campaign history
 Maintain the history of products evaluated/launched and their results in Notion, so prior
@@ -23,7 +23,7 @@ Curate Israeli-market insights and PALERI brand rules; keep them sourced and dat
 
 ## 5. Video approval log
 When Or approves or rejects a generated video, append one entry to
-`NOTION_VIDEO_APPROVAL_LOG_URL` in his words, with the video ref and the Foreplay ref.
+[NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce) in his words, with the video ref and the Foreplay ref.
 Do this before `shopify` is woken on an approve, and before the recut on a reject.
 Do not delete a row. Do not promote the reason into `niches-to-avoid.md`, brand rules,
 or the do-not-repeat list in the same write. That promotion is a proposal in the inbox.
