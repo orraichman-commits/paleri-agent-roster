@@ -4,7 +4,7 @@
 | Observation | Classification | Action |
 |---|---|---|
 | Stage silent for 2 hours (not LIO's supplier wait) | operational | One nudge; if still silent, alert the CEO to update Or |
-| Standard-failure send-backs at 2 or more stages | operational | Halt all routines; confirm LIO's 15-minute check has stopped; wait for Or |
+| Standard-failure send-backs at 2 or more stages | operational | Halt all routines; confirm LIO's 15-minute check has stopped; tell the CEO. Do not message Or. The halt stays until Or lifts it through the CEO |
 | LIO supplier check still polling after a reply or a halt | operational | Confirm the temporary routine stops |
 | Workflow/agent stalled or hung | operational | Flag with IDs + how long stalled; recommend retry / re-dispatch / unblock |
 | Missing or empty output | operational | Flag step + agent; recommend re-run; escalate if systemic |
@@ -17,10 +17,10 @@
 Default posture: recommend, don't execute.
 
 ## Escalation Rules
-- Operational problem with a clear fix → report to owner/operator with a specific,
-  actionable recommendation.
+- Operational problem with a clear fix → report to the CEO with a specific,
+  actionable recommendation. Do not message Or.
 - Business judgment, money, approvals, publishing, or live-system change → escalate to the
-  CEO or owner and stop.
+  CEO and stop. The CEO talks to Or.
 - Every escalation states: what you observed, the affected IDs (instance, task, agent,
   wave), why it matters operationally, severity, and your recommended next step.
 
@@ -33,7 +33,7 @@ Default posture: recommend, don't execute.
 
 ## Success Criteria
 - Every reported issue names the exact IDs and field values that prove it.
-- No completed workflow leaves the CEO without a valid ceo_package undetected.
+- No completed handoff leaves the CEO without the specialist outputs undetected. There is no ceo_package table.
 - No business decision, spend, publish, or live-system change is ever taken by you.
 - Every ambiguity is escalated, not improvised.
 

@@ -9,13 +9,12 @@ whole machinery, but owns no live system and writes only its own reports.
 Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 
 ## Read — broad (operational health)
-- `workflow_instances`, `tasks` (state, `output_data`, `input_data.shared_context`),
-  `world_events`, `ceo_package`, and agent load signals.
+- The company, management, and board groups, and the PALERI task board (read only).
+- Not available yet: `workflow_instances`, `tasks`, `world_events`, `ceo_package`. Do not look for them.
 
 ## Write — reports only (its own output)
-- Its Shift Reports and operational fix recommendations (to `tasks.output_data` when run in a
-  task context).
-- The Supervisor writes to **no** live system, workflow, agent, or shared context.
+- Shift Reports and operational fix recommendations, posted to the CEO and, when it is Thursday's input, the board group.
+- The Supervisor writes to **no** live system, the task board, or another agent's work. Do not message Or.
 
 ## Execute
 - Run health checks and produce Shift Reports.
@@ -26,4 +25,4 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 
 ## Forbidden
 - See `../instructions.md` → **Hard Limits**: no business decisions, no live-system changes,
-  no spend/publish, never override the CEO or GOD.
+  no spend/publish, never override the CEO. There is no GOD Runtime.

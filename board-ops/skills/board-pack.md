@@ -64,4 +64,4 @@ A recommendation missing evidence, trade-off, or reversibility does not go in th
   (`performance-analyst` + `knowledge`), a different loop entirely.
 - Machinery incidents ("the fan-in barrier hung") — the Supervisor already reported it; cite it
   only if it is evidence for an *organizational* claim.
-- Any instruction addressed to another agent. Your pack addresses the CEO and Owner.
+- Any instruction addressed to another agent. Your pack addresses the CEO. The CEO sends it to Or.

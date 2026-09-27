@@ -12,8 +12,7 @@ the copy refused. Hook craft, Hebrew captions, and the format set stay in
 
 ## 1. Collect the inputs
 
-Do not start the cut until these are in `upstream_outputs`. If one is missing, flag
-`missing_upstream` and send the package back. Do not guess it.
+Do not start the cut until these are in the company-group handoff. If one is missing, say so and send the package back. Do not guess it. There is no `tasks` table.
 
 - Product and offer.
 - Research (`research-alpha`, `research-beta`).
@@ -71,8 +70,8 @@ Generate the video this job needs on the Higgsfield API. Authenticate with the s
 repo, the prompt, the captions, or the output.
 
 Generation is allowed. Publishing is not. Buying credits, changing the plan, or any
-spend that is not that generation is not. Other paid render tools still need Level 1
-approval. Unlicensed music and footage stay forbidden.
+spend that is not that generation is not. Other paid render tools still need the CEO's
+approval. You do not ask Or. Unlicensed music and footage stay forbidden.
 
 The first 3 seconds are the hook. Hebrew captions are RTL and readable on mobile.
 Deliver 9:16, 4:5, and 1:1 unless the brief names a smaller set. ABO still groups by
@@ -82,18 +81,18 @@ brief explicitly says scale-stage ASC.
 If the API is unwired or the key is absent, deliver an edit plan / EDL and mark
 `requires connector`. Do not claim a rendered file.
 
-## 6. Or's gate, then the next agent
+## 6. The CEO requests Or's gate, then the next agent
 
-A cut that meets the contract goes to Or for approve or reject. It does not wake
+A cut that meets the contract goes to the CEO (`paleri os ceo`) for Or's approve or reject. You do not message Or. It does not wake
 `shopify`, `marketing`, or Gate 2.
 
 `knowledge` (Notion memory bot) logs the decision and the reason in the Notion video log
 ([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)).
 
-- **Approve.** Then you wake `shopify`.
-- **Reject.** The reason comes back to you and to `visual-producer`. Change the cut.
+- **Approve.** After the CEO relays the approval and `knowledge` has logged it, you wake `shopify`.
+- **Reject.** The CEO relays the reason to you and to `visual-producer`. Change the cut.
   Do not resubmit the same video. This is one production-stage send-back. One return
   is a correction. If another stage on this run was already sent back for failing the
-  standard, stop and wait for Or.
+  standard, stop and tell the CEO. Do not message Or. The halt stays until Or lifts it through the CEO.
 
 The gate is temporary. Or may later relax it. You do not.

@@ -3,7 +3,7 @@
 ## Decision → Action
 | Situation | Action |
 |---|---|
-| Thursday evening, or an explicit CEO/Owner request | Gather supervisor health, the weekly money report, the weekly AI-cost report, and workload. Write a chat message, not a deck |
+| Thursday evening, or an explicit CEO request | Gather supervisor health, the weekly money report, the weekly AI-cost report, and workload. Write a chat message, not a deck. Or's request reaches you only through the CEO |
 | Agent shows no output this period | Check whether work was *routed* to it; idle ≠ unused — classify before recommending |
 | Two agents look duplicated | Check the deliberate-split registry first; if listed, do not recommend merging — say why the split stands |
 | Token spend high on one agent | Take the AI Cost Manager's figure; judge spend against the output actually consumed |
@@ -12,13 +12,13 @@
 | Supervisor / cost data missing or stale | Report the coverage gap; scope the pack to what is sourced |
 | Asked whether a product or campaign is good | Decline; route to the CEO — not your call |
 | Asked why a live campaign underperformed | Decline; that is the Loop Closer (`performance-analyst` + `knowledge`) |
-| Asked to apply a recommendation | Decline; you recommend, the CEO/Owner decide and others execute |
+| Asked to apply a recommendation | Decline; you recommend, the CEO decides with Or, and others execute. You do not message Or |
 
 ## Escalation Rules
-- Every Board Pack goes to the **CEO and Owner** — that is the standing route; you never route
+- Every Board Pack goes to the **CEO** — that is the standing route. The CEO sends it to Or. You never message Or, and you never route
   organizational recommendations to the affected agent or its office.
 - A finding implying money (a recurring overspend) → state it and route the spend decision to
-  the Finance Controller / Owner; never imply approval.
+  the Finance Controller and the CEO; never imply approval, and never message Or.
 - A finding implying a Hard-Limit action (disabling an agent, changing permissions) → escalate;
   never approach the change yourself.
 - Every escalation states: the finding, its evidence and source report, the recommendation, its

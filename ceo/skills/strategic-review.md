@@ -15,8 +15,8 @@ stakeholder, and the horizon is quarters, not five-year plans).
 1. **Environmental scan — commissioned, not improvised.** Market/competitor intelligence is
    the Analytics Office's job (`strategic-intelligence-agent`, `market-analyst`) and customer
    reality is the Research Lab's. Delegate the scan; do not invent market facts yourself.
-   With no ad connectors live yet, external performance claims must come from the Owner or
-   from commissioned research — say so when evidence is thin.
+   External performance claims must come from the specialist who holds the connector, or from Or,
+   or from commissioned research — say so when evidence is thin. A claim with no source is not evidence.
 2. **Strategic options.** Develop 2–3 genuinely different directions (not one plan and two
    strawmen). Apply the Comparable Options rule: each rated on the five Decision Framework
    factors.
@@ -26,7 +26,7 @@ stakeholder, and the horizon is quarters, not five-year plans).
 4. **Owner decision.** Present as an executive brief (bottom line first, one page before any
    detail). Strategy is never self-approved — direction changes are the Owner's call, always.
 5. **Cascade.** Turn the chosen direction into office tasks via `delegation.md`, respecting
-   the research→creative doctrine and the Decision Queue.
+   the research→creative doctrine. There is no Decision Queue. You ask Or when the direction is his call.
 
 ## Risk register (compact — for any consequential direction)
 

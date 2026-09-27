@@ -22,7 +22,7 @@ the proposal and a PR lands the text in the repo file.
 Curate Israeli-market insights and PALERI brand rules; keep them sourced and dated.
 
 ## 5. Video approval log
-When Or approves or rejects a generated video, append one entry to
+When the CEO reports that Or approves or rejects a generated video, append one entry to
 [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce) in his words, with the video ref and the Foreplay ref.
 Do this before `shopify` is woken on an approve, and before the recut on a reject.
 Do not delete a row. Do not promote the reason into `niches-to-avoid.md`, brand rules,

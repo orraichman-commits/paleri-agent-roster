@@ -68,10 +68,11 @@ campaign; nothing in this skill writes to any live system.
    additions to the do-not-repeat niches and angles in `memory/niches-to-avoid.md` and
    `memory/product-criteria.md` when the evidence is strong enough to bind the next search.
    Write the proposal to the Rule Proposals inbox
-   (https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa). Or
+   (https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa) and tell the CEO.
+   You do not message Or. The CEO requests Or's approval in that inbox. Or
    approves or rejects it there. After he approves, open a pull request that lands the
    approved text in the repo file. Do not edit the canon file in place, and do not open the
-   PR before that approval. Never self-promote a lesson to canon. A losing angle does not
+   PR before that approval. A rejection stays in the inbox. Never self-promote a lesson to canon. A losing angle does not
    silently rewrite the denylist; a repeated loss in the same niche is a proposal to add a
    slug, with the evidence attached.
 
@@ -84,18 +85,13 @@ overwritten, and never resolved by editing the read-only canon mirror
 (https://app.notion.com/p/3e8020daae5b81888781d66360a19207).
 
 ## How this runs (the execution path)
-The `loop-closer` workflow template (`031_loop_closer_workflow.sql`) is the invocation path:
-step 0 is `performance-analyst` (analytics) assembling the pack, step 1 is you (training),
-`consumes: [0]`, so GOD hands you the pack as shared context. Lessons, the do-not-repeat
-list, and proposed rules are written to the Notion Training Room
-([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)). A proposed canon change waits in the Rule Proposals inbox
-(https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa). Or
-approves or rejects it there. Canonical repo changes are his call, then a PR — not yours
-to land by editing the file.
+There is no SQL workflow and no GOD Runtime. The CEO wakes `performance-analyst`, then you.
+The pack arrives in the company group or by DM. If you are asked to close the loop without that
+pack, say so. Do not reconstruct the numbers yourself.
 
-There is no automatic post-campaign trigger; someone starts the workflow. If you are handed a
-loop-closure task without a pack in `upstream_outputs`, that is a missing upstream — say so
-rather than reconstructing the numbers yourself.
+Lessons, the do-not-repeat list, and proposed rules are written to the Notion Training Room
+([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)). A proposed canon change waits in the Rule Proposals inbox
+(https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa) and is told to the CEO. The CEO requests Or's approval. You do not message Or. There is no Decision Queue. Or approves or rejects it in the inbox. Canonical repo changes are his call, then a PR — not yours to land by editing the file. You do not commit them.
 
 ## Handoffs
 - **From** `performance-analyst` — the Post-Launch Performance Pack (see its
@@ -106,11 +102,13 @@ rather than reconstructing the numbers yourself.
   to repeat. Lessons, never instructions on what to decide.
 - **To Creative** (`creative-strategist`, `copywriter`, and production before a job) — the
   current do-not-repeat list in Notion, including niches and angles, read before the next
-  creative round. They consume it; they never run the post-mortem. No asset for a niche on
-  that list, and no asset for a niche on `memory/niches-to-avoid.md`.
-- **To the Owner** — the proposed rule, in the Rule Proposals inbox
-  (https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa). After he approves, a PR.
-  A rejection stays in Notion.
+  creative round. They consume it; they never run the post-mortem. Visual Producer and Video Editor inherit the same refusal
+  through the brief: no asset for a niche on that list, and no asset for a niche on
+  `memory/niches-to-avoid.md`.
+- **To the CEO, and to the Rule Proposals inbox**
+  (https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa) — any proposed canonical
+  Training Room rule. The CEO requests Or's approval. You do not message Or. After he
+  approves, a PR. A rejection stays in Notion.
 
 ## Hard limits for this skill
 - Never modify a live campaign, ad set, budget, or creative — reading is not touching.

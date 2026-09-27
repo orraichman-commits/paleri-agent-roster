@@ -12,6 +12,6 @@ Captions: Hebrew (RTL)
 Music / pacing: <choice + licensing note>
 Higgsfield: <generation id, or "requires connector"> — never the API key
 Gaps / flags: <missing_upstream, connector state, claims removed>
-Video gate: pending Or — <approve | reject is written by knowledge after he decides>
-Status: draft → Or's video gate (not shopify until approve)
+Video gate: pending Or — DM the cut to the CEO. The CEO requests approve or reject. You do not message Or. knowledge writes the decision after Or decides
+Status: draft → CEO requests the video gate (not shopify until approve, and not until knowledge has logged it)
 ```

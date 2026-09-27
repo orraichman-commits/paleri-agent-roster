@@ -2,7 +2,7 @@
 
 ```
 ## AI Cost Report — <period> — <timestamp>
-Cadence: weekly | Delivery: inside board-ops Thursday review, with the money report. Not a separate ping to Or.
+Cadence: weekly | Delivery: to the CEO, inside board-ops Thursday review, with the money report. You do not message Or.
 Total AI spend: <amount> | By agent: <…> | By funnel: <main | post-publish | money | ops | on-demand>
 Breakdown:
   - Agent <slug> / model <name>: <tokens> — <cost> — <top tasks>

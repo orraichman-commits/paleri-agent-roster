@@ -76,14 +76,19 @@ Creative reads that log from Notion before every job. The gate itself is unchang
 
 What changed when the ecommerce training course was folded in, and when the approved workflow landed: `CHANGELOG.md`.
 
+## Go-live
+
+Each bot reads its own folder in this repo on every wake. There is no GOD Runtime and no database.
+
+Coordination is three chat groups, a direct message to the CEO bot `paleri os ceo`, and the PALERI task board in Notion. That board is written only by the Notion memory bot, which holds the Knowledge Agent role (`knowledge`). The task board is not the knowledge record. The Training Room living layer (lessons, the video approval log) is in Notion. Canon stays in `knowledge/memory/`.
+
+Every bot starts in SETUP: one message in its own chat asking Or to connect the list under **Setup connections**, then it stops. After verification it is STANDBY. It becomes ACTIVE only when the CEO sends ACTIVATE, and only for a routine the CEO names. After SETUP, only the CEO talks to Or. Gate 1, Gate 2, and the video approve/reject are Or's decisions, requested by the CEO. `video-editor` DMs the cut to the CEO and does not wake `shopify` until Or approves and `knowledge` logs the decision and the reason. Or publishes by hand.
+
+Group membership is in `knowledge/memory/funnels.md` (section G).
+
 ## Notes for anyone reading these brains
 
-- **Folder name ≠ DB slug** in three cases: `shopify` → `shopify-agent`,
-  `strategic-intelligence` → `strategic-intelligence-agent`, `knowledge` → `knowledge`.
-- **The runtime loads a different file.** For specialists, the wired brain is the single-file
-  `agents/instructions/<slug>.md` in the source repo, not this modular tree. The two are kept
-  in sync; only the CEO's tree is assembled live by a Brain Loader. These folders are the
-  canonical authored version.
+- **Folder name is the pack.** Two historical names differed: `shopify` was called `shopify-agent`, and `strategic-intelligence` was called `strategic-intelligence-agent`. There is no database slug to look up. The folder is what the bot reads.
 - **Loop Closer** is a skill, not an agent: `performance-analyst/skills/loop-closer-handoff.md`
   (data) → `knowledge/skills/loop-closer.md` (lessons + do-not-repeat, written to Notion) → CEO.
   A proposed canon rule waits in the Rule Proposals inbox

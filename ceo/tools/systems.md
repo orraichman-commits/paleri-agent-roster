@@ -1,110 +1,53 @@
 # Tool — Systems (CEO Executive Control Center)
 
-The major systems the CEO uses or receives information from, with an honest status for each.
-**Status legend:** `WIRED` (connected and in use) · `PARTIAL` (exists but capability
-incomplete) · `PLANNED — NOT YET WIRED` (do not assume it exists).
+What is actually there. Do not treat a missing system as wired.
 
-Do not treat a `PLANNED` system as available. Where a system produces authoritative data,
-see `data-sources.md` for its trust level.
+There is **no GOD Runtime** and **no database**. Bots read their folders in this repo on every wake. Coordination is the three chat groups, a DM to you (`paleri os ceo`), and the PALERI task board in Notion. That board is written only by the Notion memory bot, which is the Knowledge Agent. Canon stays in the repo. The Training Room living layer (lessons, video approval log) is in Notion.
+
+`schedules/` is not a cron. You wake Thursday's review, the daily read, and the Loop Closer by naming them. Do not invent a scheduler.
 
 ---
 
-## Workflow Engine — `WIRED`
-Orchestrates multi-step work as `workflow_instances` built from workflow templates. Runs in
-waves with a race-safe fan-in barrier. Source of workflow state (`state`, `current_wave`,
-`wave_plan`, `aggregated_outputs`).
+## Chat groups — in use
 
-## GOD Runtime — `WIRED`
-The **deterministic** orchestration engine. No AI, no reasoning, no business judgment. It
-routes tasks, enforces `consumes`-based shared context, and assembles the CEO Package. The
-CEO never directs GOD as a brain; GOD only executes deterministic orchestration.
+- **Company** — every agent. Handoffs and deliverables.
+- **Management** — you, `supervisor`, `board-ops`, `finance-controller`, `marketing`.
+- **Board** — you, `board-ops`, `supervisor`, `finance-controller`, `ai-cost-manager`, `knowledge`.
 
-## Agent Runtime — `PARTIAL`
-Executes agents against their brains. Real execution is currently gated in code to a single
-agent (`copywriter`); other agents are defined but not yet enabled for live execution. Treat
-non-copywriter execution as not yet available.
+Membership is also in `knowledge/memory/funnels.md`.
 
-This is an **execution-wiring gate, not an org statement.** `visual-producer` and
-`video-editor` are full, mandatory stages of the Creative chain whose runtime is not enabled
-yet — not optional or future roles. Plan the whole chain; report honestly which stages can
-execute for real today.
+## Your chat with Or — in use
 
-## Supervisor — `PARTIAL`
-The operational supervisor brain exists and produces Shift Reports, but it is **not yet wired
-into the runtime execution loop**. Use its reports as advisory input when available; do not
-assume automatic, continuous supervision yet. The Supervisor covers machinery health only — it
-does not do business post-mortems (Loop Closer) or organizational recommendations (Board Ops).
+The only channel to Or after other agents finish SETUP. Owner commands arrive here. Gate 1, Gate 2, and the video approve/reject are requested here. The daily note and Thursday's review go out here. Or publishes by hand. There is no Board Meeting inbox and no Approval Inbox.
 
-## Board Ops — `PARTIAL`
-The org-efficiency agent is seeded (migration `030_board_ops_agent.sql`) and can be declared as
-a workflow specialist. It sits in the Finance Office in the DB (`agents.office_id` is NOT NULL)
-while remaining cross-cutting in doctrine. The approved cadence is **Thursday evening**
-(a chat message, not a deck). The CEO wakes it. `schedules/` is not a wired cron — do not
-invent one — and never act on a pack as if the Owner already approved it.
+## Notion — in use, split by who writes
 
-## Loop Closer — `PARTIAL` (skill + workflow, not a system)
-Post-launch market learning: `performance-analyst` assembles the Post-Launch Performance Pack,
-`knowledge` turns it into lessons, do-not-repeat items, and proposed Training Room updates, and
-the CEO consumes the summary. The `loop-closer` workflow template
-(`031_loop_closer_workflow.sql`) chains the two steps, with the Knowledge step approval-gated —
-so the skill has a real execution path rather than being brain text nothing can invoke.
+- **PALERI task board** — the Notion memory bot writes. You read.
+- **Training Room living layer** — the same bot writes lessons and the video approval log. You read.
+- **Canon** — `knowledge/memory/` in the repo. A change is a proposal. You ask Or. The file changes only after he accepts. The Knowledge Agent does not commit it.
 
-It remains **gated by its data sources**: Meta is not wired and Shopify is
-connector-conditional, so today the loop closes only on what is actually connected. With
-insufficient live campaign data the correct output is a coverage-gap note with a re-run
-condition — never a post-mortem built from imagined numbers.
+## Products table — in use
 
-## Knowledge Agent — `PARTIAL`
-The Knowledge Agent brain and its record exist and can answer/curate. The automatic
-learning-from-outcomes loop is **not yet implemented**. Curated knowledge is available;
-continuous auto-learning is planned.
+Live rows: Or's Google Sheet. You read and write. Finance reads and does not write. The schema is `memory/products-table.md`. Prices without VAT. Or is עוסק פטור.
 
-## Training Room — `PARTIAL`
-The reference layer for brand rules, owner philosophy, product/decision history, and market
-insights, curated by the Knowledge Agent. The canonical, fully-backed store is still being
-built out; treat entries as curated and confidence-rated, not absolute.
+## LIO — external, not ours
 
-## CEO Package — `WIRED`
-The deterministic technical package GOD assembles on workflow completion
-(`workflow_instances.ceo_package`): participating agents, agent outputs, `missing_outputs`,
-errors, `assembled_by`. It is the CEO's primary evidence bundle for a business decision.
+You send product name and a screenshot after research finishes. LIO asks the supplier, checks every 15 minutes, updates you, and stops. You do not change LIO.
 
-## Event Ledger — `WIRED`
-The operational spine: one append-only event stream (`ledger_events`, namespaced
-`domain.action` types with severity, actor, and subject references). **Source of truth for
-what happened.** `world_events` is kept only as a legacy projection during migration —
-new reasoning should read the ledger.
+## Specialist connectors — theirs, not yours
 
-## Artifact Store — `WIRED`
-Everything the company produces lands in `content_assets`: lifecycle
-`draft → in_review → approved/rejected → published → archived`, plus a separate market-verdict
-`performance_state`. Real-execution outputs dual-write an artifact alongside
-`tasks.output_data`; owner review transitions the artifact and emits `artifact.*` events.
-Browsable at `/artifacts`.
+Shopify admin (drafts only), Meta Ads (read), Shopify analytics (read), Perplexity, Foreplay, Meta Ads Library, Higgsfield (`HIGGSFIELD_API_KEY`). Each pack's **Setup connections** list is the source of truth. You do not open those accounts. A missing connector is a coverage gap in their report.
 
-## Decision Queue — `WIRED`
-The Owner's real approval surface: tasks in `waiting_approval` (plus any legacy
-approval_requests), rendered by one shared ReviewQueue in the Review drawer and
-`/approval-inbox`. Approve/reject releases the workload slot, transitions the artifact,
-and notifies GOD to advance the workflow.
+## Loop Closer — a skill, not a system
 
-## Supabase — `WIRED`
-The database of record underneath the Workflow Engine, tasks, events, and budget data. The
-underlying source of truth for most CEO inputs.
+`performance-analyst` posts the pack. `knowledge` writes lessons into the Notion living layer and hands you the summary. You wake it weekly and at the end of a test. No SQL workflow. Canonical Training Room changes still need Or, and you request them.
 
-## Shopify — `CONDITIONAL` (connector)
-Live store data and publishing, available **only when the connector is connected**. When it
-is not, all store work is draft. Never assume live Shopify actions occurred without a
-connected connector and Owner approval.
+## Supervisor and Board Ops — bots, not database rows
 
-## Meta (Ads) — `PLANNED — NOT YET WIRED`
-Paid-media platform for campaigns and ad performance. Not connected yet. Do not assume Meta
-campaign data or publishing is available.
+They read the groups and the task board. Board Ops is not seated in a Finance Office table. It reports to you. You send Thursday's message to Or. `schedules/` does not fire it.
 
-## Board Meeting — `WIRED`
-The CEO's primary intake channel for owner commands, department escalations, and requests,
-and the channel the CEO responds on (see `agents/ceo/outputs/schema.md`).
+## Not available yet
 
-## Approval Inbox — `WIRED`
-Where actions that cross a Hard Limit or exceed autonomy wait for Owner approval, and where
-prior approvals/rejections are recorded.
+GOD Runtime, workflow engine, `workflow_instances`, `tasks`, `ceo_package`, `world_events`, `ledger_events`, `content_assets`, `budget_events`, Supabase, Decision Queue, Approval Inbox, Board Meeting as a separate app, and a token-cost ledger (the AI Cost Manager must say when the figure is missing).
+
+Do not emit `<action>{"type":"create_task"...}</action>`. Name the agent in the company group.

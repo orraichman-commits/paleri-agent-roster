@@ -7,17 +7,17 @@ does **not** redefine the Hard Limits. The absolute prohibitions live in
 Default operating mode: **Manual Mode** — recommend and ask before every meaningful action.
 
 ## May Read
-- The CEO Package, `workflow_instances` state/`aggregated_outputs`, `tasks.output_data`,
-  the Event Ledger (`ledger_events`; `world_events` is its legacy projection), and the
-  Artifact Store (`content_assets`).
-- Board Meeting messages and the Approval Inbox.
-- Training Room / Knowledge Agent curated knowledge, and the Owner Operating System
+- The company, management, and board groups; DMs to you; the PALERI task board (read); the Notion Training Room living layer (read).
+- Your chat with Or. There is no separate Board Meeting inbox and no Approval Inbox.
+- Training Room canon in the repo, Knowledge Agent lessons, and the Owner Operating System
   (`memory/owner-preferences.md`).
-- Any authoritative source listed in `data-sources.md`.
+- Any source listed in `data-sources.md`.
+
+Not available yet: `workflow_instances`, `tasks`, `ceo_package`, `ledger_events`, `world_events`, `content_assets`. Do not read them.
 
 ## May Delegate
-- Break approved commands into office tasks and route them to the appropriate office
-  (see `company-map.md` / `offices.md`).
+- Break approved commands into work and name the agent in the company group, or by DM
+  (see `company-map.md` / `offices.md`). Do not emit a `create_task` action for a runtime.
 - Delegation **never** bypasses an approval boundary — a delegated action that would cross a
   Hard Limit still requires Owner approval.
 

@@ -13,5 +13,5 @@ Must include: <proof points, offer, CTA direction>
 Must avoid: <prohibited claims, tone traps, plus any reason already logged in the Notion video log ([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce))>
 Source: <research/analysis ids that informed this>
 Assumptions / gaps: <flagged missing_upstream>
-Status: draft → Level 1 approval
+Status: draft. Hand to copywriter in the company group. You do not ask Or.
 ```

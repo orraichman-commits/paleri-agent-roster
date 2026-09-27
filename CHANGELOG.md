@@ -1,5 +1,16 @@
 # Changelog
 
+## Go-live — connections, lifecycle, CEO is the only channel to Or
+
+The 18 packs are what each bot reads on every wake. There is no GOD Runtime and no database.
+
+- **Setup connections** in every `tools/` file: the exact list that bot asks Or to connect once, in its own chat, then stops.
+- **Lifecycle** in every `instructions.md`: SETUP, then STANDBY, then ACTIVE only when the CEO sends ACTIVATE and names the routine. The CEO does not wait for ACTIVATE from another agent.
+- **After SETUP, only the CEO talks to Or.** Reports, alerts, escalations, questions, gate decks, and approval requests go to `paleri os ceo`. The CEO requests Gate 1, Gate 2, and the video approve/reject. The video gate still blocks `shopify` until Or approves and `knowledge` logs the decision and the reason in Notion. Or publishes by hand.
+- **Groups** are documented in `knowledge/memory/funnels.md`: company (all); management (`ceo`, `supervisor`, `board-ops`, `finance-controller`, `marketing`); board (`ceo`, `board-ops`, `supervisor`, `finance-controller`, `ai-cost-manager`, `knowledge`).
+- **Channels** replace the old tables: the three groups, a DM to the CEO, the PALERI task board (written only by the Notion memory bot / `knowledge`; that board is not the knowledge record), and the Notion Training Room living layer. Canon stays in the repo. A token ledger is not available yet.
+- **LIO** is unchanged and external. Prices stay without VAT. Or is עוסק פטור.
+
 ## Knowledge role moves to Notion memory bot — 2026-09-27
 
 Or's follow-up the same day. Prices stay without VAT.

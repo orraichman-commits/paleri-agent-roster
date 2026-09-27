@@ -3,11 +3,11 @@
 Detailed detection criteria for each responsibility.
 
 ## 1. Workflow health
-- Instances stuck in `running` past expected duration (stale `started_at`, no recent events).
-- Instances that never reached `completed` / `failed` (orphaned or hung).
-- A wave that fanned out but never fanned in: `current_wave` not advancing while the wave's
-  tasks are already terminal (fan-in barrier not releasing).
-- Repeated failures/retries on the same step or workflow.
+There is no workflow table. Watch the company group and the task board (read only).
+- A handoff that was announced and then went quiet past the time the funnel allows.
+- Work that was started in the group and never closed with an output or an explicit stop.
+- Parallel work (research-alpha, research-beta, customer-intelligence) where one voice never came back.
+- The same stage failing and being sent back again.
 
 ## 2. Agent coordination
 - Every handoff: did it complete, did the output meet the receiving contract, how many
@@ -15,27 +15,22 @@ Detailed detection criteria for each responsibility.
 - A stage with no output for **2 hours**: one nudge, then an alert to the CEO (who
   updates Or). LIO waiting on the supplier is excluded from this clock.
 - Stop rule: standard-failure send-backs at **2 or more stages** → halt all routines,
-  confirm temporary routines have stopped (LIO's 15-minute supplier check), wait for Or.
+  confirm temporary routines have stopped (LIO's 15-minute supplier check), tell the CEO. Do not message Or.
 - Agents dispatched but never started, or that never reported back.
 - Agents idle while work is queued, or one agent overloaded while others sit idle.
 - Handoffs between waves that did not actually transfer the expected work.
 
 ## 3. Shared-context correctness
-- Steps that declared `consumes` but received nothing (unexpected `missing_upstream`).
-- Unused context: an agent given upstream outputs whose result ignores them (disconnected
-  work — output that does not build on what it consumed).
-- Context that arrived empty when the `wave_plan` implies it should have been populated.
+- An agent who says a named upstream input never arrived.
+- Output that ignores the upstream post it was given (disconnected work).
+- A handoff that names an input the previous agent did not actually post.
 
 ## 4. Output integrity
-- Missing outputs: tasks marked `completed` with empty/absent `output_data`, or a non-empty
-  `ceo_package.missing_outputs`.
-- Disconnected work: output unrelated to its task or its declared upstream inputs.
-- Low-quality / irrelevant outputs: off-topic, generic filler, or clearly non-responsive
-  output — flagged on operational relevance/coherence only, never business merit.
-- Stalled agents: tasks in `in_progress` with an old `work_started_at` and no progress.
+- An agent who claims to be done and posts nothing.
+- Output unrelated to the task or the upstream inputs.
+- Off-topic or generic filler — flag operational relevance only, never business merit.
+- An agent who said they started and then went silent. Evidence is the message and the time, not a row.
 
-## 5. CEO package delivery
-- On workflow completion, verify the CEO actually received the technical package:
-  `state = 'completed'` MUST carry a non-null `ceo_package`.
-- Detect a CEO asked to decide without a package, or a package missing required steps'
-  outputs (`missing_outputs` populated). A blind business brain is a critical incident.
+## 5. What the CEO received
+- When a stage that reports to the CEO finishes, check that `paleri os ceo` was actually given the output in the group or by DM.
+- A CEO asked to decide without that output is a critical incident. There is no `ceo_package`.

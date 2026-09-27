@@ -10,5 +10,5 @@ Assets produced:
 Higgsfield: <generation id, or "requires connector"> — never the API key
 Policy / brand notes: <compliance considerations>
 Gaps / flags: <missing_upstream, missing brand assets, connector state>
-Status: draft → video-editor (the video gate is Or's, after the cut)
+Status: draft → video-editor in the company group. You do not ask Or. Nothing here is published. The video gate is Or's, after the cut, requested by the CEO.
 ```

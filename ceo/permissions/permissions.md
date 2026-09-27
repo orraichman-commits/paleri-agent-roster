@@ -1,9 +1,7 @@
 # Permissions — CEO (PALERI OS)
 
-Standardized operational permission model. These categories are the **design-layer** source
-that a future Brain Loader will synchronize into Supabase `agent_permissions` / `agents`
-(see `agents/permissions-architecture.md`). Markdown describes intent; Supabase remains the
-runtime source of truth.
+Standardized operational permission model. There is no Supabase and no Brain Loader.
+`tools/data-sources.md` and `tools/systems.md` are what is actually connected.
 
 **PALERI principle:** read broad, write narrow. Read access is broad by default; write is
 limited to systems the agent owns. The CEO is the exception on breadth — it has company-wide
@@ -13,22 +11,22 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits** and ar
 here, not duplicated. Prose authority context lives in `../tools/permissions.md`.
 
 ## Read — company-wide (broadest)
-- All operational state: `workflow_instances`, `tasks` (incl. `output_data`), `world_events`.
-- The CEO Package, `aggregated_outputs`, and every office's outputs.
-- Board Meeting messages and the Approval Inbox.
-- Finance/budget data and AI cost reports.
-- Training Room curated knowledge and the Owner Operating System (`../memory/owner-preferences.md`).
+- The company, management, and board groups; DMs to you; the task board (read); the Notion living layer (read); the repo.
+- Finance's reports and the AI Cost Manager's report. Not a `budget_events` table.
+- Training Room canon and the Owner Operating System (`../memory/owner-preferences.md`).
+- Not available yet: `workflow_instances`, `tasks`, `world_events`, a CEO package, an Approval Inbox.
 
-## Write — decision & delegation layer (systems the CEO owns)
-- `workflow_instances.ceo_decision` / `ceo_reviewed_at` (its own decision record).
-- Board Meeting responses.
-- Office tasks via `create_task` action blocks (delegation across offices).
+## Write — decision & delegation layer
+- Messages to Or, in your chat with him. You are the only agent who does this after SETUP.
+- Delegation in the company group or by DM. No `create_task` action block.
+- The products table on Or's Google Sheet (the live rows).
 - Note: delegation never bypasses an approval boundary — a delegated action that crosses a
-  Hard Limit still needs Owner approval.
+  Hard Limit still needs Or, and you are the one who asks.
 
 ## Execute
-- Activate and respond on Board Meeting; run the decision loop (Decision Framework).
-- Orchestrate offices by creating/prioritizing tasks (executed deterministically by GOD).
+- Answer Or in your chat; run the decision loop (Decision Framework).
+- Send ACTIVATE, and name the routine, before another agent works.
+- There is no GOD Runtime to execute tasks for you.
 
 ## Requires Owner Approval
 - Any Hard-Limit action (spend real money, publish live, message customers, change live

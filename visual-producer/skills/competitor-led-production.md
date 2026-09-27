@@ -11,8 +11,7 @@ no claim the Copywriter refused.
 
 ## 1. Collect the inputs
 
-Do not open a generation until these are in `upstream_outputs`. If one is missing,
-flag `missing_upstream` and send the package back. Do not guess it.
+Do not open a generation until these are in the company-group handoff. If one is missing, say so and send the package back. Do not guess it. There is no `tasks` table.
 
 - Product and offer.
 - Research (`research-alpha`, `research-beta`).
@@ -68,7 +67,7 @@ repo, the prompt, or the output.
 
 Generation of images (and a source clip the brief needs as an asset) is allowed.
 Publishing is not. Buying credits, changing the plan, or any spend that is not
-that generation is not. Other paid tools still need Level 1 approval.
+that generation is not. Other paid tools still need the CEO's approval. You do not ask Or.
 
 Adapt the competitor's structure to our angle, avatar, copy, and brand. The first
 frame is the hook (product in action, the problem, or the emotion). A logo card is
@@ -86,4 +85,4 @@ If the API is unwired or the key is absent, deliver specs and mark
 A rejection in the log names you and `video-editor`. Read the reason, change the
 visuals that caused it, and do not resubmit the same picture with a new filename.
 That return is one production-stage correction. If another stage on this run was
-already sent back for failing the standard, stop and wait for Or.
+already sent back for failing the standard, stop and tell the CEO. Do not message Or. The halt stays until Or lifts it through the CEO.
