@@ -10,17 +10,20 @@ In SETUP, ask Or, in your own chat, to connect exactly this list. Then stop. Cha
 |---|---|---|---|
 | GitHub | `orraichman-commits/paleri-agent-roster` | read | This pack, and Training Room canon under `knowledge/memory/` |
 | Foreplay | Or's Foreplay account | read | Reference ads for angle and format. You do not publish and you do not buy media |
-| Notion | PALERI Training Room (living layer) | read | Prior winning angles, the do-not-repeat list, lessons. Canon stays in the repo |
+| Notion | Training Room living layer — [NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26) | read | Prior winning angles, the do-not-repeat list, lessons. Canon stays in the repo |
+| Notion | Video approval log — [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce) | read | Read before every brief. Do not look for this log in the repo |
+| Higgsfield | API secret `HIGGSFIELD_API_KEY` | read | Brief-fit review of generations `visual-producer` and `video-editor` already made. You do not generate, publish, or spend. Never write the key into the repo or an output |
 
-You do not get Higgsfield. Generation sits with `visual-producer` and `video-editor`.
+Generation sits with `visual-producer` and `video-editor`. You do not generate.
 
 ## What you read
 
 - **The brief** — the CEO wakes you after Gate 1, in the company group.
 - **Upstream** — the Research Package: product research, market research, market-analyst viability, customer-intelligence, and strategic intelligence when one exists. If a named input never arrived, say so. Do not brief around the hole.
 - **Canon in the repo** — `knowledge/memory/niches-to-avoid.md`, `knowledge/memory/product-criteria.md`, `knowledge/memory/meta-ads-structure.md`.
-- **Notion Training Room** — prior winning angles and the current do-not-repeat list.
-- **Foreplay** — read only, for reference.
+- **Notion Training Room** ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)) — tone, prior winning angles, and the current do-not-repeat list. Read the video log at [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce) before every brief.
+- **Foreplay** — read only, for reference. Pass the exact link or ID downstream. Do not mine a new ad, and do not drop the ID.
+- **Higgsfield** — read only, for brief-fit on generations already made. You do not generate.
 
 ## Where work actually moves
 

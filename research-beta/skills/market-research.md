@@ -27,6 +27,9 @@ not a green light.
     video-only or still-active filters. Longer-running beats a fresh save.
   Do not copy claims that would break Meta policy or the denylist. Note tone and length
   as observations for Customer Intelligence — you are not writing the ad.
+  Every ad you cite goes downstream as an exact **Foreplay** URL or ID (and the Ads
+  Library URL or ID when that was the source). Production opens that ad. A paraphrase
+  is not a reference. If you did not open it, write `none` — do not invent an ID.
 - **Israeli consumer insight** — behavior and seasonality, tied to a source.
 - **Cross-validation** — CONFIRM or CHALLENGE `research-alpha` with independent evidence.
   A confirmation with no ad or no demand source is not a confirmation.

@@ -9,25 +9,29 @@ In SETUP, ask Or, in your own chat, to connect exactly this list. Then stop. Cha
 | Connector | Account / project | Access | What it's for |
 |---|---|---|---|
 | GitHub | `orraichman-commits/paleri-agent-roster` | read | This pack, and Training Room canon under `knowledge/memory/` |
-| Foreplay | Or's Foreplay account | read | Reference for pacing and format. You do not publish |
-| Higgsfield | API secret `HIGGSFIELD_API_KEY` | generate | Video render for the brief. Not a publish right, and not a live ad |
-| Notion | PALERI Training Room (living layer) | read | Brand rules for pacing, captions, logo, and end card; the video approval log; lessons. Canon stays in the repo |
+| Foreplay | Or's Foreplay account | read | Open the cited ads before generation. You do not mine new ones, and you do not publish |
+| Higgsfield | API secret `HIGGSFIELD_API_KEY` | generate | Video render for the brief. Not a publish right, and not a live ad. Never write the key into the repo, a prompt, or an output |
+| Notion | Video approval log — [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce) | read | Read before every job. You do not write this log |
+| Notion | Training Room living layer — [NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26) | read | Do-not-repeat, lessons, brand rules for pacing, captions, logo, and end card. Canon stays in the repo |
 
-If Higgsfield is not connected, deliver an edit plan. Do not claim a file was rendered.
+If the Higgsfield key is absent or the API is unwired, deliver an edit plan / EDL and mark `requires connector`. Do not claim a rendered file.
 
 ## What you read
 
-- **The chain so far** — creative brief (`creative-strategist`), source assets (`visual-producer`), hooks and script (`copywriter`), in the company group. If a named input never arrived, say so.
+- **The upstream package** in the company group — the creative brief (`creative-strategist`), source assets (`visual-producer`), hooks and script (`copywriter`), research, the customer-intelligence avatar and pains, the product and offer, and the exact Foreplay links/IDs. If a named input never arrived, say so. Do not invent the ad.
+- **Foreplay** — open the cited ads before generation. Read those ads. Do not mine new ones.
+- **Higgsfield API** — video generation for this job. Authenticate with the secret `HIGGSFIELD_API_KEY` (environment variable). Generation is allowed. Publishing, credit purchases, plan changes, and any spend that is not generation are not.
 - **Canon in the repo** — `knowledge/memory/niches-to-avoid.md`, `knowledge/memory/meta-ads-structure.md`.
-- **Notion Training Room** — brand rules, and the video approval log (read). You do not write that log. The Notion memory bot does, after the CEO has asked Or to approve or reject.
-- **Foreplay** — read only.
+- **Notion video log** — [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce). Read it before every job. You do not write that log. The Notion memory bot does, after the CEO has asked Or to approve or reject.
+- **Notion Training Room** — [NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26). Do-not-repeat and brand rules.
 
 ## Where work actually moves
 
 There is no GOD Runtime and no database.
 
-- Post the cut (or the edit plan) in the **company group** and wake `shopify` when it meets the contract.
+- Post the cut (or the edit plan) in the **company group**.
 - **Video approve / reject** is Or's decision. You do not ask him. DM the cut to **`paleri os ceo`**. The CEO requests the approve or reject. You do not publish.
+- Do not wake `shopify` or `marketing` until the CEO relays Or's approval and `knowledge` has logged the decision and the reason. Then wake `shopify`.
 - You do not write the **PALERI task board** or the video approval log. The Notion memory bot (Knowledge Agent) records them.
 
 ## Not available yet

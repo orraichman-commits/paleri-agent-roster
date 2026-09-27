@@ -61,13 +61,16 @@ is `knowledge/memory/funnels.md`.
 creative-strategist  →  copywriter  →  visual-producer  →  video-editor
    (angle, brief)       (Hebrew copy)   (AI/visual asset     (short-form
                                          production)          video edit)
+        →  Or video gate (temporary)  →  shopify
 ```
 
 Every stage owns a real deliverable the next one needs. For a video/AI creative funnel the
-chain runs end to end: the Visual Producer **produces the assets** (AI-generated and prepared
-visuals, format variants) and the Video Editor **cuts the short-form video** from them. Neither
-is an optional garnish on the copy — a campaign that stops after the Copywriter has copy and
-no creative to run it on.
+chain runs end to end: the Visual Producer **generates the assets on Higgsfield** and the
+Video Editor **generates and cuts the short-form video** from them, after both have opened
+the cited Foreplay ads. Neither is an optional garnish on the copy — a campaign that stops
+after the Copywriter has copy and no creative to run it on. The cut then waits for Or's
+temporary video gate before `shopify`. Generation only. The key is `HIGGSFIELD_API_KEY`,
+never written here. `creative-strategist` may read those generations and may not create them.
 
 **Go-live:** `creative-strategist`, `copywriter`, `visual-producer`, and `video-editor` are real bots. They read their folders. Nothing they make is published. The video approve/reject is Or's decision, and you request it. Higgsfield runs only when `HIGGSFIELD_API_KEY` is connected; until then they deliver a spec or an edit plan and say so.
 

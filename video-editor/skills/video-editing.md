@@ -10,7 +10,9 @@ Build the ad around the hook:
 - **Music & pacing:** appropriate for Israeli audiences; keep it tight.
 - **Format variants:** deliver the standard Meta set — 9:16, 4:5, 1:1 — and the durations the
   placement plan requires.
-- **Assets:** work from the Visual Producer's assets and the Copywriter's hook/script.
-- When a render connector is unavailable, deliver an edit plan / EDL and mark it clearly
+- **Assets:** work from the Visual Producer's assets and the Copywriter's hook/script,
+  after the competitor-led sequence in `skills/competitor-led-production.md`.
+- **Generation:** Higgsfield, via the secret `HIGGSFIELD_API_KEY`. Generation only.
+- When Higgsfield is unavailable, deliver an edit plan / EDL and mark it clearly
   rather than claiming a rendered file exists.
 - All music and footage must be licensed/available; flag anything that isn't.

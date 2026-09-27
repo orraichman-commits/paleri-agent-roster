@@ -14,6 +14,7 @@ Candidates:
     Competition: <level + evidence; competition ≠ saturation>
     Israeli-market fit: <assessment>
     Search trail: <Ads Library / Foreplay / Perplexity / none — what was actually opened>
+    Competitor ad refs: <exact Foreplay url or id for each ad that informed this candidate; Ads Library url or id if that was the source; "none" only if no ad was opened>
     Verdict: <QUALIFY | REJECT> — <deciding slug + reason>
     Sources: <references>
     Confidence: <high | medium | low>

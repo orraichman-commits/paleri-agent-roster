@@ -55,7 +55,8 @@ Approved flow: `knowledge/memory/funnels.md`.
   not after a supplier appears.
 - **You check.** Market and competitors: who is already selling, and whether that is
   competition (a good sign) or saturation. Denied niches are not opportunities.
-- **Handoff.** Wake `market-analyst` when the intelligence report meets the contract.
+- **Handoff.** Wake `market-analyst` when the intelligence report meets the contract,
+  including the exact Foreplay link or ID of every ad you used as inspiration.
   You do not message LIO and you do not pick a supplier.
 - **Send-back.** A report that restates Alpha with no independent evidence goes back to
   your own sources, not forward. If Alpha's product fails the denylist, stop and say so.

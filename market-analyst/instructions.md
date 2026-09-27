@@ -68,6 +68,8 @@ Approved flow: `knowledge/memory/funnels.md`.
 - If required research is in `missing_upstream`, score only what the evidence supports, lower
   confidence, and flag the gap; never fill it with assumption.
 - Your report becomes the CEO's `upstream_outputs`; make the scoring legible and sourced.
+- Pass the competitor-ad refs through unchanged. Do not summarize a Foreplay link or ID
+  into a description. If research used an ad and omitted the ref, send that research back.
 
 ## Hard Limits (absolute)
 - Business: no final go/no-go, no budget spend, no launch decisions.

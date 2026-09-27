@@ -48,6 +48,9 @@ Also check:
 - **Search trail** — which source showed the product already selling (Ads Library,
   Foreplay if approved, or neither). A candidate nobody is advertising is higher risk;
   label it. Do not invent an ad you did not see.
+- **Competitor ad refs** — if an ad informed the candidate, the handoff carries the
+  exact Foreplay URL or ID (Ads Library URL or ID when that was the source). A
+  description without a link or ID fails the contract. Production will open that ad.
 
 Cross-check with `research-beta` when their intelligence is in `upstream_outputs`.
 Conflicts are recorded, not smoothed over.

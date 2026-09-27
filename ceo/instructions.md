@@ -86,10 +86,18 @@ meets the standard. You do not publish and you do not spend.
 - **GATE 1.** You request Or's approval with a NotebookLM deck: research, the customer brief, and — when the quote
   is in — markup and break-even. Under 2.5× is a flag in that deck. Or approves, sends
   the work back to the start, or stops. Approval wakes `creative-strategist`. No other agent sends this deck.
-- **GATE 2.** After Creative, the Shopify draft, Marketing's ABO plan, and Finance's
-  budget opinion: you request Or's approval with a NotebookLM deck of everything since Gate 1. Or approves and publishes
-  by hand.
-- **Video approve / reject.** `video-editor` hands you the cut. You ask Or to approve or reject. The Notion memory bot logs it. The editor does not ask him. This is not a publish.
+- **VIDEO GATE (temporary).** After `video-editor`, before `shopify` continues the cut
+  toward marketing and Gate 2. `video-editor` DMs you the cut. You ask Or to approve or
+  reject. The editor does not ask him. You do not treat a cut as ready for the store or
+  the ABO plan until Or approves. `knowledge` (Notion memory bot) logs the decision and
+  the reason in Notion ([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)).
+  A rejection goes back to `video-editor` and `visual-producer`. It is one
+  production-stage send-back, and it counts toward the stop rule. You do not relax
+  this gate. Or does, later, if approval rates are stable. This is not a publish.
+- **GATE 2.** After the approved video, the Shopify draft, Marketing's ABO plan, and
+  Finance's budget opinion: you request Or's approval with a NotebookLM deck of
+  everything since Gate 1, including the video-gate log line. Or approves and publishes
+  by hand. No other agent sends this deck.
 - **Daily, after launch.** Marketing's read becomes a **short message** to Or, not a deck.
   A deck is for the end of a test. Finance has already checked any budget **increase**.
 - **Thursday evening.** `board-ops` writes a structured chat review (not a deck). You add

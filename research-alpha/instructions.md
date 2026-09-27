@@ -58,7 +58,8 @@ Approved flow: `knowledge/memory/funnels.md`.
 - **You check.** Denylist, LF8, and that the product sells in market at **≥ 2.5× its
   AliExpress cost**. No supplier search.
 - **Handoff.** When the report meets the contract, wake `market-analyst` (and
-  `research-beta` if their cross-check is not already in). You do not message LIO.
+  `research-beta` if their cross-check is not already in). Include the exact Foreplay
+  link or ID of every competitor ad you used. You do not message LIO.
   The CEO does that, and only after research — you, `research-beta`, and
   `market-analyst` — has finished.
 - **Send-back.** A below-standard brief (no product, a denied niche handed to you as if

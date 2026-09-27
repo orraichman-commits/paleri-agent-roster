@@ -50,8 +50,10 @@ After SETUP, you do not contact Or. Reports, alerts, escalations, questions, and
 ## Place in the funnels
 Approved flow: `knowledge/memory/funnels.md`.
 
-- **Trigger.** `video-editor` wakes you when the cut meets the contract. Creative's four
-  stages are already done. Gate 1 has passed. Gate 2 has not.
+- **Trigger.** `video-editor` wakes you only after Or has approved the video and
+  `knowledge` has logged the decision and the reason. Creative's four stages are
+  already done. Gate 1 has passed. The temporary video gate has passed. Gate 2 has not.
+  A pending or rejected video does not wake you.
 - **You draft.** Hebrew product page. Prices **without VAT**. Same price the CEO will
   put on the products table. No .90 ending forced by VAT.
 - **Handoff.** A draft that meets the contract wakes `marketing` for the ABO plan.

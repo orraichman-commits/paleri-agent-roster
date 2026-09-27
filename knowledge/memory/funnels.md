@@ -31,6 +31,17 @@ There is no Marketing Office. `marketing` sits in Analytics.
 שערי בעלים נשארים בינתיים בנקודות המפתח. אישור אור אינו ויתור על הסטנדרט, והסטנדרט אינו
 אישור להוציא כסף או לפרסם.
 
+**שער וידאו (זמני, בתחילת הדרך).** כל סרטון שנוצר עובר לאישור או לדחייה של אור לפני
+`marketing` ולפני Gate 2, וגם לפני ש־`shopify` מתעורר. העורך לא פונה לאור. הוא שולח את
+החיתוך למנכ״ל (`paleri os ceo`), והמנכ״ל מבקש את האישור. ההחלטה והנימוק נרשמים ביומן
+הווידאו בחדר האימון ב־Notion
+([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)).
+`shopify` לא מתעורר עד שאור מאשר ו־`knowledge` רושם את ההחלטה והנימוק. דחייה חוזרת
+ל־`video-editor` ול־`visual-producer` עם הנימוק, דרך המנכ״ל. זו החזרת סטנדרט של **שלב
+הייצור** (שלב אחד). שלב אחד שהוחזר פעם אחת הוא תיקון, לא עצירה. אם שלב אחר באותו ריצה
+כבר הוחזר, ה־STOP RULE חל. כששיעור האישורים יציב, אור יכול לרפות את השער לאוטונומיה.
+אף סוכן לא מרפה אותו לבד.
+
 אין תקרת הוצאת מטא חודשית. אישור הוא לפי קמפיין. אין התראת תקרת מחזור.
 
 ## A. Main funnel
@@ -42,6 +53,7 @@ Or (brief, or "hunt") → CEO
   → CEO sends product name + screenshot to LIO   [after research finishes]
   → GATE 1 (NotebookLM deck → Or)
   → creative-strategist → copywriter → visual-producer → video-editor
+  → VIDEO GATE (Or approve/reject — temporary; decision + reason logged)
   → shopify (draft, prices without VAT)
   → marketing (ABO plan + proposed test budget)
   → finance-controller (budget opinion)
@@ -64,8 +76,34 @@ Or (brief, or "hunt") → CEO
 4. **GATE 1.** The CEO requests Or's approval with a **NotebookLM deck**. No other agent sends it. Or approves, sends the work
    back to the start, or stops. A return to the start is Or's decision. It is not a
    standard-failure send-back between bots, and it does not by itself trip the stop rule.
-5. **Creative, then the store draft.** The four creative stages, in order. The video approve/reject is Or's decision, requested by the CEO. `video-editor` does not ask Or. Then
-   `shopify` drafts the product page. Prices are **without VAT**. The draft is not a publish.
+5. **Creative, then the video gate, then the store draft.** The four creative stages,
+   in order. Research, `customer-intelligence`, `creative-strategist`, and `copywriter`
+   pass the exact competitor-ad references (Foreplay links/IDs) in the handoff. A
+   handoff that used an ad and dropped the link or ID fails the standard and goes back.
+   `visual-producer` and `video-editor` collect the brief, the research, the avatar and
+   pains, the angles and hooks, the copy, and the product and offer. Before they
+   generate, they open those ads in Foreplay themselves, cross-check hook, structure,
+   pacing, visuals, offer, and claims against what the earlier agents wrote, flag
+   contradictions, and resolve them. The video is built on that ad's proven structure,
+   adapted to our angle, avatar, copy, and brand. Denylist, Meta ad policy, and ABO
+   grouping by angle / avatar / copy / hook still apply.
+   They generate the images and the video on the Higgsfield API. The key is the secret
+   `HIGGSFIELD_API_KEY` (never written into the repo). Generation is allowed. Publishing
+   is not. Spend beyond generation is not. `creative-strategist` may read generations
+   for brief-fit. They may not generate.
+   **VIDEO GATE (temporary).** Every generated video goes to Or for approve or reject
+   before it moves on to `marketing` or Gate 2. `video-editor` does not ask Or. It DMs
+   the cut to `paleri os ceo`. The CEO requests the approve or reject. `shopify` is not
+   woken until Or approves and `knowledge` has logged the decision and the reason in
+   the Notion video log
+   ([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)). Creative reads that log
+   from Notion before the next job. A rejection returns the video to `video-editor` and
+   `visual-producer` with the reason, relayed by the CEO. That return is one
+   production-stage send-back: a single rejection is a correction, not a stop. It trips
+   the stop rule when another stage on this run was already sent back for failing the
+   standard. Or can later relax the gate once approval rates are stable. Agents do not
+   relax it.
+   Then `shopify` drafts the product page. Prices are **without VAT**. The draft is not a publish.
 6. **ABO.** `marketing` groups the assets by angle / avatar / copy / hook
    (`meta-ads-structure.md`) and proposes a test budget.
 7. **Finance opinion.** `finance-controller` reviews that budget: reasonable, not
@@ -76,8 +114,8 @@ Or (brief, or "hunt") → CEO
    - COD + CAC **≤ ~60%**.
    - Break-even ROAS **below 2**.
    The output is an **opinion to the CEO** for the Gate 2 deck, not a live spend.
-8. **GATE 2.** The CEO requests Or's approval with a NotebookLM deck of **everything since Gate 1**.
-   Or approves and publishes manually. No other agent asks him to publish.
+8. **GATE 2.** The CEO requests Or's approval with a NotebookLM deck of **everything since Gate 1**,
+   including the video-gate log line. Or approves and publishes manually. No other agent asks him to publish.
 
 ## B. Post-publish funnel
 
@@ -101,8 +139,9 @@ set is **winning**, **waiting**, or **weak**.
 The CEO's daily note to Or is a **short message**. A NotebookLM deck is for the **end
 of a test**, not for the daily read.
 
-**Fatigue.** Marketing flags it. Work returns to `creative-strategist`. The new round
-passes **Gate 2 again** before Or republishes.
+**Fatigue.** Marketing flags it. Work returns to `creative-strategist`. A new video
+still passes the temporary video gate (Or approve/reject, logged) before `marketing`
+or Gate 2. The new round passes **Gate 2 again** before Or republishes.
 
 **Weekly, and at the end of a test.** `performance-analyst` stays separate from
 Marketing and does the full-funnel read, including Shopify data. That pack goes to the
@@ -191,11 +230,17 @@ LIO's quote replaces it.
 | `creative-strategist` | `copywriter` | `customer-intelligence` |
 | `copywriter` | `visual-producer` | `creative-strategist` |
 | `visual-producer` | `video-editor` | `copywriter` |
-| `video-editor` | `shopify` | `visual-producer` |
+| `video-editor` (cut ready) | `paleri os ceo`, for the video gate. Not `shopify`. The editor does not ask Or | `visual-producer` |
+| Or approves the video (the CEO relays it; `knowledge` logs it in Notion) | `shopify` (woken by `video-editor` after the log is written) | — |
+| Or rejects the video (the CEO relays the reason) | `video-editor` and `visual-producer`, with the reason | one production-stage send-back; stop rule if another stage on this run already failed |
 | `shopify` | `marketing` | `video-editor` |
 | `marketing` (ABO plan) | `finance-controller` | `shopify` or `creative-strategist` |
 | `finance-controller` (opinion) | CEO, for Gate 2 | `marketing` |
 | Gate 2 approved | Or publishes by hand. The CEO passes the campaign name and ID. Then `marketing` starts the 24h read | — |
+
+Exact Foreplay links/IDs travel with the handoff from `research-alpha` / `research-beta`
+through `market-analyst` and `customer-intelligence` into `creative-strategist` and
+`copywriter`, and from there into production. Production opens those ads before generating.
 
 ## G. Go-live channels, lifecycle, groups
 
@@ -205,9 +250,9 @@ There is no GOD Runtime and no database. Real coordination:
 - **Management group** — `ceo`, `supervisor`, `board-ops`, `finance-controller`, `marketing`.
 - **Board group** — `ceo`, `board-ops`, `supervisor`, `finance-controller`, `ai-cost-manager`, `knowledge`.
 - **DM** to the CEO bot `paleri os ceo`.
-- **PALERI task board** in Notion. Written only by the Notion memory bot, which is `knowledge`.
-- **Training Room living layer** in Notion: lessons, do-not-repeat, video approval log. Same bot writes it.
-- **Canon** stays in this repo, under `knowledge/memory/`.
+- **PALERI task board** in Notion. Written only by the Notion memory bot, which is `knowledge`. The task board is not the knowledge record. Do not read a card as a knowledge fact, and do not write knowledge into a card.
+- **Training Room living layer** in Notion ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)): lessons, do-not-repeat, decision memory. The video approval log is [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce). Canon proposals wait in the Rule Proposals inbox (https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa). The same bot writes the living layer. It does not write knowledge onto the task board.
+- **Canon** stays in this repo, under `knowledge/memory/`. Notion keeps a read-only mirror generated from `main` (https://app.notion.com/p/3e8020daae5b81888781d66360a19207). If the mirror and the repo disagree, the repo wins.
 
 `LIO` is unchanged and external.
 
@@ -215,7 +260,7 @@ There is no GOD Runtime and no database. Real coordination:
 
 The CEO does not wait for ACTIVATE from another agent. After Or verifies the CEO's own connections, Or's next working message in the CEO's chat puts the CEO on duty. The CEO is the one who sends ACTIVATE.
 
-After SETUP, no agent except the CEO contacts Or. Gate 1, Gate 2, and the video approve/reject stay Or's decisions. The CEO requests them. Or publishes by hand.
+After SETUP, no agent except the CEO contacts Or. Gate 1, Gate 2, and the video approve/reject stay Or's decisions. The CEO requests them. `shopify` is not woken until Or approves the video and `knowledge` has logged the decision and the reason. Or publishes by hand.
 
 | Agent | Groups |
 |---|---|

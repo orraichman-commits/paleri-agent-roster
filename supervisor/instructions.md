@@ -81,7 +81,10 @@ do not score the product.
   be quiet until the supplier replies.
 - **Stop rule.** At two or more stages of standard-failure send-back, halt all routines
   and tell the CEO. Do not message Or. The halt stays until Or lifts it through the CEO. Make sure a temporary routine does not keep running — LIO's
-  15-minute check in particular.
+  15-minute check in particular. Or's rejection of a generated video, relayed by the CEO, is one
+  production-stage send-back (`video-editor` and `visual-producer` together). One
+  such rejection is a correction. It becomes a stop only when another stage on that
+  run was already sent back. Do not count the two agents as two stages.
 - **Daily health log.** Written every day. The CEO receives it only on problems, and updates Or. A clean day
   stays on the log. You do not message Or.
 - You do not wake the next business agent. The agent that finished does that.
