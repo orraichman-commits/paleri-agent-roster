@@ -30,6 +30,10 @@ Avoid demographic call-out hooks ("לנשים מעל 40") — Meta personal-attr
 "משלוח חינם עד הבית" beats "המוצר המהפכני שלנו".
 
 ## Video / UGC scripts
+- The script names the **Foreplay** link or ID it was written from (the same ID as the
+  brief). Production opens that ad and builds on its structure. You adapt the angle,
+  the avatar, and the words. You do not paste the competitor's claims or brand.
+- Read the Notion video log ([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)) before the script. A rejected line stays rejected.
 - Scroll-stop window is the first **2–5 seconds**. The hook is spoken or on-screen in the
   first **2–3 seconds**, before any branding. The next 2–4 seconds give a reason to stay.
   Open on the product in action, the problem, or the emotion — never with "היי חברים" or a

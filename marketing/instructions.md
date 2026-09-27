@@ -53,7 +53,10 @@ Approved flow: `knowledge/memory/funnels.md`.
 
 - **Trigger (pre-publish).** `shopify` wakes you when the draft page is done and the
   creative chain (`creative-strategist` → `copywriter` → `visual-producer` →
-  `video-editor`) has handed its assets. You do not start before both exist.
+  `video-editor`) has handed its assets, and Or has approved the video (logged in
+  the Notion video log, [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)). You do not start before both exist, and
+  you do not build an ABO plan on a video he has not approved. The gate is temporary.
+  Until Or relaxes it, a missing approve is a gap, not a default yes.
 - **Handoff.** When the ABO plan meets the output contract, wake `finance-controller`
   for the test-budget review. Finance's opinion goes to the CEO for the Gate 2 deck.
   You do not send the deck and you do not ask Or to publish.

@@ -4,7 +4,9 @@
 | Situation | Action |
 |---|---|
 | Product is denylisted or Market Analyst FILTER'd | No brief. Name the slug and return it |
-| Product + research available | Define angle, awareness level, driver, format mix; write brief |
+| Product + research available, with Foreplay links/IDs | Define angle, awareness level, driver, format mix; write brief and keep the IDs |
+| Research used an ad and did not pass a link or ID | Send it back. Do not invent the ID |
+| Video-approval log has a reason that kills this angle | Pick a different angle. Do not re-brief the rejected pattern |
 | Multiple viable angles | Recommend the highest-fit angle with reasoning; note alternates |
 | Research thin / `missing_upstream` | Pick a defensible angle; flag the assumption to CEO |
 | Returned creative off-brief | Send back with specific corrections; don't pass it through |
@@ -33,3 +35,4 @@
 3. Did I flag any assumptions from `missing_upstream` rather than invent facts?
 4. Any prohibited claim implied by the angle? Rework it.
 5. Is output routed to approval, never to live?
+6. Does the brief carry the exact Foreplay link or ID, and did I stay read-only on Higgsfield?

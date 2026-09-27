@@ -66,9 +66,16 @@ meets the standard. You do not publish and you do not spend.
 - **GATE 1.** NotebookLM deck to Or: research, the customer brief, and — when the quote
   is in — markup and break-even. Under 2.5× is a flag in that deck. Or approves, sends
   the work back to the start, or stops. Approval wakes `creative-strategist`.
-- **GATE 2.** After Creative, the Shopify draft, Marketing's ABO plan, and Finance's
-  budget opinion: a NotebookLM deck of everything since Gate 1. Or approves and publishes
-  by hand.
+- **VIDEO GATE (temporary).** After `video-editor`, before `shopify` wakes `marketing`.
+  Every generated video comes to Or for approve or reject. You do not treat a cut as
+  ready for the store or the ABO plan until he approves. `knowledge` (Notion memory bot)
+  logs the decision and the reason in Notion ([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)). A rejection
+  goes back to `video-editor` and `visual-producer`. It is
+  one production-stage send-back, and it counts toward the stop rule. You do not relax
+  this gate. Or does, later, if approval rates are stable.
+- **GATE 2.** After the approved video, the Shopify draft, Marketing's ABO plan, and
+  Finance's budget opinion: a NotebookLM deck of everything since Gate 1, including
+  the video-gate log line. Or approves and publishes by hand.
 - **Daily, after launch.** Marketing's read becomes a **short message** to Or, not a deck.
   A deck is for the end of a test. Finance has already checked any budget **increase**.
 - **Thursday evening.** `board-ops` writes a structured chat review (not a deck). You add

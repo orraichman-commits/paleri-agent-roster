@@ -18,6 +18,8 @@ it cannot launder the denied one.
 When upstream ad intelligence includes Foreplay or Ads Library notes, use them for
 **tone and length** the market already responds to. They are evidence about the buyer,
 not copy to paste, and not a license to repeat a non-compliant claim.
+Pass the exact Foreplay link or ID (Ads Library link or ID when that was the source)
+in the CORE of the brief. Do not drop it to save bytes. Production opens that ad.
 
 ## 1. Avatar Construction
 Build 1 primary avatar (+ up to 2 secondary) per product/campaign. An avatar is only

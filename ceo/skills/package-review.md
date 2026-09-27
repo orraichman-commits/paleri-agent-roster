@@ -33,8 +33,10 @@ raw evidence into a business decision. This is the methodology behind every `ceo
    excited" is not one. Unit-economics sanity (`knowledge/memory/unit-economics.md`) that
    the Market Analyst skipped is a CONDITIONAL at best: you do not spend to discover a
    margin the sheet already fails. **Gates:** Gate 1 and Gate 2 are NotebookLM decks to
-   Or (`knowledge/memory/funnels.md`). Creative does not start before Gate 1. Publish
-   does not happen before Gate 2, and you do not publish it. **Stop rule:** standard-failure
+   Or (`knowledge/memory/funnels.md`). Creative does not start before Gate 1. A generated
+   video does not move to `marketing` or Gate 2 before Or's temporary video gate
+   (approve/reject, logged). Publish does not happen before Gate 2, and you do not
+   publish it. **Stop rule:** standard-failure
    send-backs at two or more stages halt the run. You wait for Or. You do not commission
    another lap.
 4. **Evidence quality.** Are claims sourced and consistent with each other? Contradictions

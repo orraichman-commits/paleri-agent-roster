@@ -5,6 +5,10 @@
 |---|---|
 | New CEO decision + outcome available | Record decision, rationale, outcome; link to workflow |
 | Owner approves/rejects with feedback | Draft an owner-preference update; mark pending approval |
+| Or approves or rejects a generated video | Append the decision and his reason to [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce), verbatim, before the next handoff |
+| A lesson or do-not-repeat item is ready | Write it to [NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26). Do not edit a canon file |
+| Or approves a proposal in the Notion inbox | Open a PR with that approved text. Do not edit canon in place |
+| Or rejects a proposal | Leave it rejected in the inbox. Do not open a PR |
 | New entry contradicts existing knowledge | Record the conflict; flag both for owner review; do not overwrite |
 | Entry unused/unconfirmed for a long time | Flag as stale; lower confidence; propose review |
 | Agent/CEO asks a knowledge question | Answer with sourced facts + confidence; mark gaps as unknown |

@@ -1,5 +1,46 @@
 # Changelog
 
+## Knowledge role moves to Notion memory bot — 2026-09-27
+
+Or's follow-up the same day. Prices stay without VAT.
+
+The Knowledge Agent role is held by **Notion memory bot** (also called Notion Manager).
+Its task-board coordinator role stays apart from the knowledge record.
+
+- **Repo canon**, read by path: `niches-to-avoid.md`, `product-criteria.md`,
+  `meta-ads-structure.md`, `unit-economics.md`, `funnels.md`, plus instruction packs,
+  skills, and permissions. An approved rule lands here only as a PR. Notion keeps a
+  read-only mirror, generated from `main` after each merge, never hand-edited:
+  https://app.notion.com/p/3e8020daae5b81888781d66360a19207
+- **Notion living layer** ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)): lessons and the
+  do-not-repeat list, decision memory, and product and campaign history. Loop Closer
+  writes there. A canon proposal goes to the Rule Proposals inbox
+  (https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa) and becomes a PR only
+  after Or approves it.
+- **Video log** leaves the repo. It lives at [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce). Creative reads it from Notion before every job. The gate logic is unchanged.
+
+## Higgsfield generation and the video gate — 2026-09-27
+
+Or's decision. Prices stay without VAT. He is עוסק פטור.
+
+- **Higgsfield.** `visual-producer` and `video-editor` generate the images and videos
+  they need on the Higgsfield API. The key is the secret `HIGGSFIELD_API_KEY`. It is
+  not in the repo. Generation is allowed. Publishing is not. Spend beyond generation
+  is not. `creative-strategist` has read access only, for brief-fit review.
+- **Working method.** Production collects the brief, research, avatar and pains, angles
+  and hooks, copy, and the offer. Before generating, they open the competitor ads in
+  Foreplay. Research, customer intelligence, the strategist, and the copywriter pass
+  the exact Foreplay links/IDs. Production cross-checks hook, structure, pacing,
+  visuals, offer, and claims, then builds on that ad's structure, adapted to our
+  angle, avatar, copy, and brand. Denylist, ad policy, and ABO by angle / avatar /
+  copy / hook still apply.
+- **Video gate.** Temporary. Every generated video goes to Or before `shopify` continues
+  it toward marketing and Gate 2. Decision and reason go in the Notion video log
+  ([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)). Creative reads it before the next job.
+  Rejection returns to `video-editor` and `visual-producer` and counts as one
+  production-stage send-back under the stop rule. Or can relax the gate later.
+  Agents cannot.
+
 ## Approved workflow — marketing, funnels, עוסק פטור
 
 Or approved the operating design. It is now the roster.

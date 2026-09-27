@@ -67,13 +67,16 @@ is `knowledge/memory/funnels.md`.
 creative-strategist  →  copywriter  →  visual-producer  →  video-editor
    (angle, brief)       (Hebrew copy)   (AI/visual asset     (short-form
                                          production)          video edit)
+        →  Or video gate (temporary)  →  shopify
 ```
 
 Every stage owns a real deliverable the next one needs. For a video/AI creative funnel the
-chain runs end to end: the Visual Producer **produces the assets** (AI-generated and prepared
-visuals, format variants) and the Video Editor **cuts the short-form video** from them. Neither
-is an optional garnish on the copy — a campaign that stops after the Copywriter has copy and
-no creative to run it on.
+chain runs end to end: the Visual Producer **generates the assets on Higgsfield** and the
+Video Editor **generates and cuts the short-form video** from them, after both have opened
+the cited Foreplay ads. Neither is an optional garnish on the copy — a campaign that stops
+after the Copywriter has copy and no creative to run it on. The cut then waits for Or's
+temporary video gate before `shopify`. Generation only. The key is `HIGGSFIELD_API_KEY`,
+never written here. `creative-strategist` may read those generations and may not create them.
 
 **Runtime reality (do not blur it):** real execution is gated in code to `copywriter` today
 (`agent-runtime`); the other three return simulation stubs. That is an execution-wiring
