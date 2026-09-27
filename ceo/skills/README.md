@@ -1,17 +1,16 @@
 # CEO Skills
 
-This folder holds the CEO's on-demand know-how, loaded by the **Brain Loader**
-(`src/lib/ceo/prompt.ts` → `loadCeoBrain`). Composition is deterministic:
+This folder holds the CEO's on-demand know-how. There is no Brain Loader. Read the file
+that matches the message in front of you.
 
-- **always loaded:** `../instructions.md`, `../memory/owner-preferences.md`,
+- **Always:** `../instructions.md`, `../memory/owner-preferences.md`,
   `../memory/kpis.md`, `../outputs/schema.md`
-- **per call context:** board_meeting → decision-framework, operating-procedure, delegation;
-  package_review → decision-framework, package-review
-- **keyword-triggered:** any other skill whose `trigger_keywords` frontmatter matches the
-  owner's message (e.g. unit-economics on pricing/margin talk)
+- **A decision, a delegation, or a message to Or:** `decision-framework.md`, `operating-procedure.md`, `delegation.md`
+- **A stack of specialist posts to judge:** `decision-framework.md`, `package-review.md`
+- **A topic match:** any other skill whose `trigger_keywords` frontmatter matches
+  Or's message (e.g. unit-economics on pricing/margin talk)
 
-`agents/instructions/ceo-agent.md` remains only as the **fallback brain** if the modular
-tree fails to load.
+There is no fallback brain in another repo. This folder is what you read.
 
 ## Frontmatter convention (every skill file)
 

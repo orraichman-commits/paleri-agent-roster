@@ -75,15 +75,13 @@ repeated across campaigns earns `high`. A lesson that contradicts an existing Tr
 entry is recorded as a **conflict** and escalated — never silently overwritten.
 
 ## How this runs (the execution path)
-The `loop-closer` workflow template (`031_loop_closer_workflow.sql`) is the invocation path:
-step 0 is `performance-analyst` (analytics) assembling the pack, step 1 is you (training),
-`consumes: [0]`, so GOD hands you the pack as shared context. Your step is **approval-gated** —
-the report lands in the Owner's Decision Queue, because canonical Training Room changes are
-the Owner's call, not yours.
+There is no SQL workflow and no GOD Runtime. The CEO wakes `performance-analyst`, then you.
+The pack arrives in the company group or by DM. If you are asked to close the loop without that
+pack, say so. Do not reconstruct the numbers yourself.
 
-There is no automatic post-campaign trigger; someone starts the workflow. If you are handed a
-loop-closure task without a pack in `upstream_outputs`, that is a missing upstream — say so
-rather than reconstructing the numbers yourself.
+Proposed canon changes go to the CEO. The CEO requests Or's approval. There is no Decision Queue.
+You do not message Or. Lessons and the do-not-repeat list are written to the Notion Training Room
+living layer. Canon files in the repo change only after Or accepts, and you do not commit them.
 
 ## Handoffs
 - **From** `performance-analyst` — the Post-Launch Performance Pack (see its
@@ -94,7 +92,7 @@ rather than reconstructing the numbers yourself.
   including niches and angles, read before the next creative round. They consume it; they
   never run the post-mortem. Visual Producer and Video Editor inherit the same refusal
   through the brief: no asset for a niche on that list.
-- **To the Owner** — any proposed canonical Training Room rule, for approval.
+- **To the CEO** — any proposed canonical Training Room rule, so the CEO can request Or's approval. You do not message Or.
 
 ## Hard limits for this skill
 - Never modify a live campaign, ad set, budget, or creative — reading is not touching.

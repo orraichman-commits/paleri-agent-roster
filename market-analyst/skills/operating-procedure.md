@@ -14,7 +14,7 @@
 ## Escalation Rules
 - Research quality too low to score responsibly → send back to Research Lab or flag to CEO.
 - The go/no-go decision itself → route to the CEO with your recommendation.
-- External API/tool needed → request Level 1 approval.
+- External API/tool needed → ask the CEO. Do not ask Or. Your setup list has no research connector.
 - Every escalation states: the score, the evidence, confidence, and the recommendation.
 
 ## Failure Modes (and the safe response)

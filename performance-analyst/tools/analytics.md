@@ -1,6 +1,6 @@
 # Tools — Analytics Connectors (Performance Analyst)
 
-External performance data sources. Available only when connected; state clearly when a
+External performance data sources. The exact SETUP list is in `data-sources.md`. Available only when connected; state clearly when a
 connector is unavailable and mark the resulting blind spots.
 
 - **Meta Ads** — campaign performance (ROAS, spend, CTR, CPA) when connected. Reading

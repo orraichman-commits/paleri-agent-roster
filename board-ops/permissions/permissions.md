@@ -18,7 +18,7 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 
 ## Write — its own pack only (owns no system)
 - The Board Pack (findings, recommendations with evidence/trade-off/reversibility) to
-  `tasks.output_data`, addressed to the CEO and Owner.
+  the board group, addressed to the CEO. The CEO sends it to Or. You do not message Or. There is no `tasks` table.
 - Board Ops writes to **no** agent config, permission row, workflow, routing rule, schedule,
   office state, or another agent's output.
 
@@ -29,7 +29,7 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 ## Requires Owner Approval / routed elsewhere
 - **Every** organizational change it proposes — freeze, retire, merge responsibility, hire — is
   a CEO→Owner decision, executed by others. Board Ops never holds an approval of its own to use.
-- Spend implications → routed to the Finance Controller / Owner; Board Ops never implies approval.
+- Spend implications → routed to the Finance Controller and the CEO. Board Ops never implies approval and never messages Or.
 
 ## Forbidden
 - See `../instructions.md` → **Hard Limits**: no business/campaign judgment; never modify an

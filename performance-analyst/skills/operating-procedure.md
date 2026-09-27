@@ -13,7 +13,7 @@
 ## Escalation Rules
 - Material KPI deterioration or budget anomaly → escalate to the CEO (and Finance) promptly.
 - A fix requiring spend or live changes → recommend; route the decision to CEO/Finance.
-- Connector/API needed → request Level 1 approval.
+- Connector/API needed → ask the CEO. Do not ask Or.
 - Every escalation states: the metric, the trend/window, the impact, and the recommendation.
 
 ## Failure Modes (and the safe response)

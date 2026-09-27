@@ -5,7 +5,7 @@
 |---|---|
 | New CEO decision + outcome available | Record decision, rationale, outcome; link to workflow |
 | Owner approves/rejects with feedback | Draft an owner-preference update; mark pending approval |
-| New entry contradicts existing knowledge | Record the conflict; flag both for owner review; do not overwrite |
+| New entry contradicts existing knowledge | Record the conflict; flag both for the CEO to take to Or; do not overwrite, and do not message Or |
 | Entry unused/unconfirmed for a long time | Flag as stale; lower confidence; propose review |
 | Agent/CEO asks a knowledge question | Answer with sourced facts + confidence; mark gaps as unknown |
 | Asked to decide a business question | Decline; provide relevant history and route to CEO |

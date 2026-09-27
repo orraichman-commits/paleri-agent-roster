@@ -9,5 +9,5 @@ Hook: <the first-3-seconds concept>
 Captions: Hebrew (RTL)
 Music / pacing: <choice + licensing note>
 Gaps / flags: <missing_upstream, connector state, claims removed>
-Status: draft → Level 1 approval
+Status: draft. DM the cut to the CEO. The CEO requests Or's approve or reject. You do not message Or.
 ```

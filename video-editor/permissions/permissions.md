@@ -13,8 +13,8 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 - Training Room brand rules for pacing, captions, logo/end-card usage (curated by Knowledge Agent).
 
 ## Write — Creative Office only (owned system)
-- Video variants (or an edit plan / EDL when no render connector) to `tasks.output_data`,
-  labelled by aspect ratio, duration, placement; routed to Level 1 approval.
+- Video variants (or an edit plan when Higgsfield is not connected), posted in the company group,
+  labelled by aspect ratio, duration, and placement. DM the cut to the CEO for Or's approve/reject. You do not ask Or. There is no `tasks` table.
 
 ## Execute
 - Edit short-form video; overlay Hebrew captions; choose music/pacing; use render tools only

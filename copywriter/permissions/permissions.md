@@ -19,7 +19,7 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits** and re
 
 ## Write — Creative Office only (owned system)
 - Copy drafts to its own `tasks.output_data`, labelled by output type and language.
-- Submission of drafts to the Approval Inbox.
+- Posting drafts in the company group for `visual-producer`. There is no Approval Inbox. You do not ask Or.
 - No writes to any other office's systems, no live channels.
 
 ## Execute

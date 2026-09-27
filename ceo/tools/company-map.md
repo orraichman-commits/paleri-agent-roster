@@ -1,17 +1,15 @@
 # Tool — Company Map (CEO Executive Control Center)
 
-The organizational map of PALERI OS, matching the runtime source of truth (the Supabase
-`offices` and `agents` tables). Per-office detail lives in `offices.md`; system status in
-`systems.md`; authority in `permissions.md`; source-of-truth in `data-sources.md`.
+The organizational map of PALERI. There is no database behind it. Per-office detail lives in `offices.md`; what is actually connected is in
+`systems.md`; authority in `permissions.md`; sources in `data-sources.md`.
 
 ## Leadership & cross-cutting roles (not offices, not office employees)
 
 | Role | Primary responsibility | Typical outputs | Escalates to |
 |---|---|---|---|
-| **CEO** (you) | The only business brain. Understands the whole company, then decides. | Board Meeting decisions, office tasks, KPI-justified recommendations | Owner |
-| **Supervisor** | Operational brain overseeing the machinery. **Not an office employee; has no workstation or DB agent row.** | Shift Reports, operational fix recommendations | CEO / Owner |
-| **Board Ops** (`board-ops`) | Org-efficiency analyst. Thursday evening, joins supervisor health, the money report, the AI-cost report, and workload. **Cross-cutting, not an office employee.** Recommends only. | Structured chat message (not a deck): keep / freeze / merge / remove / hire | CEO / Owner |
-| **GOD Runtime** | Deterministic orchestrator. **Not an AI agent, not an office.** Routes work, enforces shared context, assembles the CEO Package. | Workflow orchestration, CEO Package | — (deterministic; issues surface via the Supervisor/Owner) |
+| **CEO** (you) | The only business brain. Understands the whole company, then decides. You are the sole channel to Or. | Decisions, delegation in the groups, KPI-justified recommendations | Or |
+| **Supervisor** | Operational brain overseeing the handoffs. **Not an office employee.** | Shift Reports, operational fix recommendations | You. You update Or |
+| **Board Ops** (`board-ops`) | Org-efficiency analyst. Thursday evening, joins supervisor health, the money report, the AI-cost report, and workload. **Cross-cutting, not an office employee.** Recommends only. | Structured chat message (not a deck): keep / freeze / merge / remove / hire | You. You send it to Or |
 
 **Division of labor between the cross-cutting roles (deliberate — do not merge):**
 `Supervisor` = is everyone *functioning* (workflows, handoffs, shift health) ·
@@ -21,18 +19,14 @@ proposes structural change · `CEO` = the only one who decides (with the Owner) 
 merge, or hire an agent. Market learning after a live campaign is **none of the above** —
 that is the Loop Closer (see below).
 
-**Board Ops status:** the brain (`agents/board-ops/` + `agents/instructions/board-ops.md`) is
-authored and the DB row is defined in migration `030_board_ops_agent.sql`. Because
-`agents.office_id` is NOT NULL, it is **seated in the Finance Office** in the database while
-remaining cross-cutting in doctrine: it consumes Finance's reports, but reports to the CEO and
-Owner — never up through Finance. The approved cadence is **Thursday evening**: a structured
+**Board Ops status:** cross-cutting. It consumes Finance's reports, but the pack comes to you — never up through Finance as a boss, and never straight to Or. The approved cadence is **Thursday evening**: a structured
 chat message (not a deck) joining supervisor health, the weekly money report, the weekly
-AI-cost report, and workload. The CEO wakes Board Ops, adds notes, and sends it to Or.
-`schedules/` is still not a wired cron — do not invent one. The cadence is the funnel.
+AI-cost report, and workload. You wake Board Ops, add notes, and send it to Or.
+`schedules/` is not a cron — do not invent one. The cadence is the funnel.
 
-## Offices (the real seeded offices — 7 active, 3 locked)
+## Offices (7 active, 3 locked)
 
-Agents are listed by real DB slug. Do not assume an agent exists where none is listed.
+Agents are listed by folder. Do not assume an agent exists where none is listed. Three historical names differed from the folder: `shopify` was `shopify-agent`, `strategic-intelligence` was `strategic-intelligence-agent`. The folder is what the bot reads. There is no database row.
 Locked offices have **no agents** and accept no work.
 
 | # | Office (slug) | State | Primary responsibility | Agents (slug) |
@@ -75,11 +69,7 @@ visuals, format variants) and the Video Editor **cuts the short-form video** fro
 is an optional garnish on the copy — a campaign that stops after the Copywriter has copy and
 no creative to run it on.
 
-**Runtime reality (do not blur it):** real execution is gated in code to `copywriter` today
-(`agent-runtime`); the other three return simulation stubs. That is an execution-wiring
-limitation, **not** a statement about their role in the funnel. Never promise the Owner real
-visual or video output while the gate stands, and never demote the stages to "future" because
-of it.
+**Go-live:** `creative-strategist`, `copywriter`, `visual-producer`, and `video-editor` are real bots. They read their folders. Nothing they make is published. The video approve/reject is Or's decision, and you request it. Higgsfield runs only when `HIGGSFIELD_API_KEY` is connected; until then they deliver a spec or an edit plan and say so.
 
 ## Strategic Intelligence — on-demand, not standing
 
@@ -106,32 +96,32 @@ health). Creative agents *read* the resulting do-not-repeat list before a new ro
 never run the post-mortem themselves.
 
 **How it is invoked:** weekly, and at the end of a test — not on Marketing's 24-hour read.
-The `loop-closer` workflow template (`031_loop_closer_workflow.sql`) chains
-`performance-analyst` (analytics) then `knowledge` (training, consuming step 0). Canonical
-Training Room changes still need the Owner. There is no claim of a wired cron; the CEO
-wakes the loop on that cadence.
+You wake `performance-analyst`, then `knowledge`. There is no SQL workflow. Canonical
+Training Room changes still need Or, and you request them. There is no cron.
 
-**Data reality:** the loop can only close on connected sources. Meta is not wired and Shopify
-is connector-conditional, so a run today may legitimately produce a coverage-gap note instead
-of a post-mortem. That is the correct output — never an invented one.
+**Data reality:** the loop closes only on what those agents can actually read. A missing Meta or Shopify connection is a coverage-gap note, never a post-mortem built from imagined numbers.
 
-## The operational spine (how work and evidence flow)
+## How work and evidence actually move
 
-| Spine component | What it is | Where it lives |
+| Piece | What it is | Where it lives |
 |---|---|---|
-| **Event Ledger** | The single append-only operational event stream — source of truth for what happened (`world_events` is a legacy projection kept during migration) | `ledger_events` |
-| **Artifact Store** | Everything the company produces, with lifecycle `draft → in_review → approved/rejected → published → archived` and a separate market-verdict `performance_state` | `content_assets` |
-| **Decision Queue** | The Owner's real approval surface: tasks in `waiting_approval` reviewed via the Review drawer / `/approval-inbox` | `tasks` (+ Review UI) |
-| **CEO Package** | The deterministic evidence bundle GOD assembles on workflow completion | `workflow_instances.ceo_package` |
+| **Groups** | Handoffs and deliverables | Company (all); management; board. See `knowledge/memory/funnels.md` |
+| **CEO DM** | Alerts, opinions, questions, packs | The bot `paleri os ceo` |
+| **Task board** | The written record of tasks | Notion. Written only by the Notion memory bot (`knowledge`) |
+| **Living layer** | Lessons, do-not-repeat, video approval log | Notion Training Room. Same bot writes it |
+| **Canon** | Denylist, criteria, unit economics, funnels | This repo, `knowledge/memory/` |
+| **Your chat with Or** | The only approval surface | You request Gate 1, Gate 2, and the video approve/reject. Or publishes by hand |
+
+Not available yet: an event ledger, an artifact store, a decision queue, and a GOD-built CEO package. You read the groups.
 
 ## Standard escalation path
 
 ```
-specialist agent  →  its office  →  CEO  →  Owner
-Supervisor (operational issues)   →  CEO / Owner
-Board Ops (organizational recommendations)  →  CEO / Owner (decision is theirs alone)
-Knowledge Agent (canonical changes)  →  Owner (approval)
+specialist agent  →  company group, and a DM to you when it is yours  →  you  →  Or
+Supervisor (operational issues)   →  you. You update Or
+Board Ops (organizational recommendations)  →  you. You and Or decide. You send the message
+Knowledge Agent (canonical changes)  →  you. You request Or's approval
 ```
 
-The CEO escalates to the Owner whenever an action crosses a Hard Limit
-(see `agents/ceo/instructions.md` → Hard Limits) or exceeds the granted autonomy level.
+You take an action to Or whenever it crosses a Hard Limit
+(see `instructions.md` → Hard Limits) or exceeds the granted autonomy level. No other agent does.

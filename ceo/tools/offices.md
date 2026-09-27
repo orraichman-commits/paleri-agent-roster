@@ -1,7 +1,6 @@
 # Tool — Offices (CEO Executive Control Center)
 
-Per-office detail for the **real seeded offices** (Supabase `offices` table — the runtime
-source of truth). The overview map is in `company-map.md`. Agents are named by real DB slug.
+Per-office detail. There is no database. The overview map is in `company-map.md`. Agents are named by folder.
 Locked offices have no agents and accept no work — do not route anything there.
 
 ---
@@ -9,7 +8,7 @@ Locked offices have no agents and accept no work — do not route anything there
 ## CEO Office (`ceo`) — active
 - **Mission:** Business judgment for the whole company.
 - **Agents:** `ceo` (you — the only business brain).
-- **Note:** GOD and the Supervisor are NOT here; they are cross-cutting runtime roles, not office employees.
+- **Note:** There is no GOD Runtime. The Supervisor is not in this office; it is cross-cutting, and it reports to you.
 
 ## Research Lab (`research`) — active
 - **Mission:** Produce the complete Research Package: what to sell, the market it lives in, and who buys it.
@@ -44,7 +43,7 @@ Locked offices have no agents and accept no work — do not route anything there
 - **Mission:** Run the store layer as drafts; live changes are Owner-gated.
 - **Agents:** `shopify-agent`.
 - **Expected outputs:** Hebrew product page drafts (approval-gated); store optimization proposals.
-- **Escalates to CEO/Owner when:** any live store change (publish, live price, theme) needs Level 4 approval.
+- **Escalates to you when:** any live store change (publish, live price, theme) would be needed. You request Or's approval. The Shopify agent does not ask him. Or publishes by hand.
 
 ## Analytics Office (`analytics`) — active
 - **Mission:** Turn data into decision-ready insight, gate viability, and organize the Meta test.
@@ -68,7 +67,7 @@ Locked offices have no agents and accept no work — do not route anything there
 - **Mission:** Protect PALERI's money and keep spend efficient.
 - **Agents:** `finance-controller`, `ai-cost-manager`.
 - **Expected outputs:** Financial summaries, spend decisions, AI cost-efficiency reports.
-- **Escalates to CEO/Owner when:** spend is at/above threshold, or on overruns/spikes.
+- **Escalates to you when:** spend is at/above threshold, or on overruns. You ask Or when the decision is his. Finance does not message him.
 
 ## Training Room (`training`) — active
 - **Mission:** Be the institutional memory of the company.
@@ -82,27 +81,23 @@ Locked offices have no agents and accept no work — do not route anything there
 
 ## Board Ops (`board-ops`) — cross-cutting
 - **Mission:** Periodically join operational health, AI/finance cost, and workload into one
-  organizational recommendation set for the Owner and CEO.
+  organizational recommendation set for you to send to Or.
 - **Inputs:** Supervisor Shift Reports, AI Cost Manager reports, Finance Controller summaries,
   office/agent workload status.
 - **Expected outputs:** A Thursday-evening chat message — keep / freeze / merge / remove / hire,
   token waste, load imbalance — **recommendations only**. Not a deck.
 - **Hard boundary:** never changes live config, never removes an agent, never approves spend.
   The CEO and Owner decide; Board Ops only assembles the case.
-- **DB seat:** `agents.office_id` is NOT NULL, so the row lives in the **Finance Office**
-  (migration `030_board_ops_agent.sql`) while the role stays cross-cutting: it consumes
-  Finance's reports but reports to the CEO and Owner, never up through Finance. A workflow
-  step declaring `board-ops` must therefore name `office_slug: finance`.
-- **Thursday evening — the approved cadence.** A structured chat message, not a deck. The
-  CEO wakes Board Ops, adds notes, and sends the message to Or. `schedules/` is not a wired
-  cron; do not invent one, and do not describe the review as optional.
+- **Seat:** cross-cutting. It consumes Finance's reports and reports to you, never up through Finance and never straight to Or.
+- **Thursday evening — the approved cadence.** A structured chat message, not a deck. You
+  wake Board Ops, add notes, and send the message to Or. `schedules/` is not a cron; do not invent one, and do not describe the review as optional.
 
 ---
 
 ## Locked offices (seeded, no agents, accept no work)
 
 ## Publishing Office (`publishing`) — locked
-- **Future mission:** The only place assets go live externally (Publisher role — never the creating specialist). Until unlocked, nothing publishes automatically; publishing decisions are CEO→Owner calls executed manually.
+- **Future mission:** The only place assets go live externally (Publisher role — never the creating specialist). Until unlocked, nothing publishes automatically; you request the publish, and Or does it by hand.
 - **Planned shape when it opens (not now):** once the store is live externally, this office gets
   **one single Publishing agent** — not a full office of specialists. Approved direction only;
   no brain, no slug, no DB row exists yet. Do not create it before the Owner opens the office.
@@ -122,8 +117,7 @@ Locked offices have no agents and accept no work — do not route anything there
 There is **no Marketing Office**. `marketing` is an Analytics agent: it builds the ABO test
 and reads it daily. The CEO still decides, and Or still publishes and changes budgets by
 hand. There is also no Product/Operations/Customer-Experience/Data/Automation office — those
-were an older conceptual model. Store operations live in the Shopify Office; orchestration
-is the GOD Runtime (not an office).
+were an older conceptual model. Store operations live in the Shopify Office. There is no GOD Runtime. Handoffs move in the chat groups.
 
 Do not create a Marketing Office. The daily read living in Analytics is the approved design,
 not a gap.

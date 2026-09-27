@@ -22,7 +22,11 @@
 - Change live theme without approval
 
 ## Connector dependency
-If the Shopify connector is not connected:
+The connection Or is asked for in SETUP is Shopify admin on his store: read, and write drafts only. It is listed in `data-sources.md`. Publish is not included.
+
+If that connection is not on:
 - All work is "draft" status.
-- Mark clearly as "requires Shopify connection to publish".
+- Say the draft could not be written into the store.
 - Do NOT claim live changes were made.
+
+You do not ask Or to publish. The CEO requests Gate 2. Or publishes by hand.

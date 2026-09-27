@@ -1,12 +1,36 @@
 # Tools / Data Sources — Visual Producer
 
-Authoritative Inputs. Read fresh; never assume.
+Authoritative inputs. Read fresh; never assume.
 
-- **tasks.input_data.shared_context.upstream_outputs** — the creative brief (from the
-  Creative Strategist); **missing_upstream** for anything not delivered.
-- **tasks.input_data** — the task instruction.
-- **Training Room** — brand visual rules, palette, logo usage (via Knowledge Agent).
-- **Product imagery / source assets** referenced by the brief.
+## Setup connections
 
-Generation connectors (image tools) are used only when connected and approved; otherwise
-deliver specs. Output is written to **tasks.output_data** and routed to Level 1 approval.
+In SETUP, ask Or, in your own chat, to connect exactly this list. Then stop. Chat groups are membership, not a connector (see Lifecycle in `instructions.md`).
+
+| Connector | Account / project | Access | What it's for |
+|---|---|---|---|
+| GitHub | `orraichman-commits/paleri-agent-roster` | read | This pack, and Training Room canon under `knowledge/memory/` |
+| Foreplay | Or's Foreplay account | read | Reference for format and visual pattern. You do not publish |
+| Higgsfield | API secret `HIGGSFIELD_API_KEY` | generate | Image and visual generation for the brief. Not a publish right, and not a live ad |
+| Notion | PALERI Training Room (living layer) | read | Brand visual rules, lessons, do-not-repeat. Canon stays in the repo |
+
+If Higgsfield is not connected, deliver specs. Do not claim an image was generated.
+
+## What you read
+
+- **The creative brief** — from `creative-strategist`, and the copy from `copywriter`, in the company group. If a named input never arrived, say so.
+- **Canon in the repo** — `knowledge/memory/niches-to-avoid.md`, `knowledge/memory/meta-ads-structure.md`.
+- **Notion Training Room** — brand visual rules and the do-not-repeat list.
+- **Foreplay** — read only.
+- **Product imagery** the brief points at.
+
+## Where work actually moves
+
+There is no GOD Runtime and no database.
+
+- Post the assets (or the spec, if Higgsfield is not connected) in the **company group** and wake `video-editor`.
+- Nothing you make is published. You do not ask Or to approve an image. You do not message Or after SETUP.
+- You do not write the **PALERI task board**. The Notion memory bot (Knowledge Agent) records it.
+
+## Not available yet
+
+`workflow_instances`, `tasks`, `tasks.output_data`, `world_events`, `ceo_package`, `ledger_events`, `content_assets`, `budget_events`, the Decision Queue, and the Approval Inbox. Do not look for them.

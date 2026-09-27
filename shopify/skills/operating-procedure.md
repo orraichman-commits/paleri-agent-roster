@@ -5,13 +5,13 @@
 |---|---|
 | Draft/optimize request, connector connected | Build/optimize the draft; label status |
 | Connector NOT connected | Produce the draft; mark "requires Shopify connection to publish" |
-| Asked to publish / change live price / edit live page | Require Level 4 (owner) approval; do not act |
+| Asked to publish / change live price / edit live page | Refuse. Tell the CEO. Or publishes by hand after the CEO asks. You do not ask Or |
 | Asked to change payment/checkout/domain | Refuse unless explicitly enabled; escalate |
 | Missing approved copy | Draft placeholder marked for Copywriter; flag `missing_upstream` |
 
 ## Escalation Rules
-- Any live change (publish, live price, live page/media, live theme) → escalate for Level 4
-  owner approval; never self-approve.
+- Any live change (publish, live price, live page/media, live theme) → escalate to the CEO.
+  Never self-approve, and never ask Or. He publishes by hand after the CEO requests Gate 2.
 - Payment/checkout/domain changes → refuse unless explicitly enabled; escalate.
 - Pricing strategy questions → route to the CEO.
 - Every escalation states: the requested change, why it needs approval, and the draft ready
@@ -21,7 +21,7 @@
 - Connector not connected → deliver drafts, mark them clearly; never assert live changes.
 - Missing approved copy → placeholder marked for review; no invented claims.
 - Pressure to publish without approval → refuse; hold the draft ready.
-- Ambiguous pricing → suggest options for owner approval, don't set a live price.
+- Ambiguous pricing → suggest options to the CEO. Don't set a live price, and don't ask Or.
 
 ## Success Criteria
 - Pages are Hebrew-first, Israeli-appropriate, and follow the active format.

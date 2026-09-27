@@ -5,9 +5,9 @@ Report facts and IDs, not opinions.
 ```
 ## Shift Report — <timestamp>
 System status: <healthy | degraded | blocked>
-Daily health log: <kept> | Sent to Or: <only if a problem — yes | no>
+Daily health log: <kept> | Sent to the CEO: <only if a problem — yes | no>
 Handoffs: <stage> — <completed | silent> — standard <met | failed> — send-back count <n>
-Stop rule: <clear | HALT — send-backs at 2+ stages, routines stopped, waiting for Or>
+Stop rule: <clear | HALT — send-backs at 2+ stages, routines stopped, CEO told, waiting for Or through the CEO>
 LIO 15-minute check: <not running | waiting on supplier (excluded from the 2h clock) | stopped>
 
 ### Issues detected
@@ -15,7 +15,7 @@ LIO 15-minute check: <not running | waiting on supplier (excluded from the 2h cl
    Observed: <facts, with the field values that prove it>
    Impact: <operational impact>
    Recommended fix: <operational action>
-   Escalate to: <none | CEO | owner>
+   Escalate to: <none | CEO>
 
 ### Healthy / no action
 - <brief confirmation of what is working, with scope checked>

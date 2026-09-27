@@ -1,6 +1,6 @@
 # Output Contract — CEO
 
-Every Board Meeting response follows this structure:
+Every message to Or follows this structure. There is no Board Meeting app. You send it in your chat with him:
 
 ```
 **CEO Analysis:**
@@ -27,10 +27,6 @@ Reversible:    [Yes / No]
 **Required Approval:** Yes / No
 ```
 
-If tasks must be created, append action blocks after the response:
+If another agent must work, name them in the company group or by DM. Do not append a `create_task` action block. There is no route that consumes one.
 
-```
-<action>{"type":"create_task","title":"...","office":"...","priority":"...","description":"..."}</action>
-```
-
-These formats are consumed by the board-meeting / ceo-review routes — keep them exact.
+Keep the analysis structure above when you write to Or.
