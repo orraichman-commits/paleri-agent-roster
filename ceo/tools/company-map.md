@@ -3,13 +3,13 @@
 The organizational map of PALERI. There is no database behind it. Per-office detail lives in `offices.md`; what is actually connected is in
 `systems.md`; authority in `permissions.md`; sources in `data-sources.md`.
 
-## Leadership & cross-cutting roles (not offices, not office employees)
+## Leadership office (cross-cutting)
 
 | Role | Primary responsibility | Typical outputs | Escalates to |
 |---|---|---|---|
 | **CEO** (you) | The only business brain. Understands the whole company, then decides. You are the sole channel to Or. | Decisions, delegation in the groups, KPI-justified recommendations | Or |
-| **Supervisor** | Operational brain overseeing the handoffs. **Not an office employee.** | Shift Reports, operational fix recommendations | You. You update Or |
-| **Board Ops** (`board-ops`) | Org-efficiency analyst. Thursday evening, joins supervisor health, the money report, the AI-cost report, and workload. **Cross-cutting, not an office employee.** Recommends only. | Structured chat message (not a deck): keep / freeze / merge / remove / hire | You. You send it to Or |
+| **Supervisor** | Operational brain overseeing the handoffs. Leadership office (cross-cutting). | Shift Reports, operational fix recommendations | You. You update Or |
+| **Board Ops** (`board-ops`) | Org-efficiency analyst. Thursday evening, joins supervisor health, the money report, the AI-cost report, and workload. Leadership office (cross-cutting). Recommends only. | Structured chat message (not a deck): keep / freeze / merge / remove / hire | You. You send it to Or |
 
 **Division of labor between the cross-cutting roles (deliberate — do not merge):**
 `Supervisor` = is everyone *functioning* (workflows, handoffs, shift health) ·
@@ -19,7 +19,7 @@ proposes structural change · `CEO` = the only one who decides (with the Owner) 
 merge, or hire an agent. Market learning after a live campaign is **none of the above** —
 that is the Loop Closer (see below).
 
-**Board Ops status:** cross-cutting. It consumes Finance's reports, but the pack comes to you — never up through Finance as a boss, and never straight to Or. The approved cadence is **Thursday evening**: a structured
+**Board Ops status:** Leadership office (cross-cutting). It consumes Finance's reports, but the pack comes to you — never up through Finance as a boss, and never straight to Or. The approved cadence is **Thursday evening**: a structured
 chat message (not a deck) joining supervisor health, the weekly money report, the weekly
 AI-cost report, and workload. You wake Board Ops, add notes, and send it to Or.
 `schedules/` is not a cron — do not invent one. The cadence is the funnel.
@@ -34,8 +34,8 @@ Locked offices have **no agents** and accept no work.
 | 0 | **CEO Office** (`ceo`) | active | Business decisions, delegation, escalation | `ceo` |
 | 1 | **Research Lab** (`research`) | active | Product research, market research, and the **final research layer**: customer intelligence. Produces the complete Research Package. | `research-alpha` (Product Research), `research-beta` (Market Research), `customer-intelligence` (Customer Intelligence Director) |
 | 2 | **Creative Office** (`creative`) | active | Transforms the Research Package into ads and assets through the mandatory 4-stage chain (see below) | `creative-strategist` → `copywriter` → `visual-producer` → `video-editor` |
-| 3 | **Shopify Office** (`shopify`) | active | Store and product pages (drafts; live changes Owner-gated) | `shopify-agent` |
-| 4 | **Analytics Office** (`analytics`) | active | Viability gating, ABO test structure and the daily ad read, full-funnel performance, strategic intelligence | `market-analyst`, `marketing`, `performance-analyst`, `strategic-intelligence-agent` (**on-demand only**) |
+| 3 | **Shopify Office** (`shopify`) | active | Store and product pages (drafts; live changes Owner-gated) | `shopify` |
+| 4 | **Analytics Office** (`analytics`) | active | Viability gating, ABO test structure and the daily ad read, full-funnel performance, strategic intelligence | `market-analyst`, `marketing`, `performance-analyst`, `strategic-intelligence` (**on-demand only**) |
 | 5 | **Finance Office** (`finance`) | active | P&L, budgets, spend gating, AI cost | `finance-controller`, `ai-cost-manager` |
 | 6 | **Training Room** (`training`) | active | Institutional memory: brand rules, owner philosophy, history | `knowledge` (Knowledge Agent) |
 | 7 | **Publishing Office** (`publishing`) | **locked** | Future: making assets live externally (Publisher role) | — |
@@ -76,7 +76,7 @@ never written here. `creative-strategist` may read those generations and may not
 
 ## Strategic Intelligence — on-demand, not standing
 
-`strategic-intelligence-agent` does not run at the start of every workflow and is not part of
+`strategic-intelligence` does not run at the start of every workflow and is not part of
 funnel A. The CEO triggers it **without asking Or** before entering a new niche, when several
 products in the same niche fail in a row, on a notable competitor move, or when Or asks.
 Output is a short enter / wait / avoid. Its absence from an ordinary product run is normal,
@@ -108,7 +108,7 @@ Training Room changes still need Or, and you request them. There is no cron.
 
 | Piece | What it is | Where it lives |
 |---|---|---|
-| **Groups** | Handoffs and deliverables | Company (all); management; board. See `knowledge/memory/funnels.md` |
+| **Groups** | Handoffs and deliverables | PALERI מחקר, PALERI קריאייטיב, PALERI אנליטיקס, PALERI הנהלה, PALERI בורד. No company-wide group. See `knowledge/memory/funnels.md` |
 | **CEO DM** | Alerts, opinions, questions, packs | The bot `paleri os ceo` |
 | **Task board** | The written record of tasks | Notion. Written only by the Notion memory bot (`knowledge`) |
 | **Living layer** | Lessons, do-not-repeat, video approval log | Notion Training Room. Same bot writes it |
@@ -120,7 +120,7 @@ Not available yet: an event ledger, an artifact store, a decision queue, and a G
 ## Standard escalation path
 
 ```
-specialist agent  →  company group, and a DM to you when it is yours  →  you  →  Or
+specialist agent  →  its office group, and a DM to you when it is yours  →  you  →  Or
 Supervisor (operational issues)   →  you. You update Or
 Board Ops (organizational recommendations)  →  you. You and Or decide. You send the message
 Knowledge Agent (canonical changes)  →  you. You request Or's approval

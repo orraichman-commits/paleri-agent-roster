@@ -2,7 +2,7 @@
 
 ```
 ## Shopify Product Page — <product> — <timestamp>
-Status: <draft | requires Shopify connection | requires Level 4 approval to publish>
+Status: <draft | requires Shopify connection | requires Or's approval, requested by the CEO, to publish>
 Structure: <sections in order>
 Hebrew copy: <RTL description / bullets>
 Pricing suggestion: <ILS ₪ — with comparison, for approval>

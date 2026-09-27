@@ -1,7 +1,6 @@
 # Permissions — Market Research Agent (PALERI OS)
 
-Standardized operational permission model (design layer; synchronized to Supabase by a future
-Brain Loader — see `agents/permissions-architecture.md`).
+Standardized operational permission model. There is no Supabase and no Brain Loader.
 
 **PALERI principle:** read broad, write narrow. Reads across the company for context; writes
 only within its office (market-intelligence reports).
@@ -9,20 +8,19 @@ only within its office (market-intelligence reports).
 Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 
 ## Read — broad (operational + market context)
-- Its task and `shared_context.upstream_outputs` (Product Research candidates, Strategic
-  Intelligence); `missing_upstream`.
+- The brief and upstream posts in PALERI מחקר (Product Research candidates; Strategic Intelligence when the CEO has brought it across). If a named input never arrived, say so. There is no `tasks` table and no `shared_context`.
 - Training Room prior market insights and seasonal patterns (curated by the Knowledge Agent).
-- External research / ad-intelligence connectors (read-only, when connected and approved).
+- External research / ad-intelligence connectors (read-only, when connected).
 
 ## Write — Research Lab only (owned system)
-- Structured market-intelligence reports (incl. cross-validation verdicts) to
-  `tasks.output_data` for handoff to the Market Analyst.
+- Structured market-intelligence reports (incl. cross-validation verdicts), posted in
+  PALERI מחקר, for handoff to the Market Analyst.
 
 ## Execute
 - Run trend/demand/competitor/ad-intelligence research; cross-validate Product Research.
 
 ## Requires Owner Approval
-- Paid research / ad-intelligence tools not yet enabled (Level 1 approval).
+- Paid research / ad-intelligence tools not yet enabled. `paleri os ceo` approves, or raises it to Or. You do not ask Or.
 
 ## Forbidden
 - See `../instructions.md` → **Hard Limits**: no go/no-go/spend/launch decisions; never

@@ -1,5 +1,19 @@
 # Changelog
 
+## Office groups, links, and retired runtime names
+
+Documentation only. Rules, funnels, and gates are unchanged except where this list says so.
+
+- Setup connections name the PALERI task board, the Training Room, and the CEO products table with their links.
+- Permissions no longer treat `shared_context`, `tasks.output_data`, or `budget_events` as live. Those names stay only on the "not available yet" lists.
+- Paid tools go to `paleri os ceo`, who approves or raises them to Or.
+- Slugs are `shopify` and `strategic-intelligence`. The historical names stay only where the docs explain them on purpose.
+- Finance has no unnamed Owner threshold. A spend or budget issue outside the canon rules is raised to the CEO, who decides whether to bring it to Or.
+- `performance-analyst` flags a budget anomaly to `finance-controller`.
+- `supervisor` and `board-ops` are the Leadership office (cross-cutting).
+- The supervisor confirms through the CEO that LIO's 15-minute check has stopped.
+- There is no company-wide group. Office groups are PALERI מחקר, PALERI קריאייטיב, and PALERI אנליטיקס. PALERI הנהלה and PALERI בורד are unchanged. The CEO sits in every group.
+
 ## Go-live — connections, lifecycle, CEO is the only channel to Or
 
 The 18 packs are what each bot reads on every wake. There is no GOD Runtime and no database.
@@ -7,8 +21,8 @@ The 18 packs are what each bot reads on every wake. There is no GOD Runtime and 
 - **Setup connections** in every `tools/` file: the exact list that bot asks Or to connect once, in its own chat, then stops.
 - **Lifecycle** in every `instructions.md`: SETUP, then STANDBY, then ACTIVE only when the CEO sends ACTIVATE and names the routine. The CEO does not wait for ACTIVATE from another agent.
 - **After SETUP, only the CEO talks to Or.** Reports, alerts, escalations, questions, gate decks, and approval requests go to `paleri os ceo`. The CEO requests Gate 1, Gate 2, and the video approve/reject. The video gate still blocks `shopify` until Or approves and `knowledge` logs the decision and the reason in Notion. Or publishes by hand.
-- **Groups** are documented in `knowledge/memory/funnels.md`: company (all); management (`ceo`, `supervisor`, `board-ops`, `finance-controller`, `marketing`); board (`ceo`, `board-ops`, `supervisor`, `finance-controller`, `ai-cost-manager`, `knowledge`).
-- **Channels** replace the old tables: the three groups, a DM to the CEO, the PALERI task board (written only by the Notion memory bot / `knowledge`; that board is not the knowledge record), and the Notion Training Room living layer. Canon stays in the repo. A token ledger is not available yet.
+- **Groups** at that point were company (all), management, and board. The company-wide group is retired; see the office groups at the top of this file.
+- **Channels** replace the old tables: chat groups, a DM to the CEO, the PALERI task board (written only by the Notion memory bot / `knowledge`; that board is not the knowledge record), and the Notion Training Room living layer. Canon stays in the repo. A token ledger is not available yet.
 - **LIO** is unchanged and external. Prices stay without VAT. Or is עוסק פטור.
 
 ## Knowledge role moves to Notion memory bot — 2026-09-27

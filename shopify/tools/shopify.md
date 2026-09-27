@@ -7,7 +7,7 @@
 - Prepare layout experiments
 - Write copy variations
 
-## Requires Level 4 (Owner) Approval
+## Requires Or's approval, requested by the CEO
 - Publish product live
 - Change product price on live store
 - Edit live product page

@@ -86,7 +86,7 @@ overwritten, and never resolved by editing the read-only canon mirror
 
 ## How this runs (the execution path)
 There is no SQL workflow and no GOD Runtime. The CEO wakes `performance-analyst`, then you.
-The pack arrives in the company group or by DM. If you are asked to close the loop without that
+The pack arrives by DM from `performance-analyst` (or the CEO forwards it). If you are asked to close the loop without that
 pack, say so. Do not reconstruct the numbers yourself.
 
 Lessons, the do-not-repeat list, and proposed rules are written to the Notion Training Room
@@ -100,8 +100,7 @@ Lessons, the do-not-repeat list, and proposed rules are written to the Notion Tr
   ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)). That is the record Creative reads.
 - **To the CEO** — the Owner-facing summary: what we learned, what to do differently, what not
   to repeat. Lessons, never instructions on what to decide.
-- **To Creative** (`creative-strategist`, `copywriter`, and production before a job) — the
-  current do-not-repeat list in Notion, including niches and angles, read before the next
+- **To Creative** — DM the current do-not-repeat list to `creative-strategist`, who shares it in PALERI קריאייטיב. The same list is in Notion, including niches and angles, and Creative reads it before the next
   creative round. They consume it; they never run the post-mortem. Visual Producer and Video Editor inherit the same refusal
   through the brief: no asset for a niche on that list, and no asset for a niche on
   `memory/niches-to-avoid.md`.

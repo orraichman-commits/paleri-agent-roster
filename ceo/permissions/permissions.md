@@ -11,14 +11,14 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits** and ar
 here, not duplicated. Prose authority context lives in `../tools/permissions.md`.
 
 ## Read — company-wide (broadest)
-- The company, management, and board groups; DMs to you; the task board (read); the Notion living layer (read); the repo.
+- All five groups; DMs to you; the task board (read); the Notion living layer (read); the repo. You sit in every group.
 - Finance's reports and the AI Cost Manager's report. Not a `budget_events` table.
 - Training Room canon and the Owner Operating System (`../memory/owner-preferences.md`).
 - Not available yet: `workflow_instances`, `tasks`, `world_events`, a CEO package, an Approval Inbox.
 
 ## Write — decision & delegation layer
 - Messages to Or, in your chat with him. You are the only agent who does this after SETUP.
-- Delegation in the company group or by DM. No `create_task` action block.
+- Delegation in the agent's office group or by DM. No `create_task` action block. A cross-office handoff is a DM, or you bridge it.
 - The products table on Or's Google Sheet (the live rows).
 - Note: delegation never bypasses an approval boundary — a delegated action that crosses a
   Hard Limit still needs Or, and you are the one who asks.

@@ -14,7 +14,7 @@
 
 ## Escalation Rules
 - Needs live customer data (surveys, interviews, reviews scraping via paid tool) →
-  ask the CEO. Do not ask Or. Never contact customers directly.
+  `paleri os ceo` approves, or raises it to Or. Do not ask Or. Never contact customers directly.
 - Research too weak to support any reliable avatar → send back with the specific gaps
   listed; don't fabricate a customer.
 - The "which product / how much / when to launch" decision → route to the CEO.

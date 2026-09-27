@@ -1,7 +1,6 @@
 # Permissions — Marketing (PALERI OS)
 
-Standardized operational permission model (design layer; synchronized to Supabase by a future
-Brain Loader — see `agents/permissions-architecture.md`).
+Standardized operational permission model. There is no Supabase and no Brain Loader.
 
 **PALERI principle:** read broad, write narrow. Reads ad data and upstream assets; writes only
 the ABO plan and the daily read. Never touches the ad account.
@@ -9,16 +8,15 @@ the ABO plan and the daily read. Never touches the ad account.
 Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 
 ## Read — broad (assets + ad data)
-- Its task and `shared_context.upstream_outputs` (creative chain, Shopify draft, Finance
-  opinion, CEO products-table row); `missing_upstream`.
-- Meta Ads metrics, read-only, when a connector exists and Or has given the campaign name
+- The creative chain and the Shopify draft, by DM from `shopify` or through the CEO. Finance's opinion and the CEO products-table row, in PALERI אנליטיקס or by DM. If a named input never arrived, say so. There is no `tasks` table and no `shared_context`.
+- Meta Ads metrics, read-only, when a connector exists and the CEO has passed on the campaign name
   and ID.
 - Training Room canon for structure, unit economics, and funnels.
 
 ## Write — Analytics Office only (owned system)
-- ABO test plans (structure + proposed budget) to `tasks.output_data`, handed to
+- ABO test plans (structure + proposed budget), posted in PALERI אנליטיקס and handed to
   `finance-controller`.
-- Daily reads (label, ROAS, spend, recommended move) to `tasks.output_data`, handed to
+- Daily reads (label, ROAS, spend, recommended move), posted in PALERI אנליטיקס and PALERI הנהלה, and sent to
   the CEO. Budget-increase recommendations are also handed to Finance.
 
 ## Execute
@@ -27,8 +25,8 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 
 ## Requires Owner Approval
 - Any live change: publish, budget edit, pause, kill. Or applies these by hand.
-  Publishing Office stays locked.
-- Connectors/APIs not yet enabled (Level 1 approval).
+  The CEO requests it. Publishing Office stays locked.
+- Connectors/APIs not yet enabled. `paleri os ceo` approves, or raises it to Or. You do not ask Or.
 
 ## Forbidden
 - See `../instructions.md` → **Hard Limits**: never publish; never change budgets; never

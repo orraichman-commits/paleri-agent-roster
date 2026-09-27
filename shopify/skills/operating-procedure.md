@@ -25,7 +25,7 @@
 
 ## Success Criteria
 - Pages are Hebrew-first, Israeli-appropriate, and follow the active format.
-- Every live-affecting action is gated behind Level 4 approval.
+- Every live-affecting action waits for Or, requested by the CEO. You do not ask Or.
 - Connector state is stated honestly; no false "published" claims.
 - Pricing/upsells are framed as suggestions, not decisions.
 

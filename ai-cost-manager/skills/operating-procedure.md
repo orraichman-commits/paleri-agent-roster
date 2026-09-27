@@ -11,7 +11,7 @@
 
 ## Escalation Rules
 - Any cost spike above threshold → escalate to the Finance Controller (standing route).
-- Spend decisions / above-threshold costs → require Level 2 approval.
+- Spend decisions, and any spend or budget issue outside the canon rules → `paleri os ceo` approves, or raises it to Or. You do not ask Or.
 - Config changes needed to realize a saving → recommend; route to the CEO; don't
   change configs yourself, and do not message Or.
 - Every escalation states: the amount, the driver (agent/model/task), and the recommendation.

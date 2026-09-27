@@ -24,10 +24,9 @@ Each agent folder carries its modular brain:
 
 ## The roster
 
-**Leadership & cross-cutting**
-- `ceo` — the only business brain
-- `supervisor` — operational health of the machinery (no DB row; cross-cutting)
-- `board-ops` — org efficiency; Thursday-evening company review as a chat message (recommends only)
+**CEO Office** — `ceo`, the only business brain
+
+**Leadership office (cross-cutting)** — `supervisor` (operational health of the machinery) · `board-ops` (org efficiency; Thursday-evening company review as a chat message; recommends only)
 
 **Research Lab** — `research-alpha` (product) · `research-beta` (market) · `customer-intelligence` (final research layer)
 
@@ -80,7 +79,7 @@ What changed when the ecommerce training course was folded in, and when the appr
 
 Each bot reads its own folder in this repo on every wake. There is no GOD Runtime and no database.
 
-Coordination is three chat groups, a direct message to the CEO bot `paleri os ceo`, and the PALERI task board in Notion. That board is written only by the Notion memory bot, which holds the Knowledge Agent role (`knowledge`). The task board is not the knowledge record. The Training Room living layer (lessons, the video approval log) is in Notion. Canon stays in `knowledge/memory/`.
+Coordination is five chat groups (three office groups, plus management and board). A group holds at most 6 members, so there is no company-wide group. The CEO sits in every group and bridges between them. Handoffs that cross offices go by direct message to the next agent, or through the CEO. There is also a direct message to the CEO bot `paleri os ceo`, and the PALERI task board in Notion. That board is written only by the Notion memory bot, which holds the Knowledge Agent role (`knowledge`). The task board is not the knowledge record. The Training Room living layer (lessons, the video approval log) is in Notion. Canon stays in `knowledge/memory/`.
 
 Every bot starts in SETUP: one message in its own chat asking Or to connect the list under **Setup connections**, then it stops. After verification it is STANDBY. It becomes ACTIVE only when the CEO sends ACTIVATE, and only for a routine the CEO names. After SETUP, only the CEO talks to Or. Gate 1, Gate 2, and the video approve/reject are Or's decisions, requested by the CEO. `video-editor` DMs the cut to the CEO and does not wake `shopify` until Or approves and `knowledge` logs the decision and the reason. Or publishes by hand.
 

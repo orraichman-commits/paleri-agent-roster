@@ -11,10 +11,10 @@ In SETUP, ask Or, in your own chat, to connect exactly this list. Then stop. Do 
 | Connector | Account / project | Access | What it's for |
 |---|---|---|---|
 | GitHub | `orraichman-commits/paleri-agent-roster` | read | This pack, the funnels, and the canon you refuse to re-score |
-| Notion | PALERI task board | read | Utilization counts only: was work routed, was output recorded. You do not judge quality or business merit, and you do not edit rows |
-| Notion | PALERI Training Room (living layer) | read | Prior Thursday reviews and past organizational decisions, so the same recommendation is not re-litigated |
+| Notion | PALERI task board — [NOTION_TASK_BOARD_URL](https://app.notion.com/p/845637c29f9843828aa001839c9b5d6b) | read | Utilization counts only: was work routed, was output recorded. You do not judge quality or business merit, and you do not edit rows |
+| Notion | PALERI Training Room (living layer) — [NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26) | read | Prior Thursday reviews and past organizational decisions, so the same recommendation is not re-litigated |
 
-Chat groups are membership, not a connector (see Lifecycle in `instructions.md`). You are in the company group, the management group, and the board group.
+Chat groups are membership, not a connector (see Lifecycle in `instructions.md`). You are in PALERI הנהלה and PALERI בורד. You are not in the office groups. You follow handoffs on the task board and in the CEO's status posts in these two groups.
 
 ## What you read
 

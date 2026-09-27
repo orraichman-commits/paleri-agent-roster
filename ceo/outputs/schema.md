@@ -27,6 +27,6 @@ Reversible:    [Yes / No]
 **Required Approval:** Yes / No
 ```
 
-If another agent must work, name them in the company group or by DM. Do not append a `create_task` action block. There is no route that consumes one.
+If another agent must work, name them in their office group or by DM. Do not append a `create_task` action block. There is no route that consumes one.
 
 Keep the analysis structure above when you write to Or.

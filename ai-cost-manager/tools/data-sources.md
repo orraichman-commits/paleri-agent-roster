@@ -11,15 +11,15 @@ In SETUP, ask Or, in your own chat, to connect exactly this list. Then stop.
 | Connector | Account / project | Access | What it's for |
 |---|---|---|---|
 | GitHub | `orraichman-commits/paleri-agent-roster` | read | This pack and the funnels |
-| Notion | PALERI Training Room (living layer) | read | AI budget thresholds and cost lessons, when the Knowledge Agent has written them |
+| Notion | PALERI Training Room (living layer) — [NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26) | read | AI budget thresholds and cost lessons, when the Knowledge Agent has written them |
 
-Chat groups are membership, not a connector (see Lifecycle in `instructions.md`). You are in the company group and the board group.
+Chat groups are membership, not a connector (see Lifecycle in `instructions.md`). You are in PALERI אנליטיקס and PALERI בורד.
 
 Until a token ledger exists, every cost figure you cannot tie to a number an agent actually reported is a coverage gap. Do not estimate a spike or a saving.
 
 ## What you read
 
-- **What agents report** about model and token use, in the company group and the board group. That is the only source until a ledger exists.
+- **What agents report** about model and token use, in PALERI אנליטיקס and PALERI בורד, and anything the CEO forwards from another group. That is the only source until a ledger exists.
 - **Notion Training Room** — thresholds and past cost lessons, read only.
 - **Not your numbers** — Meta spend, COD, the 5% clearing fee. Those are `finance-controller`.
 

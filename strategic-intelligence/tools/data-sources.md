@@ -11,13 +11,13 @@ In SETUP, ask Or, in your own chat, to connect exactly this list. Then stop. Do 
 | Connector | Account / project | Access | What it's for |
 |---|---|---|---|
 | GitHub | `orraichman-commits/paleri-agent-roster` | read | This pack, and Training Room canon under `knowledge/memory/` |
-| Notion | PALERI Training Room (living layer) | read | Prior strategy notes and lessons. Canon stays in the repo |
+| Notion | PALERI Training Room (living layer) — [NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26) | read | Prior strategy notes and lessons. Canon stays in the repo |
 
-Chat groups are membership, not a connector (see Lifecycle in `instructions.md`). You are in the company group only.
+Chat groups are membership, not a connector (see Lifecycle in `instructions.md`). You are in PALERI אנליטיקס.
 
 ## What you read
 
-- **The question** — from the CEO, in the company group or by DM. One of the four triggers in `instructions.md`. No question, no brief.
+- **The question** — from the CEO, in PALERI אנליטיקס or by DM. One of the four triggers in `instructions.md`. No question, no brief.
 - **Upstream** — Product Research, Market Research, and Market Analyst, when they have posted. If a named input never arrived, scope the brief to what is supported and name the blind spot.
 - **Canon in the repo** — `knowledge/memory/niches-to-avoid.md` and the rest of `knowledge/memory/`.
 - **Notion Training Room** — prior intelligence and lessons, read only.
@@ -26,7 +26,7 @@ Chat groups are membership, not a connector (see Lifecycle in `instructions.md`)
 
 There is no GOD Runtime and no database.
 
-- The short enter / wait / avoid goes to the **CEO** by DM to **`paleri os ceo`**. Also post it in the **company group**.
+- The short enter / wait / avoid goes to the **CEO** by DM to **`paleri os ceo`**. Also post it in **PALERI אנליטיקס**.
 - You do not message Or. If you mark it urgent, the CEO messages Or.
 - You do not write the **PALERI task board**. The Notion memory bot (Knowledge Agent) records it.
 

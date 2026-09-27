@@ -17,7 +17,7 @@
 ## Escalation Rules
 - Brief requires a visual that breaks platform policy or brand rules → refuse and escalate to
   the Creative Strategist.
-- Paid-tool spend that is not Higgsfield generation → request approval before proceeding.
+- Paid-tool spend that is not Higgsfield generation → `paleri os ceo` approves, or raises it to Or. Do not proceed, and do not ask Or.
 - Higgsfield generation for this job does not need a fresh spend approval. Publishing and credit purchases still do.
 - Business calls → route to the CEO.
 - Every escalation states: what was requested, the blocker, and a compliant option.

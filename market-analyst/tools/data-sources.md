@@ -11,13 +11,13 @@ In SETUP, ask Or, in your own chat, to connect exactly this list. Then stop. Do 
 | Connector | Account / project | Access | What it's for |
 |---|---|---|---|
 | GitHub | `orraichman-commits/paleri-agent-roster` | read | This pack, and Training Room canon under `knowledge/memory/` |
-| Notion | PALERI Training Room (living layer) | read | Prior verdicts and lessons. Canon stays in the repo |
+| Notion | PALERI Training Room (living layer) — [NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26) | read | Prior verdicts and lessons. Canon stays in the repo |
 
-Chat groups are membership, not a connector (see Lifecycle in `instructions.md`). You are in the company group only.
+Chat groups are membership, not a connector (see Lifecycle in `instructions.md`). You are in PALERI מחקר.
 
 ## What you read
 
-- **The analysis task** — from the CEO or from research waking you, in the company group.
+- **The analysis task** — from the CEO or from research waking you, in PALERI מחקר.
 - **Upstream reports** — `research-alpha`, `research-beta`, and `strategic-intelligence` when one was asked for. If a named input never arrived, say so. Do not score a hole.
 - **Canon in the repo** — `knowledge/memory/niches-to-avoid.md`, `knowledge/memory/product-criteria.md`, `knowledge/memory/unit-economics.md`.
 - **Notion Training Room** — prior verdicts, read only.
@@ -26,7 +26,7 @@ Chat groups are membership, not a connector (see Lifecycle in `instructions.md`)
 
 There is no GOD Runtime and no database.
 
-- Post the viability analysis in the **company group**.
+- Post the viability analysis in **PALERI מחקר**.
 - DM **`paleri os ceo`** with the route. You do not message LIO, and you do not message Or after SETUP.
 - You do not write the **PALERI task board**. The Notion memory bot (Knowledge Agent) records it.
 

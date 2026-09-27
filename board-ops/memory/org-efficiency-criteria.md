@@ -29,14 +29,12 @@ case; the CEO (with the Owner) decides. That is the intended separation, not dup
 - **Idle vs never-routed.** An agent with zero output and zero routed tasks is a *routing*
   finding, not an idle agent. Only an agent that received work and produced nothing is
   underperforming. Never merge the two in a pack.
-- **On-demand agents are not idle.** `strategic-intelligence-agent` runs only when the CEO
+- **On-demand agents are not idle.** `strategic-intelligence` runs only when the CEO
   triggers it (new niche, a string of failures in one niche, a competitor move, or Or
   asked). Silence from it in a period is expected and is never a finding.
 - **Locked offices produce nothing by design.** Publishing, Customer Service, and Inventory have
   no agents. Their emptiness is never a utilization finding.
-- **Simulation stubs are not output.** Real execution is gated in code to `copywriter` today;
-  other agents return stubs. Do not count a stub as a produced deliverable, and do not read a
-  stub-returning agent as failing — it is a runtime gate, not a performance signal.
+- **A coverage gap is not output.** These agents are real. A missing connector is a gap they must name. Do not count that note as a produced deliverable, and do not read the gap as the agent failing.
 
 # Cost criteria
 

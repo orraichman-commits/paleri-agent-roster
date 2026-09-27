@@ -12,11 +12,11 @@ In SETUP, ask Or, in your own chat, to connect exactly this list. Then stop. Cha
 | Perplexity | Or's Perplexity account | read | Demand framing. Not a substitute for an ad |
 | Foreplay | Or's Foreplay account | read | Primary paid creative intelligence: ads practitioners saved, days-on, format |
 | Meta Ads Library | Or's Meta account | read | Primary free surface: active ads, country, how long they have run |
-| Notion | PALERI Training Room (living layer) | read | Prior market insights, seasonal patterns, lessons. Canon stays in the repo |
+| Notion | PALERI Training Room (living layer) — [NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26) | read | Prior market insights, seasonal patterns, lessons. Canon stays in the repo |
 
 ## What you read
 
-- **The brief** — from the CEO, in the company group or by DM: category or trend, or candidates to validate.
+- **The brief** — from the CEO, in PALERI מחקר or by DM: category or trend, or candidates to validate.
 - **Upstream** — Product Research and Strategic Intelligence when they have posted. If a named input never arrived, say so.
 - **Meta Ads Library** — active ads, country, how long they have run.
 - **Foreplay** — discovery of ads practitioners saved, days-on, format filters.
@@ -30,7 +30,7 @@ Say which surface you actually used. If you could not open it, that is a blind s
 
 There is no GOD Runtime and no database.
 
-- Post the market report in the **company group** and wake `market-analyst`.
+- Post the market report in **PALERI מחקר** and wake `market-analyst`.
 - DM **`paleri os ceo`** when the handoff is to the CEO. You do not message Or after SETUP.
 - You do not write the **PALERI task board**. The Notion memory bot (Knowledge Agent) records it.
 

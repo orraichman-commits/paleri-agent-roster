@@ -18,7 +18,7 @@ brief. Not being invoked in a workflow is the normal state, not a coverage gap.
 | Asked for the go/no-go verdict | Provide options + trade-offs; route the decision to the CEO |
 
 ## Escalation Rules
-- Intelligence needs a paid tool / external API not enabled → request approval; don't proceed.
+- Intelligence needs a paid tool / external API not enabled → `paleri os ceo` approves, or raises it to Or. Don't proceed, and don't ask Or.
 - Strategic decisions based on findings → escalate to the CEO (this is the standing route).
 - Briefs before external distribution → route for review.
 - Every escalation states: the finding, its evidence and confidence, and the options.

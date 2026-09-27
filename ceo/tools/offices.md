@@ -8,7 +8,7 @@ Locked offices have no agents and accept no work — do not route anything there
 ## CEO Office (`ceo`) — active
 - **Mission:** Business judgment for the whole company.
 - **Agents:** `ceo` (you — the only business brain).
-- **Note:** There is no GOD Runtime. The Supervisor is not in this office; it is cross-cutting, and it reports to you.
+- **Note:** There is no GOD Runtime. The Supervisor sits in the Leadership office (cross-cutting), and it reports to you.
 
 ## Research Lab (`research`) — active
 - **Mission:** Produce the complete Research Package: what to sell, the market it lives in, and who buys it.
@@ -31,10 +31,8 @@ Locked offices have no agents and accept no work — do not route anything there
 - **Chain doctrine:** for a video/AI creative funnel all four stages run. Visual and video are
   deliverables the campaign cannot launch without — not decoration on top of the copy. The
   Copywriter remains the linchpin of the message; it is simply not the whole creative.
-- **Expected outputs:** Creative briefs, Hebrew copy, visual assets, short-form video — all approval-gated drafts that land in the Artifact Store.
-- **Execution reality:** real execution is gated in code to `copywriter` today; the other three
-  return simulation stubs (`tools/systems.md` → Agent Runtime). Report that honestly when
-  promising output; it does not change their place in the chain.
+- **Expected outputs:** Creative briefs, Hebrew copy, visual assets, short-form video — all drafts. Nothing in the chain is published. The video approve/reject is Or's, and you request it.
+- **Execution reality:** `creative-strategist`, `copywriter`, `visual-producer`, and `video-editor` are real agents. They read their folders. A missing Higgsfield connection is a coverage gap they must name. It does not change their place in the chain.
 - **Before a new creative round:** `creative-strategist` and `copywriter` read the current
   **do-not-repeat** list from the Knowledge Agent's latest Loop-Closer report, when one exists.
 - **CEO involves it when:** a completed Research Package needs creative for launch or testing.
@@ -42,7 +40,7 @@ Locked offices have no agents and accept no work — do not route anything there
 
 ## Shopify Office (`shopify`) — active
 - **Mission:** Run the store layer as drafts; live changes are Owner-gated.
-- **Agents:** `shopify-agent`.
+- **Agents:** `shopify`.
 - **Expected outputs:** Hebrew product page drafts (approval-gated); store optimization proposals.
 - **Escalates to you when:** any live store change (publish, live price, theme) would be needed. You request Or's approval. The Shopify agent does not ask him. Or publishes by hand.
 
@@ -54,7 +52,7 @@ Locked offices have no agents and accept no work — do not route anything there
     Or confirms launch. Recommendations only. Never publishes, never changes a budget.
   - `performance-analyst` — weekly and end-of-test full-funnel read (Shopify included) and
     the **Post-Launch Performance Pack** that feeds the Loop Closer. Not the daily read.
-  - `strategic-intelligence-agent` — macro/competitive intelligence, **on-demand only**.
+  - `strategic-intelligence` — macro/competitive intelligence, **on-demand only**.
     The CEO triggers it without asking Or: new niche, a string of failures in one niche,
     a notable competitor move, or Or asked. Short enter / wait / avoid.
 - **Distinct on purpose:** `market-analyst` gates *whether to go*; `marketing` structures
@@ -68,7 +66,7 @@ Locked offices have no agents and accept no work — do not route anything there
 - **Mission:** Protect PALERI's money and keep spend efficient.
 - **Agents:** `finance-controller`, `ai-cost-manager`.
 - **Expected outputs:** Financial summaries, spend decisions, AI cost-efficiency reports.
-- **Escalates to you when:** spend is at/above threshold, or on overruns. You ask Or when the decision is his. Finance does not message him.
+- **Escalates to you when:** any spend or budget issue falls outside the canon rules, or on overruns. You decide whether to bring it to Or. Finance does not message him.
 
 ## Training Room (`training`) — active
 - **Mission:** Be the institutional memory of the company.
@@ -78,9 +76,11 @@ Locked offices have no agents and accept no work — do not route anything there
 
 ---
 
-## Cross-cutting roles (not offices, no office employees)
+## Leadership office (cross-cutting)
 
-## Board Ops (`board-ops`) — cross-cutting
+`supervisor` and `board-ops` sit in the Leadership office. It is cross-cutting: it is not a line office that produces the product. Both report to you. Neither watches an office group. They follow handoffs on the PALERI task board (`knowledge` is the only writer) and in your status posts in PALERI הנהלה and PALERI בורד.
+
+## Board Ops (`board-ops`) — Leadership office (cross-cutting)
 - **Mission:** Periodically join operational health, AI/finance cost, and workload into one
   organizational recommendation set for you to send to Or.
 - **Inputs:** Supervisor Shift Reports, AI Cost Manager reports, Finance Controller summaries,
@@ -89,7 +89,7 @@ Locked offices have no agents and accept no work — do not route anything there
   token waste, load imbalance — **recommendations only**. Not a deck.
 - **Hard boundary:** never changes live config, never removes an agent, never approves spend.
   The CEO and Owner decide; Board Ops only assembles the case.
-- **Seat:** cross-cutting. It consumes Finance's reports and reports to you, never up through Finance and never straight to Or.
+- **Seat:** Leadership office (cross-cutting). It consumes Finance's reports and reports to you, never up through Finance and never straight to Or.
 - **Thursday evening — the approved cadence.** A structured chat message, not a deck. You
   wake Board Ops, add notes, and send the message to Or. `schedules/` is not a cron; do not invent one, and do not describe the review as optional.
 

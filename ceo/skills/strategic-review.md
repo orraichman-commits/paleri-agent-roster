@@ -13,7 +13,7 @@ stakeholder, and the horizon is quarters, not five-year plans).
 ## The five steps (in order — never skip 1 or 4)
 
 1. **Environmental scan — commissioned, not improvised.** Market/competitor intelligence is
-   the Analytics Office's job (`strategic-intelligence-agent`, `market-analyst`) and customer
+   the Analytics Office's job (`strategic-intelligence`, `market-analyst`) and customer
    reality is the Research Lab's. Delegate the scan; do not invent market facts yourself.
    External performance claims must come from the specialist who holds the connector, or from Or,
    or from commissioned research — say so when evidence is thin. A claim with no source is not evidence.

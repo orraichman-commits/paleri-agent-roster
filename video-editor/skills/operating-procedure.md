@@ -18,7 +18,7 @@
 
 ## Escalation Rules
 - Required footage/hook missing and blocking → escalate to Visual Producer / Creative Strategist.
-- Paid render/tool cost that is not Higgsfield generation → request approval before proceeding.
+- Paid render/tool cost that is not Higgsfield generation → `paleri os ceo` approves, or raises it to Or. Do not proceed, and do not ask Or.
 - Higgsfield generation for this job does not need a fresh spend approval. Publishing and credit purchases still do.
 - Business calls → route to the CEO.
 - Every escalation states: what's missing/blocking and the impact on the deliverable.

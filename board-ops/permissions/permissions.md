@@ -1,7 +1,6 @@
 # Permissions — Board Ops (PALERI OS)
 
-Standardized operational permission model (design layer; synchronized to Supabase by a future
-Brain Loader — see `agents/permissions-architecture.md`).
+Standardized operational permission model. There is no Supabase and no Brain Loader.
 
 **PALERI principle:** read broad, write narrow. Board Ops reads operational, cost, and workload
 reports across the whole company, but owns no system at all and writes only its own Board Pack.
@@ -11,14 +10,12 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 
 ## Read — broad (organizational health)
 - Supervisor Shift Reports; AI Cost Manager cost-efficiency reports; Finance Controller summaries.
-- Agent/office workload signals (`agent_workload`, queue/state), `tasks` (state,
-  `assigned_agent_id`, output presence) for utilization counting.
-- `ledger_events` (period boundaries, escalation frequency); prior Board Packs and past
-  organizational decisions via the Training Room.
+- Utilization counts on the PALERI task board (read only; `knowledge` is the only writer) and the CEO's status posts in PALERI הנהלה and PALERI בורד. There is no `agent_workload` table, no `tasks` table, and no `ledger_events`.
+- Prior Board Packs and past organizational decisions via the Training Room.
 
 ## Write — its own pack only (owns no system)
 - The Board Pack (findings, recommendations with evidence/trade-off/reversibility) to
-  the board group, addressed to the CEO. The CEO sends it to Or. You do not message Or. There is no `tasks` table.
+  PALERI בורד, addressed to the CEO. The CEO sends it to Or. You do not message Or. There is no `tasks` table.
 - Board Ops writes to **no** agent config, permission row, workflow, routing rule, schedule,
   office state, or another agent's output.
 
