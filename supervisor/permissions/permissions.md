@@ -1,19 +1,18 @@
 # Permissions — Supervisor (PALERI OS)
 
-Standardized operational permission model (design layer; synchronized to Supabase by a future
-Brain Loader — see `agents/permissions-architecture.md`).
+Standardized operational permission model. There is no Supabase and no Brain Loader.
 
 **PALERI principle:** read broad, write narrow. The Supervisor reads broadly to observe the
-whole machinery, but owns no live system and writes only its own reports.
+whole machinery, but owns no live system and writes only its own reports. The Supervisor sits in the Leadership office (cross-cutting).
 
 Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 
 ## Read — broad (operational health)
-- The company, management, and board groups, and the PALERI task board (read only).
+- PALERI הנהלה and PALERI בורד (the CEO's status posts), and the PALERI task board (read only). You do not watch an office group.
 - Not available yet: `workflow_instances`, `tasks`, `world_events`, `ceo_package`. Do not look for them.
 
 ## Write — reports only (its own output)
-- Shift Reports and operational fix recommendations, posted to the CEO and, when it is Thursday's input, the board group.
+- Shift Reports and operational fix recommendations, posted to the CEO and, when it is Thursday's input, PALERI בורד.
 - The Supervisor writes to **no** live system, the task board, or another agent's work. Do not message Or.
 
 ## Execute

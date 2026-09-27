@@ -1,7 +1,6 @@
 # Permissions — Video Editor (PALERI OS)
 
-Standardized operational permission model (design layer; synchronized to Supabase by a future
-Brain Loader — see `agents/permissions-architecture.md`).
+Standardized operational permission model. There is no Supabase and no Brain Loader.
 
 **PALERI principle:** read broad, write narrow. Reads across the company for context; writes
 only within the Creative Office (video drafts / edit plans).
@@ -9,14 +8,14 @@ only within the Creative Office (video drafts / edit plans).
 Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 
 ## Read — broad (operational context)
-- The brief, source assets, script, and exact Foreplay links/IDs in the company group.
+- The brief, source assets, script, and exact Foreplay links/IDs in PALERI קריאייטיב.
   If a named input never arrived, say so. There is no `tasks` table.
 - Foreplay, to open those cited ads before generation. Not a license to browse for new ads.
 - Training Room brand rules for pacing, captions, logo/end-card usage (curated by Knowledge Agent).
 - The Notion video log ([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)) before every job. Do not look for this log in the repo.
 
 ## Write — Creative Office only (owned system)
-- Video variants (or an edit plan / EDL when Higgsfield is not connected), posted in the company group,
+- Video variants (or an edit plan / EDL when Higgsfield is not connected), posted in PALERI קריאייטיב,
   labelled by aspect ratio, duration, and placement. DM the cut to the CEO for Or's approve/reject. You do not ask Or. There is no `tasks` table. Not to `shopify` until that gate is an approve and `knowledge` has logged it.
 
 ## Execute

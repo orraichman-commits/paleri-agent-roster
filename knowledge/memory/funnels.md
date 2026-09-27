@@ -177,9 +177,9 @@ not warn that revenue is approaching an osek-patur threshold.
 **Supervisor.** Tracks every handoff: completion, whether it met the standard, and the
 send-back count. A stage with **no output for 2 hours** gets **one nudge**, then an
 alert to the CEO, who updates Or. **LIO's wait for the supplier is excluded** from that
-clock. The supervisor enforces the stop rule, tells the CEO, and makes sure temporary routines stop
+clock. The supervisor enforces the stop rule, tells the CEO, and confirms through the CEO that temporary routines have stopped
 (LIO's 15-minute check stops when the supplier has replied, or when the stop rule
-halts everything). The CEO talks to Or. A daily health log is kept and sent to the CEO **only when there is a
+halts everything). The supervisor does not contact LIO. The CEO talks to Or. A daily health log is kept and sent to the CEO **only when there is a
 problem**. The CEO updates Or. The supervisor does not message Or.
 
 **Board Ops.** Every **Thursday evening**, a company review as a **structured chat
@@ -236,6 +236,7 @@ LIO's quote replaces it.
 | `shopify` | `marketing` | `video-editor` |
 | `marketing` (ABO plan) | `finance-controller` | `shopify` or `creative-strategist` |
 | `finance-controller` (opinion) | CEO, for Gate 2 | `marketing` |
+| `performance-analyst` (budget-anomaly flag) | `finance-controller` | — |
 | Gate 2 approved | Or publishes by hand. The CEO passes the campaign name and ID. Then `marketing` starts the 24h read | — |
 
 Exact Foreplay links/IDs travel with the handoff from `research-alpha` / `research-beta`
@@ -244,17 +245,23 @@ through `market-analyst` and `customer-intelligence` into `creative-strategist` 
 
 ## G. Go-live channels, lifecycle, groups
 
-There is no GOD Runtime and no database. Real coordination:
+There is no GOD Runtime and no database. A group chat holds at most 6 members, so there is no company-wide group. Real coordination is five groups. The CEO sits in every group and bridges between them. A handoff that crosses offices goes by direct DM to the next agent, as the table above already defines, or through the CEO.
 
-- **Company group** — every agent. Handoffs and deliverables.
-- **Management group** — `ceo`, `supervisor`, `board-ops`, `finance-controller`, `marketing`.
-- **Board group** — `ceo`, `board-ops`, `supervisor`, `finance-controller`, `ai-cost-manager`, `knowledge`.
-- **DM** to the CEO bot `paleri os ceo`.
-- **PALERI task board** in Notion. Written only by the Notion memory bot, which is `knowledge`. The task board is not the knowledge record. Do not read a card as a knowledge fact, and do not write knowledge into a card.
+- **PALERI מחקר** — `ceo`, `research-alpha`, `research-beta`, `customer-intelligence`, `market-analyst`, LIO.
+- **PALERI קריאייטיב** — `ceo`, `creative-strategist`, `copywriter`, `visual-producer`, `video-editor`, `shopify`.
+- **PALERI אנליטיקס** — `ceo`, `marketing`, `performance-analyst`, `strategic-intelligence`, `finance-controller`, `ai-cost-manager`.
+- **PALERI הנהלה** (management, unchanged) — `ceo`, `supervisor`, `board-ops`, `finance-controller`, `marketing`.
+- **PALERI בורד** (board, unchanged) — `ceo`, `board-ops`, `supervisor`, `finance-controller`, `ai-cost-manager`, `knowledge`.
+- **DM** to the CEO bot `paleri os ceo`, and a direct DM to the next agent when the handoff leaves its office group.
+- **PALERI task board** in Notion ([NOTION_TASK_BOARD_URL](https://app.notion.com/p/845637c29f9843828aa001839c9b5d6b)). Written only by the Notion memory bot, which is `knowledge`. The task board is not the knowledge record. Do not read a card as a knowledge fact, and do not write knowledge into a card.
 - **Training Room living layer** in Notion ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)): lessons, do-not-repeat, decision memory. The video approval log is [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce). Canon proposals wait in the Rule Proposals inbox (https://app.notion.com/p/093f925b7a4245418c870cf88d9094fa). The same bot writes the living layer. It does not write knowledge onto the task board.
 - **Canon** stays in this repo, under `knowledge/memory/`. Notion keeps a read-only mirror generated from `main` (https://app.notion.com/p/3e8020daae5b81888781d66360a19207). If the mirror and the repo disagree, the repo wins.
 
-`LIO` is unchanged and external.
+`supervisor` and `board-ops` sit in the Leadership office (cross-cutting). They do not watch an office group. They follow handoffs on the task board, which `knowledge` maintains as its only writer, and in the CEO's status posts in PALERI הנהלה and PALERI בורד.
+
+`knowledge` sends Creative's do-not-repeat list by DM to `creative-strategist`. `creative-strategist` shares it in PALERI קריאייטיב.
+
+`LIO` is a member of PALERI מחקר and is otherwise unchanged and external. No agent contacts LIO except the CEO, who sends the product name and a screenshot after research finishes. The supervisor confirms through the CEO that LIO's 15-minute check has stopped.
 
 **Lifecycle.** Every bot starts in SETUP. Its only action is one message in its own chat asking Or to connect the list under **Setup connections** in its `tools/` file. Then it stops. After verification it is STANDBY. It becomes ACTIVE only when the CEO sends ACTIVATE, and it runs a routine only after the CEO names that routine.
 
@@ -264,11 +271,14 @@ After SETUP, no agent except the CEO contacts Or. Gate 1, Gate 2, and the video 
 
 | Agent | Groups |
 |---|---|
-| `ceo` | company, management, board |
-| `supervisor` | company, management, board |
-| `board-ops` | company, management, board |
-| `finance-controller` | company, management, board |
-| `marketing` | company, management |
-| `ai-cost-manager` | company, board |
-| `knowledge` | company, board |
-| every other agent | company |
+| `ceo` | PALERI מחקר, PALERI קריאייטיב, PALERI אנליטיקס, PALERI הנהלה, PALERI בורד |
+| `supervisor` | PALERI הנהלה, PALERI בורד |
+| `board-ops` | PALERI הנהלה, PALERI בורד |
+| `finance-controller` | PALERI אנליטיקס, PALERI הנהלה, PALERI בורד |
+| `marketing` | PALERI אנליטיקס, PALERI הנהלה |
+| `ai-cost-manager` | PALERI אנליטיקס, PALERI בורד |
+| `knowledge` | PALERI בורד |
+| `research-alpha`, `research-beta`, `customer-intelligence`, `market-analyst` | PALERI מחקר |
+| LIO (external) | PALERI מחקר |
+| `creative-strategist`, `copywriter`, `visual-producer`, `video-editor`, `shopify` | PALERI קריאייטיב |
+| `performance-analyst`, `strategic-intelligence` | PALERI אנליטיקס |

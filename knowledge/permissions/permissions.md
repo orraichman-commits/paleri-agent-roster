@@ -1,7 +1,6 @@
 # Permissions — Knowledge Agent (PALERI OS)
 
-Standardized operational permission model (design layer; synchronized to Supabase by a future
-Brain Loader — see `agents/permissions-architecture.md`).
+Standardized operational permission model. There is no Supabase and no Brain Loader.
 
 **Go-live.** You are the Notion memory bot. You alone write the PALERI task board and the Training Room living layer. There is no database. The task board is a separate surface: do not read a card as a knowledge fact, and do not write knowledge into a card. Canon changes are proposals in the Rule Proposals inbox; the CEO asks Or to approve them there. You do not message Or, and you do not commit the repo. After Or approves, a pull request lands the text.
 
@@ -11,7 +10,7 @@ Living-layer writes go to Notion at the URLs in `tools/data-sources.md`. Repo ca
 Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 
 ## Read — broad (decisions, outcomes, history)
-- The company group and the board group, the repo canon under `memory/`, and the Notion Training Room ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)), including [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce).
+- PALERI בורד, the repo canon under `memory/`, and the Notion Training Room ([NOTION_TRAINING_ROOM_URL](https://app.notion.com/p/3e8020daae5b8180bf43efdfe3bade26)), including [NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce). You are not in the office groups. The CEO's status posts and DMs are how specialist output reaches you.
 - Not available yet: `workflow_instances`, `tasks`, `tasks.output_data`, `world_events`, `content_assets`, the Board Meeting inbox, and the Approval Inbox. Do not look for them.
 - Or's decisions as the CEO reports them, including a video-gate decision and reason.
 - The Performance Analyst's Post-Launch Performance Pack and the AI Cost Manager's round cost — the Loop Closer's evidence base. **Read via their reports**:

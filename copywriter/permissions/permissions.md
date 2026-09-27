@@ -1,25 +1,23 @@
 # Permissions — Copywriter (PALERI OS)
 
-Standardized operational permission model (design layer; synchronized to Supabase by a future
-Brain Loader — see `agents/permissions-architecture.md`). Markdown describes intent; Supabase
-`agent_permissions` remains the runtime source of truth.
+Standardized operational permission model. There is no Supabase and no Brain Loader.
+This file is the permission model.
 
 **PALERI principle:** read broad, write narrow. The Copywriter can read operational
 information across the company, but only writes within its own office (Creative Office) —
-copy drafts on its task, routed to approval.
+copy drafts, handed to the next stage.
 
 Hard Limits are authoritative in `../instructions.md` → **Hard Limits** and referenced here.
 
 ## Read — broad (operational context)
-- Its task and brief: `tasks.input_data`, `tasks.input_data.shared_context.upstream_outputs`
-  (Creative Strategist angle, research), `missing_upstream`.
+- The creative brief in PALERI קריאייטיב (Creative Strategist angle, research the CEO brought into the group). If a named input never arrived, say so. There is no `tasks` table and no `shared_context`.
 - The active Copywriting Format.
 - Training Room brand rules, tone, and prior approved copy (curated by the Knowledge Agent).
 - Company operational state relevant to its work (product/campaign context) — read-only.
 
 ## Write — Creative Office only (owned system)
-- Copy drafts to its own `tasks.output_data`, labelled by output type and language.
-- Posting drafts in the company group for `visual-producer`. There is no Approval Inbox. You do not ask Or.
+- Copy drafts, posted in PALERI קריאייטיב for `visual-producer`, labelled by output type and language.
+- There is no Approval Inbox. You do not ask Or.
 - No writes to any other office's systems, no live channels.
 
 ## Execute

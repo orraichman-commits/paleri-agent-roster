@@ -6,7 +6,7 @@ wired_mirror: none — read this file when judging specialist posts. There is no
 
 # Skill: CEO Package Review — CEO
 
-How to judge the specialist posts in the company group and in your DMs, and turn
+How to judge the specialist posts in the office groups and in your DMs, and turn
 raw evidence into a business decision. There is no `workflow_instances.ceo_package`.
 
 ## What you are looking at

@@ -1,7 +1,6 @@
 # Permissions — Visual Producer (PALERI OS)
 
-Standardized operational permission model (design layer; synchronized to Supabase by a future
-Brain Loader — see `agents/permissions-architecture.md`).
+Standardized operational permission model. There is no Supabase and no Brain Loader.
 
 **PALERI principle:** read broad, write narrow. Reads across the company for context; writes
 only within the Creative Office (visual asset drafts / specs).
@@ -10,14 +9,14 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 
 ## Read — broad (operational context)
 - The creative brief, copy, research, avatar, and exact Foreplay links/IDs in the
-  company group. If a named input never arrived, say so. There is no `tasks` table.
+  PALERI קריאייטיב. If a named input never arrived, say so. There is no `tasks` table.
 - Foreplay, to open those cited ads before generation. Not a license to browse for new ads.
 - Training Room brand visual rules, palette, logo usage (curated by the Knowledge Agent).
 - Product imagery / source assets referenced by the brief.
 - The Notion video log ([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)) before every job. Do not look for this log in the repo.
 
 ## Write — Creative Office only (owned system)
-- Visual asset drafts (or generation specs when no connector) in the company group,
+- Visual asset drafts (or generation specs when no connector) in PALERI קריאייטיב,
   labelled by format/placement, with the Foreplay link or ID still attached.
   Handed to `video-editor`, not to publishing. There is no `tasks` table. You do not message Or.
 

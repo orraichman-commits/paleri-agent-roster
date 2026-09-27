@@ -11,7 +11,7 @@
 | Conflicting signals | Present both; state confidence; don't resolve as fact |
 
 ## Escalation Rules
-- Research needs a paid tool / external API not enabled → request approval; don't proceed.
+- Research needs a paid tool / external API not enabled → `paleri os ceo` approves, or raises it to Or. Don't proceed, and don't ask Or.
 - A business decision is being asked of you → route to the Market Analyst / CEO.
 - Every handoff/escalation states: signals found, confidence, and coverage gaps.
 

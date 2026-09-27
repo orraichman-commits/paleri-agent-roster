@@ -1,7 +1,6 @@
 # Permissions — Creative Strategist (PALERI OS)
 
-Standardized operational permission model (design layer; synchronized to Supabase by a future
-Brain Loader — see `agents/permissions-architecture.md`).
+Standardized operational permission model. There is no Supabase and no Brain Loader.
 
 **PALERI principle:** read broad, write narrow. Reads across the company for context; writes
 only within the Creative Office (creative briefs and brief-fit reviews).
@@ -9,7 +8,7 @@ only within the Creative Office (creative briefs and brief-fit reviews).
 Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 
 ## Read — broad (operational context)
-- The brief in the company group (Product/Market Research, Market Analyst
+- The brief in PALERI קריאייטיב (Product/Market Research, Market Analyst
   viability, Strategic Intelligence, exact Foreplay links/IDs). If a named input never arrived, say so. There is no `tasks` table.
 - Training Room brand rules, tone, prior winning angles (curated by the Knowledge Agent).
 - The Notion video log ([NOTION_VIDEO_APPROVAL_LOG_URL](https://app.notion.com/p/3b938b344c5e4a0f8ede1bbf0fcd33ce)) before every brief. Do not look for this log in the repo.
@@ -19,7 +18,7 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
   Authenticate with `HIGGSFIELD_API_KEY` only for that read. Never write the key down.
 
 ## Write — Creative Office only (owned system)
-- Creative briefs in the company group, for `copywriter`,
+- Creative briefs in PALERI קריאייטיב, for `copywriter`,
   including the exact Foreplay links/IDs the angle and hooks came from. There is no `tasks` table.
 - Brief-fit review verdicts on returned creative.
 

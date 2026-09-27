@@ -8,7 +8,7 @@ System status: <healthy | degraded | blocked>
 Daily health log: <kept> | Sent to the CEO: <only if a problem — yes | no>
 Handoffs: <stage> — <completed | silent> — standard <met | failed> — send-back count <n>
 Stop rule: <clear | HALT — send-backs at 2+ stages, routines stopped, CEO told, waiting for Or through the CEO>
-LIO 15-minute check: <not running | waiting on supplier (excluded from the 2h clock) | stopped>
+LIO 15-minute check: <not running | waiting on supplier (excluded from the 2h clock) | stopped — confirmed through the CEO>
 
 ### Issues detected
 1. [<info | warning | critical>] <what> — workflow=<id> wave=<n> task=<id> agent=<slug>

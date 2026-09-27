@@ -2,7 +2,7 @@
 
 What is actually there. Do not treat a missing system as wired.
 
-There is **no GOD Runtime** and **no database**. Bots read their folders in this repo on every wake. Coordination is the three chat groups, a DM to you (`paleri os ceo`), and the PALERI task board in Notion. That board is written only by the Notion memory bot, which is the Knowledge Agent. Canon stays in the repo. The Training Room living layer (lessons, video approval log) is in Notion.
+There is **no GOD Runtime** and **no database**. Bots read their folders in this repo on every wake. Coordination is five chat groups, a DM to you (`paleri os ceo`), and the PALERI task board in Notion. A group holds at most 6 members, so there is no company-wide group. You sit in every group and bridge between them. That board is written only by the Notion memory bot, which is the Knowledge Agent. Canon stays in the repo. The Training Room living layer (lessons, video approval log) is in Notion.
 
 `schedules/` is not a cron. You wake Thursday's review, the daily read, and the Loop Closer by naming them. Do not invent a scheduler.
 
@@ -10,9 +10,11 @@ There is **no GOD Runtime** and **no database**. Bots read their folders in this
 
 ## Chat groups — in use
 
-- **Company** — every agent. Handoffs and deliverables.
-- **Management** — you, `supervisor`, `board-ops`, `finance-controller`, `marketing`.
-- **Board** — you, `board-ops`, `supervisor`, `finance-controller`, `ai-cost-manager`, `knowledge`.
+- **PALERI מחקר** — you, `research-alpha`, `research-beta`, `customer-intelligence`, `market-analyst`, LIO.
+- **PALERI קריאייטיב** — you, `creative-strategist`, `copywriter`, `visual-producer`, `video-editor`, `shopify`.
+- **PALERI אנליטיקס** — you, `marketing`, `performance-analyst`, `strategic-intelligence`, `finance-controller`, `ai-cost-manager`.
+- **PALERI הנהלה** (management) — you, `supervisor`, `board-ops`, `finance-controller`, `marketing`.
+- **PALERI בורד** (board) — you, `board-ops`, `supervisor`, `finance-controller`, `ai-cost-manager`, `knowledge`.
 
 Membership is also in `knowledge/memory/funnels.md`.
 
@@ -44,10 +46,10 @@ Shopify admin (drafts only), Meta Ads (read), Shopify analytics (read), Perplexi
 
 ## Supervisor and Board Ops — bots, not database rows
 
-They read the groups and the task board. Board Ops is not seated in a Finance Office table. It reports to you. You send Thursday's message to Or. `schedules/` does not fire it.
+They sit in the Leadership office (cross-cutting). They do not watch an office group. They follow handoffs on the task board (`knowledge` is the only writer) and in your status posts in PALERI הנהלה and PALERI בורד. Board Ops is not seated in a Finance Office table. It reports to you. You send Thursday's message to Or. `schedules/` does not fire it.
 
 ## Not available yet
 
 GOD Runtime, workflow engine, `workflow_instances`, `tasks`, `ceo_package`, `world_events`, `ledger_events`, `content_assets`, `budget_events`, Supabase, Decision Queue, Approval Inbox, Board Meeting as a separate app, and a token-cost ledger (the AI Cost Manager must say when the figure is missing).
 
-Do not emit `<action>{"type":"create_task"...}</action>`. Name the agent in the company group.
+Do not emit `<action>{"type":"create_task"...}</action>`. Name the agent in their office group, or DM them. A handoff that crosses offices goes by DM, or through you.

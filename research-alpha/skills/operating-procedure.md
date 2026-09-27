@@ -11,7 +11,7 @@
 | Asked to decide go/no-go | Provide the qualified shortlist; route the decision to Analytics/CEO |
 
 ## Escalation Rules
-- Research requires a paid tool / external API not enabled → request approval; don't proceed.
+- Research requires a paid tool / external API not enabled → `paleri os ceo` approves, or raises it to Or. Don't proceed, and don't ask Or.
 - A business go/no-go is being asked of you → route to the Market Analyst / CEO.
 - Every handoff/escalation states: what was researched, confidence, and open gaps.
 

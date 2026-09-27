@@ -3,19 +3,18 @@
 Detailed detection criteria for each responsibility.
 
 ## 1. Workflow health
-There is no workflow table. Watch the company group and the task board (read only).
+There is no workflow table. Watch the PALERI task board (read only; `knowledge` is the only writer) and the CEO's status posts in PALERI הנהלה and PALERI בורד. You do not watch an office group.
 - A handoff that was announced and then went quiet past the time the funnel allows.
-- Work that was started in the group and never closed with an output or an explicit stop.
+- Work the task board or a CEO status post shows as started, and never closed with an output or an explicit stop.
 - Parallel work (research-alpha, research-beta, customer-intelligence) where one voice never came back.
 - The same stage failing and being sent back again.
 
 ## 2. Agent coordination
 - Every handoff: did it complete, did the output meet the receiving contract, how many
   stages have sent work back for a standard failure.
-- A stage with no output for **2 hours**: one nudge, then an alert to the CEO (who
-  updates Or). LIO waiting on the supplier is excluded from this clock.
+- A stage with no output for **2 hours**: one nudge through the CEO (DM to `paleri os ceo`), who passes it to the stage. If it stays silent, that same DM is the alert, and the CEO updates Or. LIO waiting on the supplier is excluded from this clock. You do not contact LIO.
 - Stop rule: standard-failure send-backs at **2 or more stages** → halt all routines,
-  confirm temporary routines have stopped (LIO's 15-minute supplier check), tell the CEO. Do not message Or.
+  confirm through the CEO that temporary routines have stopped (LIO's 15-minute supplier check), tell the CEO. Do not message Or. You do not contact LIO.
 - Agents dispatched but never started, or that never reported back.
 - Agents idle while work is queued, or one agent overloaded while others sit idle.
 - Handoffs between waves that did not actually transfer the expected work.
