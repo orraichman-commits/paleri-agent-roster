@@ -11,6 +11,7 @@ Products:
     Recommended angle: <outcome positioning, or none if FILTER>
     Verdict: <ROUTE TO CEO | FILTER> — <reason>
     Evidence: <upstream sources>
+    Competitor ad refs (pass through, do not drop): <exact Foreplay url or id from research-alpha / research-beta; Ads Library url or id if that was the source>
     Confidence: <high | medium | low>
 Gaps: <missing_upstream, low-quality inputs>
 Handoff: CEO Office

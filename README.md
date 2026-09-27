@@ -1,7 +1,7 @@
 # PALERI Agent Roster
 
 Read-only export of the agent brain files from `paleri-os/agents/`.
-**18 agents, 146 markdown files**, one folder per agent, same structure as the source repo.
+**18 agents, 149 markdown files**, one folder per agent, same structure as the source repo.
 External to this roster: **LIO**, Or's supplier-quote agent. LIO is not a folder here.
 
 This repo exists so external bots/services can fetch these files over plain HTTP or the
@@ -34,6 +34,12 @@ Each agent folder carries its modular brain:
 **Creative Office** — the mandatory 4-stage chain:
 `creative-strategist` → `copywriter` → `visual-producer` → `video-editor`
 
+`visual-producer` and `video-editor` generate images and video on the Higgsfield API.
+The key is the secret `HIGGSFIELD_API_KEY` (not in this repo). Generation only — no
+publishing, no spend beyond generation. `creative-strategist` may read those
+generations and may not create them. Every video waits for Or's approve/reject
+before marketing and Gate 2. The log is `knowledge/memory/video-approval-log.md`.
+
 **Analytics** — `market-analyst` (viability gate) · `marketing` (ABO test structure + daily ad read; recommendations only) · `performance-analyst` (weekly / end-of-test full funnel + Loop-Closer data leg) · `strategic-intelligence` (**on-demand only**)
 
 There is no Marketing Office. `marketing` sits in Analytics. Publishing stays locked; Or publishes and changes budgets by hand.
@@ -50,6 +56,7 @@ each keep a private copy of the list.
 - `meta-ads-structure.md` — ABO test vs CBO/ASC scale, test budgets, compliance boundaries
 - `unit-economics.md` — COD, CAC, the ~60% guideline, prices **without VAT** (Or is עוסק פטור)
 - `funnels.md` — the approved main, post-publish, money, and ops funnels, plus on-demand strategic intelligence
+- `video-approval-log.md` — Or's approve/reject on each generated video, with his reason (temporary gate; creative reads it before every job)
 
 What changed when the ecommerce training course was folded in, and when the approved workflow landed: `CHANGELOG.md`.
 

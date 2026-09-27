@@ -10,20 +10,28 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 
 ## Read — broad (operational context)
 - Task brief and `shared_context.upstream_outputs` (Product/Market Research, Market Analyst
-  viability, Strategic Intelligence); `missing_upstream`.
+  viability, Strategic Intelligence, exact Foreplay links/IDs); `missing_upstream`.
 - Training Room brand rules, tone, prior winning angles (curated by the Knowledge Agent).
+- `knowledge/memory/video-approval-log.md` before every brief.
 - Product/campaign operational context — read-only.
+- **Higgsfield API, read only.** Generation records already created for this job
+  (status, generation id, output id), so a brief-fit review can see the asset.
+  Authenticate with `HIGGSFIELD_API_KEY` only for that read. Never write the key down.
 
 ## Write — Creative Office only (owned system)
-- Creative briefs to `tasks.output_data` (become the production agents' upstream context).
+- Creative briefs to `tasks.output_data` (become the production agents' upstream context),
+  including the exact Foreplay links/IDs the angle and hooks came from.
 - Brief-fit review verdicts on returned creative.
 
 ## Execute
 - Define angle/format/awareness; route briefs to production agents; review outputs for fit.
+- Read Higgsfield generations. Do not call generation.
 
 ## Requires Owner Approval
 - Paid-tool spend / external API calls (Level 1 approval); nothing published.
+- Higgsfield generation, publishing, credit purchases, and plan changes are not yours
+  even when the key is present. Generation belongs to `visual-producer` and `video-editor`.
 
 ## Forbidden
 - See `../instructions.md` → **Hard Limits**: no spend/launch/product decisions; never
-  publish; never brief a misleading/medical/competitor claim.
+  publish; never generate on Higgsfield; never brief a misleading/medical/competitor claim.

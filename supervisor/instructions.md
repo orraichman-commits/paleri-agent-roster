@@ -69,7 +69,10 @@ do not score the product.
   be quiet until the supplier replies.
 - **Stop rule.** At two or more stages of standard-failure send-back, halt all routines
   and wait for Or. Make sure a temporary routine does not keep running — LIO's
-  15-minute check in particular.
+  15-minute check in particular. Or's rejection of a generated video is one
+  production-stage send-back (`video-editor` and `visual-producer` together). One
+  such rejection is a correction. It becomes a stop only when another stage on that
+  run was already sent back. Do not count the two agents as two stages.
 - **Daily health log.** Written every day. Or receives it only on problems. A clean day
   stays on the log.
 - You do not wake the next business agent. The agent that finished does that.

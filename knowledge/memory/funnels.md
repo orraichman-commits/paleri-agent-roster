@@ -25,6 +25,13 @@ There is no Marketing Office. `marketing` sits in Analytics.
 שערי בעלים נשארים בינתיים בנקודות המפתח. אישור אור אינו ויתור על הסטנדרט, והסטנדרט אינו
 אישור להוציא כסף או לפרסם.
 
+**שער וידאו (זמני, בתחילת הדרך).** כל סרטון שנוצר עובר לאישור או לדחייה של אור לפני
+`marketing` ולפני Gate 2. ההחלטה והנימוק נרשמים ב־`knowledge/memory/video-approval-log.md`.
+דחייה חוזרת ל־`video-editor` ול־`visual-producer` עם הנימוק. זו החזרת סטנדרט של **שלב
+הייצור** (שלב אחד). שלב אחד שהוחזר פעם אחת הוא תיקון, לא עצירה. אם שלב אחר באותו ריצה
+כבר הוחזר, ה־STOP RULE חל. כששיעור האישורים יציב, אור יכול לרפות את השער לאוטונומיה.
+אף סוכן לא מרפה אותו לבד.
+
 אין תקרת הוצאת מטא חודשית. אישור הוא לפי קמפיין. אין התראת תקרת מחזור.
 
 ## A. Main funnel
@@ -36,6 +43,7 @@ Or (brief, or "hunt")
   → CEO sends product name + screenshot to LIO   [after research finishes]
   → GATE 1 (NotebookLM deck → Or)
   → creative-strategist → copywriter → visual-producer → video-editor
+  → VIDEO GATE (Or approve/reject — temporary; decision + reason logged)
   → shopify (draft, prices without VAT)
   → marketing (ABO plan + proposed test budget)
   → finance-controller (budget opinion)
@@ -58,8 +66,31 @@ Or (brief, or "hunt")
 4. **GATE 1.** The CEO sends Or a **NotebookLM deck**. Or approves, sends the work
    back to the start, or stops. A return to the start is Or's decision. It is not a
    standard-failure send-back between bots, and it does not by itself trip the stop rule.
-5. **Creative, then the store draft.** The four creative stages, in order. Then
-   `shopify` drafts the product page. Prices are **without VAT**.
+5. **Creative, then the video gate, then the store draft.** The four creative stages,
+   in order. Research, `customer-intelligence`, `creative-strategist`, and `copywriter`
+   pass the exact competitor-ad references (Foreplay links/IDs) in the handoff. A
+   handoff that used an ad and dropped the link or ID fails the standard and goes back.
+   `visual-producer` and `video-editor` collect the brief, the research, the avatar and
+   pains, the angles and hooks, the copy, and the product and offer. Before they
+   generate, they open those ads in Foreplay themselves, cross-check hook, structure,
+   pacing, visuals, offer, and claims against what the earlier agents wrote, flag
+   contradictions, and resolve them. The video is built on that ad's proven structure,
+   adapted to our angle, avatar, copy, and brand. Denylist, Meta ad policy, and ABO
+   grouping by angle / avatar / copy / hook still apply.
+   They generate the images and the video on the Higgsfield API. The key is the secret
+   `HIGGSFIELD_API_KEY` (never written into the repo). Generation is allowed. Publishing
+   is not. Spend beyond generation is not. `creative-strategist` may read generations
+   for brief-fit. They may not generate.
+   **VIDEO GATE (temporary).** Every generated video goes to Or for approve or reject
+   before it moves on to `marketing` or Gate 2. `shopify` is not woken until Or
+   approves. The decision and the reason are logged in
+   `knowledge/memory/video-approval-log.md`. Creative reads that log before the next
+   job. A rejection returns the video to `video-editor` and `visual-producer` with the
+   reason. That return is one production-stage send-back: a single rejection is a
+   correction, not a stop. It trips the stop rule when another stage on this run was
+   already sent back for failing the standard. Or can later relax the gate once
+   approval rates are stable. Agents do not relax it.
+   Then `shopify` drafts the product page. Prices are **without VAT**.
 6. **ABO.** `marketing` groups the assets by angle / avatar / copy / hook
    (`meta-ads-structure.md`) and proposes a test budget.
 7. **Finance opinion.** `finance-controller` reviews that budget: reasonable, not
@@ -95,8 +126,9 @@ set is **winning**, **waiting**, or **weak**.
 The CEO's daily note to Or is a **short message**. A NotebookLM deck is for the **end
 of a test**, not for the daily read.
 
-**Fatigue.** Marketing flags it. Work returns to `creative-strategist`. The new round
-passes **Gate 2 again** before Or republishes.
+**Fatigue.** Marketing flags it. Work returns to `creative-strategist`. A new video
+still passes the temporary video gate (Or approve/reject, logged) before `marketing`
+or Gate 2. The new round passes **Gate 2 again** before Or republishes.
 
 **Weekly, and at the end of a test.** `performance-analyst` stays separate from
 Marketing and does the full-funnel read, including Shopify data. That pack goes to the
@@ -186,8 +218,14 @@ LIO's quote replaces it.
 | `creative-strategist` | `copywriter` | `customer-intelligence` |
 | `copywriter` | `visual-producer` | `creative-strategist` |
 | `visual-producer` | `video-editor` | `copywriter` |
-| `video-editor` | `shopify` | `visual-producer` |
+| `video-editor` (cut ready) | Or, for the video gate. Not `shopify` | `visual-producer` |
+| Or approves the video | `shopify` (woken by `video-editor` after `knowledge` logs it) | — |
+| Or rejects the video | `video-editor` and `visual-producer`, with the reason | one production-stage send-back; stop rule if another stage on this run already failed |
 | `shopify` | `marketing` | `video-editor` |
 | `marketing` (ABO plan) | `finance-controller` | `shopify` or `creative-strategist` |
 | `finance-controller` (opinion) | CEO, for Gate 2 | `marketing` |
 | Gate 2 approved | Or publishes. Then `marketing` starts the 24h read | — |
+
+Exact Foreplay links/IDs travel with the handoff from `research-alpha` / `research-beta`
+through `market-analyst` and `customer-intelligence` into `creative-strategist` and
+`copywriter`, and from there into production. Production opens those ads before generating.

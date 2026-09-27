@@ -52,6 +52,11 @@ more stages, stop and wait for Or.
   before a new round, when one exists: hooks, claims, and offers that already failed with
   evidence are not rewritten from scratch. You consume that list; you never run the
   post-mortem (that is `performance-analyst` + `knowledge`).
+- **Read `knowledge/memory/video-approval-log.md`** before a new round. Do not rewrite a
+  line Or already rejected.
+- Pass the exact Foreplay link or ID of every competitor ad you wrote from. Keep the
+  IDs that arrived in the brief. If you used an ad and the ID is missing, stop and send
+  the brief back. Do not invent an ID, and do not describe the ad instead of naming it.
 
 ## Hard Limits (absolute)
 - Content integrity: no generic AI-sounding or corporate/formal copy; no overpromising or
@@ -71,6 +76,7 @@ If a task requires any of the above, stop and flag/escalate.
 - Denylist + Meta structure (canon) → `knowledge/memory/niches-to-avoid.md`,
   `knowledge/memory/meta-ads-structure.md`
 - Operating loop (Decision→Action, escalation, copy-chief pass) → `skills/operating-procedure.md`
+- Owner video decisions (read before every round) → `knowledge/memory/video-approval-log.md`
 - Authoritative Inputs (brief, shared_context, active format) → `tools/data-sources.md`
 - Israeli market knowledge → `memory/israeli-market.md`
 - Copy draft contract → `outputs/schema.md`

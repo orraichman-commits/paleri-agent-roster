@@ -61,7 +61,8 @@ Connectors stay unwired until a real integration exists (`performance-analyst/to
 - **−20%** כשה־Ad Set חלש. פיננסים לא נדרשים לחיתוך.
 - **כיבוי** רק אחרי **48–72 שעות** שבהן ה־ROAS מתחת ל־break-even ROAS של המוצר מטבלת ה־CEO
   (`ceo/memory/products-table.md`): `margin = price − cost − 5% clearing`, `break-even ROAS = price / margin`.
-- עייפות קריאייטיב חוזרת ל־`creative-strategist` ועוברת שוב את Gate 2.
+- עייפות קריאייטיב חוזרת ל־`creative-strategist`. סרטון חדש עובר את שער הוידאו הזמני
+  (אישור או דחייה של אור, עם נימוק ביומן) לפני `marketing` ולפני Gate 2, ואז עובר שוב את Gate 2.
 - הטסט נשאר ABO. מנצח שמוכן לסקייל עובר הביתה ל־CBO. לא הופכים את הטסט עצמו ל־CBO.
 
 ## Creative window (for the brief, not a media buy)

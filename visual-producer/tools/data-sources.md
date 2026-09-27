@@ -2,11 +2,22 @@
 
 Authoritative Inputs. Read fresh; never assume.
 
-- **tasks.input_data.shared_context.upstream_outputs** — the creative brief (from the
-  Creative Strategist); **missing_upstream** for anything not delivered.
+- **tasks.input_data.shared_context.upstream_outputs** — the creative brief (Creative
+  Strategist), the copy (Copywriter), research, the customer-intelligence avatar and
+  pains, the product and offer, and the exact Foreplay links/IDs;
+  **missing_upstream** for anything not delivered.
 - **tasks.input_data** — the task instruction.
-- **Training Room** — brand visual rules, palette, logo usage (via Knowledge Agent).
+- **Foreplay** — open the cited ads before generation. Read those ads. Do not mine new ones.
+- **Higgsfield API** — image generation for this job (and a source clip the brief needs
+  as an asset). Owner decision 2026-09-27. Authenticate with the secret
+  `HIGGSFIELD_API_KEY` (environment variable). Never write the key, a token, or a spend
+  figure into the repo, a prompt, or an output. Generation is allowed. Publishing,
+  credit purchases, plan changes, and any spend that is not generation are not.
+- **Training Room** — brand visual rules, palette, logo usage, and
+  `knowledge/memory/video-approval-log.md` (via Knowledge Agent). Read the log before
+  every job.
 - **Product imagery / source assets** referenced by the brief.
 
-Generation connectors (image tools) are used only when connected and approved; otherwise
-deliver specs. Output is written to **tasks.output_data** and routed to Level 1 approval.
+If the Higgsfield key is absent or the API is unwired, deliver specs and mark
+`requires connector`. Do not claim a file exists. Output is written to
+**tasks.output_data** and handed to `video-editor` with the same Foreplay link or ID.

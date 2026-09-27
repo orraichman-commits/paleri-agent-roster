@@ -22,9 +22,12 @@ Hard Limits are authoritative in `../instructions.md` → **Hard Limits**.
 - Flags for stale / contradicted / low-confidence knowledge.
 - Loop-Closer reports: lessons, do-not-repeat items (including niches and angles), and
   proposed canonical rules — all as drafts/proposals to `tasks.output_data`.
+- Append Or's video-gate decision and reason to `memory/video-approval-log.md` as given.
+  That append is a record. It is not a brand-rule change.
 - Canonical entries are **not** written directly — they are proposed. The authored canon in
   `memory/niches-to-avoid.md`, `memory/product-criteria.md`, `memory/meta-ads-structure.md`,
-  and `memory/unit-economics.md` changes only when the Owner accepts a proposal.
+  `memory/unit-economics.md`, and `memory/funnels.md` changes only when the Owner accepts
+  a proposal. A pattern noticed in the video log becomes canon only that way.
 
 ## Execute
 - Answer knowledge queries with sourced facts; run knowledge-hygiene passes.

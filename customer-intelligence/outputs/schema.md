@@ -15,6 +15,7 @@ Awareness level: <level> → <messaging implication in one line>
 Primary angle: <#1 ranked angle — segment × driver × why it should win>
 Top objection: <the kill-power #1 objection> → <neutralizer or "no neutralizer — flag">
 Voice of customer: "<verbatim Hebrew phrase for the pain>" / "<phrase for the wish>"
+Competitor ad refs: <exact Foreplay url or id for each ad that calibrated this avatar; pass through, do not drop; Ads Library url or id only when Foreplay has none>
 
 ### SEGMENTS
   - <segment name>: <distinguishing trait> | awareness: <level> | represented by: <avatar>

@@ -13,6 +13,11 @@ Status: <canonical | pending owner approval | flagged>
 Notes: <conflicts, gaps, or what to confirm>
 ```
 
+## Video-gate log entry (when Or approves or rejects a generated video)
+
+Append to `memory/video-approval-log.md`. Do not rewrite his reason. The field list is
+in that file. This is a record, not a Loop-Closer lesson and not a canon change.
+
 ## Loop-Closer report (after a live campaign — see `skills/loop-closer.md`)
 
 Owner-facing, Hebrew by default. Metric names, slugs, and IDs stay in English.

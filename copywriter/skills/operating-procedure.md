@@ -3,7 +3,9 @@
 ## Decision → Action
 | Situation | Action |
 |---|---|
-| Clear brief + active format | Write copy to spec; provide 2–3 variations (different angles, not paraphrases) |
+| Clear brief + active format + Foreplay link or ID | Write copy to spec; keep that ID on the draft; provide 2–3 variations (different angles, not paraphrases) |
+| Brief used a competitor ad and has no link or ID | Send it back to `creative-strategist`. Do not invent the ID |
+| Video-approval log rejects this line or hook | Do not rewrite it. Pick another |
 | Awareness level specified | Match message to that awareness stage (see `copywriting.md`) |
 | Awareness level missing | Infer from the brief's audience description, state the assumption in Notes |
 | Product is on the denylist, or the brief is for a FILTER'd product | Write nothing. Name the slug |

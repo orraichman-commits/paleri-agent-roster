@@ -24,10 +24,11 @@ Locked offices have no agents and accept no work — do not route anything there
 - **Agents (the mandatory 4-stage chain, in order):**
   1. `creative-strategist` — angle, positioning, format mix; writes the brief.
   2. `copywriter` — the Hebrew copy (hooks, primary text, headlines, CTAs).
-  3. `visual-producer` — **produces the AI/visual assets**: ad creatives, product mockups,
-     lifestyle visuals, format variants (9:16 / 1:1 / 4:5).
-  4. `video-editor` — **cuts the short-form video** from those assets: hook, pacing, Hebrew
-     captions, format/duration variants.
+  3. `visual-producer` — **produces the AI/visual assets** on the Higgsfield API: ad
+     creatives, product mockups, lifestyle visuals, format variants (9:16 / 1:1 / 4:5).
+  4. `video-editor` — **generates and cuts the short-form video** on the Higgsfield API
+     from those assets: hook, pacing, Hebrew captions, format/duration variants. The cut
+     waits for Or's temporary video gate before `shopify`.
 - **Chain doctrine:** for a video/AI creative funnel all four stages run. Visual and video are
   deliverables the campaign cannot launch without — not decoration on top of the copy. The
   Copywriter remains the linchpin of the message; it is simply not the whole creative.

@@ -1,5 +1,27 @@
 # Changelog
 
+## Higgsfield generation and the video gate — 2026-09-27
+
+Or's decision. Prices stay without VAT. He is עוסק פטור.
+
+- **Higgsfield.** `visual-producer` and `video-editor` generate the images and videos
+  they need on the Higgsfield API. The key is the secret `HIGGSFIELD_API_KEY`. It is
+  not in the repo. Generation is allowed. Publishing is not. Spend beyond generation
+  is not. `creative-strategist` has read access only, for brief-fit review.
+- **Working method.** Production collects the brief, research, avatar and pains, angles
+  and hooks, copy, and the offer. Before generating, they open the competitor ads in
+  Foreplay. Research, customer intelligence, the strategist, and the copywriter pass
+  the exact Foreplay links/IDs. Production cross-checks hook, structure, pacing,
+  visuals, offer, and claims, then builds on that ad's structure, adapted to our
+  angle, avatar, copy, and brand. Denylist, ad policy, and ABO by angle / avatar /
+  copy / hook still apply.
+- **Video gate.** Temporary. Every generated video goes to Or before `shopify` continues
+  it toward marketing and Gate 2. Decision and reason go in
+  `knowledge/memory/video-approval-log.md`. Creative reads it before the next job.
+  Rejection returns to `video-editor` and `visual-producer` and counts as one
+  production-stage send-back under the stop rule. Or can relax the gate later.
+  Agents cannot.
+
 ## Approved workflow — marketing, funnels, עוסק פטור
 
 Or approved the operating design. It is now the roster.

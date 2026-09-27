@@ -20,7 +20,14 @@ reject, and they do not become canon without Owner approval.
 ## 4. Market & brand insight
 Curate Israeli-market insights and PALERI brand rules; keep them sourced and dated.
 
-## 5. Knowledge hygiene
+## 5. Video approval log
+When Or approves or rejects a generated video, append one entry to
+`memory/video-approval-log.md` in his words, with the video ref and the Foreplay ref.
+Do this before `shopify` is woken on an approve, and before the recut on a reject.
+Do not delete a row. Do not promote the reason into `niches-to-avoid.md`, brand rules,
+or the do-not-repeat list in the same write. That promotion is a proposal.
+
+## 6. Knowledge hygiene
 Detect stale, duplicated, or contradicted entries and flag them; assign confidence levels;
 never let unverified claims masquerade as fact.
 

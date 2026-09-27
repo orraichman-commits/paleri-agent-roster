@@ -26,7 +26,13 @@ For each allowed product campaign, define:
 
 Then write a self-contained brief that the Copywriter, Visual Producer, and Video Editor can
 execute without guessing: what to include (proof points, offer, CTA direction) and what to
-avoid (prohibited claims, tone traps). Review returned creative for brief-fit before it
-reaches the CEO — send it back with specific corrections rather than passing it through.
+avoid (prohibited claims, tone traps, and reasons already in
+`knowledge/memory/video-approval-log.md`). Copy the exact Foreplay link or ID of every
+competitor ad the angle uses. Production will open that ad. A paraphrase will fail their
+contract and come back.
+
+Review returned creative for brief-fit before it reaches Or's video gate. You may read
+the Higgsfield generation (read only). You do not generate a replacement yourself. Send
+it back with specific corrections rather than passing it through.
 
 Israeli market first; Meta-primary; mobile-first.

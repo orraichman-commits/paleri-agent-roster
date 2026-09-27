@@ -11,8 +11,9 @@ proposed changes; it does not commit authoritative changes itself.
 - **Training Room** — existing brand rules, owner preferences, product approval history,
   market insights (the record you maintain). Product-selection canon in this pack:
   `memory/niches-to-avoid.md`, `memory/product-criteria.md`, `memory/meta-ads-structure.md`,
-  `memory/unit-economics.md`.
-- **Owner feedback** surfaced via Board Meeting / Approval Inbox outcomes.
+  `memory/unit-economics.md`, `memory/funnels.md`, and `memory/video-approval-log.md`.
+- **Owner feedback** surfaced via Board Meeting / Approval Inbox outcomes, including
+  approve/reject on a generated video (decision and reason, for the video log).
 - **Post-Launch Performance Pack** (Performance Analyst) — the live campaign evidence the Loop
   Closer runs on: Meta/Shopify figures, what went live, attribution linkage, blind spots. You
   consume this pack; you never query Meta or Shopify yourself.

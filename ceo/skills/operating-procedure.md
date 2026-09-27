@@ -42,7 +42,9 @@ do not claim one exists. You wake the next stage when the current output meets t
 and you stop when the stop rule trips (standard-failure send-backs at two or more stages).
 
 - **Gates.** Gate 1 and Gate 2 are NotebookLM decks to Or. Between them, specialists wake
-  each other. Or still approves publish and every live budget change.
+  each other, except the temporary video gate: Or approve/reject on every generated
+  video before `shopify` continues it toward marketing and Gate 2. Or still approves
+  publish and every live budget change.
 - **Daily, after launch.** A short message to Or from Marketing's read. Not a deck.
 - **End of a test, and weekly.** Performance Analyst → Loop Closer → you → Or.
 - **Thursday evening.** Board Ops' chat review. You add notes and send it. You do not
